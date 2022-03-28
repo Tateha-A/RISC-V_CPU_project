@@ -1,0 +1,37 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/register32bit.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/booth_alu.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/encoder32to5.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/componentLib.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/shiftleft32.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/shiftright32.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/negate32.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/not32.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/or32.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/and32.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/rotateleft32.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/rotateright32.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/register64bit.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/mux32to1.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/lpm_add_sub0.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/lpm_divide0.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/MDR.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/datapath.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/P1_bus.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/alu.vhd}
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/alu_path.vhd}
+
+vcom -93 -work work {D:/GitWorkspace/elec374/elec374project/p1_datapath_div_tb.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  p1_datapath_div_tb
+
+add wave *
+view structure
+view signals
+run 500 ns

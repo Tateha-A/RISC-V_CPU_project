@@ -1,0 +1,43 @@
+
+
+D:/GitWorkspace/elec374/elec374project/lpm_divide0.vhd
+
+Feb 11 01AM:01:17>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+lpm_divide0.bdf
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?
+
+D:/GitWorkspace/elec374/elec374project/lpm_add_sub0.vhd
+
+Feb 11 01AM:01:32>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+lpm_add_sub0.bdf
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?
+
+D:/GitWorkspace/elec374/elec374project/lpm_divide0.vhd
+
+Feb 11 01AM:11:30>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+lpm_divide0.bdf
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?
+
+D:/GitWorkspace/elec374/elec374project/lpm_add_sub.vhd
+
+Feb 11 01AM:21:32>: Variation file name (lpm_add_sub) is identical with the name of one of its sub-components.
+
+MegaWizard Plug-In Manager will rename the variation to "lpm_add_sua" to prevent compilation errors

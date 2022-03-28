@@ -1,0 +1,72 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity p1_datapath_add_tb is
+end;
+
+architecture logic of p1_datapath_add_tb is
+
+signal clk_tb : std_logic;
+signal clr_tb : std_logic;
+signal IncPC_tb	: std_logic;
+signal MDRRead_tb	: std_logic;
+signal aluOp		: std_logic_vector(4 downto 0); 
+signal encoderIn_tb	: std_logic_vector(31 downto 0);
+signal RegEnable_tb	: std_logic_vector(31 downto 0);
+signal Mdatain_tb	:	std_logic_vector(31 downto 0);
+
+signal BusMuxOut_tb:		std_logic_vector(31 downto 0);
+signal IRout_tb:	std_logic_vector(31 downto 0);
+signal Zout_tb:	std_logic_vector(63 downto 0);
+signal R2out_tb: std_logic_vector(31 downto 0);
+signal R4out_tb: std_logic_vector(31 downto 0);
+signal R5out_tb: std_logic_vector(31 downto 0);
+
+TYPE	state is(default, Reg_load1a, Reg_load1b, Reg_load2a, Reg_load2b, Reg_load3a, Reg_load3b, T0, T1, T2, T3, T4, T5, T6);
+signal	present_state: State := default;
+
+component datapath is 
+	port (
+		clk: in std_logic;
+		Mdatain: in std_logic_vector(31 downto 0);
+		MDR_read: in std_logic;
+		PC_plus: in std_logic;
+		register_enable: std_logic_vector(31 downto 0);
+		alu_sel	: std_logic_vector(4 downto 0);
+		encoderin: std_logic_vector(31 downto 0);
+		
+		BusMuxOut: out std_logic_vector(31 downto 0);
+		
+		R2out	: out std_logic_vector(31 downto 0);
+		R4out	: out std_logic_vector(31 downto 0);
+		R5out	: out std_logic_vector(31 downto 0);
+
+		IRout	: out std_logic_vector(31 downto 0);
+		Zout: out std_logic_vector(63 downto 0)
+);
+end component;
+
+begin
+Test : datapath port map 
+(clk_tb,
+Mdatain_tb,
+MDRRead_tb,
+IncPC_tb,
+RegEnable_tb,
+aluOp,
+encoderIn_tb,
+
+BusMuxOut_tb,
+
+R2out_tb, 
+R4out_tb, 
+R5out_tb, 
+
+IRout_tb, 
+Zout_tb);
+
+clk_process: process
+begin
+	clk_tb <= '1', '0' after 10 ns;
+	wait for 20 ns;
+end process clk_process;

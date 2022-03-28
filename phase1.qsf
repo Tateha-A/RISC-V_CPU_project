@@ -1,0 +1,152 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# Date created = 17:59:49  January 27, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		phase1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY datapath
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:59:49  JANUARY 27, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_FILE register32bit.vhd
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE booth_alu.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE booth_alu.vwf
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "D:/GitWorkspace/elec374/elec374project/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VHDL_FILE encoder32to5.vhd
+set_global_assignment -name VHDL_FILE MDR.vhd
+set_global_assignment -name VHDL_FILE componentLib.vhd
+set_global_assignment -name VHDL_FILE shiftleft32.vhd
+set_global_assignment -name VHDL_FILE shiftright32.vhd
+set_global_assignment -name VHDL_FILE negate32.vhd
+set_global_assignment -name VHDL_FILE not32.vhd
+set_global_assignment -name VHDL_FILE or32.vhd
+set_global_assignment -name VHDL_FILE and32.vhd
+set_global_assignment -name VHDL_FILE rotateleft32.vhd
+set_global_assignment -name VHDL_FILE rotateright32.vhd
+set_global_assignment -name VHDL_FILE register64bit.vhd
+set_global_assignment -name VHDL_FILE datapath.vhd
+set_global_assignment -name VHDL_FILE P1_bus.vhd
+set_global_assignment -name VHDL_FILE mux32to1.vhd
+set_global_assignment -name VHDL_FILE alu.vhd
+set_global_assignment -name VHDL_FILE alu_path.vhd
+set_global_assignment -name QIP_FILE lpm_add_sub0.qip
+set_global_assignment -name BDF_FILE lmp_add_sub0.bdf
+set_global_assignment -name QIP_FILE lpm_divide0.qip
+set_global_assignment -name BDF_FILE lmp_divide0.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name VHDL_FILE p1_datapath_add_tb.vhd
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH P3_controlUnit_tb -section_id eda_simulation
+set_global_assignment -name VHDL_FILE p1_datapath_mul_tb.vhd
+set_global_assignment -name VHDL_FILE registerR0.vhd
+set_global_assignment -name VHDL_FILE RAM_sync_512x32.vhd
+set_global_assignment -name VHDL_FILE sel_and_encode.vhd
+set_global_assignment -name VHDL_FILE conff_logic.vhd
+set_global_assignment -name VHDL_FILE addi_tb.vhd
+set_global_assignment -name VHDL_FILE ram_initilization.vhd
+set_global_assignment -name MIF_FILE phase2.mif
+set_global_assignment -name BDF_FILE phase2.bdf
+set_global_assignment -name VHDL_FILE ld_R1_85_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME ld_R1_85_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ld_R1_85_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id ld_R1_85_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ld_R1_85_tb -section_id ld_R1_85_tb
+set_global_assignment -name VHDL_FILE ldi_R1_85_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME ldi_R1_85_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ldi_R1_85_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id ldi_R1_85_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ldi_R1_85_tb -section_id ldi_R1_85_tb
+set_global_assignment -name MIF_FILE phase2_ram_init.mif
+set_global_assignment -name QIP_FILE ram_function_512x32.qip
+set_global_assignment -name VHDL_FILE ld_R1_35_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME ld_R1_35_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ld_R1_35_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id ld_R1_35_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ld_R1_35_tb -section_id ld_R1_35_tb
+set_global_assignment -name VHDL_FILE ldi_r0_35r1_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME ldi_r0_35r1_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ldi_r0_35r1_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id ldi_r0_35r1_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ldi_r0_35r1_tb -section_id ldi_r0_35r1_tb
+set_global_assignment -name VHDL_FILE P2_st_90_R1_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME P2_st_90_R1_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id P2_st_90_R1_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id P2_st_90_R1_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME P2_st_90_R1_tb -section_id P2_st_90_R1_tb
+set_global_assignment -name VHDL_FILE P2_st_90R1_R1_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME P2_st_90R1_R1_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id P2_st_90R1_R1_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id P2_st_90R1_R1_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME P2_st_90R1_R1_tb -section_id P2_st_90R1_R1_tb
+set_global_assignment -name VHDL_FILE P2_brzr_R2_35_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME P2_brzr_R2_35_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id P2_brzr_R2_35_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id P2_brzr_R2_35_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME P2_brzr_R2_35_tb -section_id P2_brzr_R2_35_tb
+set_global_assignment -name VHDL_FILE control_unit.vhd
+set_global_assignment -name VHDL_FILE P3_controlUnit_tb.vhd
+set_global_assignment -name EDA_TEST_BENCH_NAME P3_controlUnit_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id P3_controlUnit_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "9000 ns" -section_id P3_controlUnit_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME P3_controlUnit_tb -section_id P3_controlUnit_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE ld_R1_85_tb.vhd -section_id ld_R1_85_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE ldi_R1_85_tb.vhd -section_id ldi_R1_85_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE ld_R1_35_tb.vhd -section_id ld_R1_35_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE ldi_r0_35r1_tb.vhd -section_id ldi_r0_35r1_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE P2_st_90_R1_tb.vhd -section_id P2_st_90_R1_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE P2_st_90R1_R1_tb.vhd -section_id P2_st_90R1_R1_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE P2_brzr_R2_35_tb.vhd -section_id P2_brzr_R2_35_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE P3_controlUnit_tb.vhd -section_id P3_controlUnit_tb
+set_global_assignment -name VHDL_FILE Seven_Seg_Display.vhd
+set_global_assignment -name VHDL_FILE DE0_interface.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

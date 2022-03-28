@@ -1,0 +1,27 @@
+# do phase1.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module booth_alu
+# 
+# Top level modules:
+# 	booth_alu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module booth_alu_vlg_sample_tst
+# -- Compiling module booth_alu_vlg_check_tst
+# -- Compiling module booth_alu_vlg_vec_tst
+# 
+# Top level modules:
+# 	booth_alu_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.booth_alu_vlg_vec_tst 
+# Loading work.booth_alu_vlg_vec_tst
+# Loading work.booth_alu
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading work.booth_alu_vlg_sample_tst
+# Loading work.booth_alu_vlg_check_tst
+# ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
+# Simulation passed !
+# ** Note: $finish    : booth_alu.vwf.vt(1283)
+#    Time: 500 ns  Iteration: 0  Instance: /booth_alu_vlg_vec_tst/tb_out

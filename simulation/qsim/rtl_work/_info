@@ -1,0 +1,1125 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\GitWorkspace\elec374\elec374project\simulation\qsim
+Ealu
+Z1 w1644555182
+Z2 DPx4 work 18 ram_initialization 0 22 A?BYg0FcldjPhajBFX:lN2
+Z3 DPx4 work 12 componentlib 0 22 B1:j_UN:ZTObGdP?MOGbF2
+Z4 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z5 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dD:\GitWorkspace\elec374\elec374project\simulation\qsim
+Z9 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/alu.vhd
+Z10 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/alu.vhd
+l0
+L6
+V`MJ=>[UMJa`[e0=jmnmBG2
+Z11 OV;C;10.1d;51
+31
+Z12 !s108 1648496839.520000
+Z13 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/alu.vhd|
+Z14 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/alu.vhd|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+!s100 lDb=G4KELd62D5XeA[6Zn2
+!i10b 1
+Abehavior
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 3 alu 0 22 `MJ=>[UMJa`[e0=jmnmBG2
+l34
+L17
+VdmN?E0IOah1Nn8BmXPk_^3
+R11
+31
+R12
+R13
+R14
+R15
+R16
+!s100 LQzhMX=VD`J2YH0El6K6H3
+!i10b 1
+Ealu_path
+Z17 w1644561467
+R2
+R3
+Z18 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R4
+R5
+R6
+R7
+R8
+Z19 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/alu_path.vhd
+Z20 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/alu_path.vhd
+l0
+L7
+VQf5^S^iA>SSdE`XV0Gg821
+R11
+31
+Z21 !s108 1648496839.562000
+Z22 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/alu_path.vhd|
+Z23 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/alu_path.vhd|
+R15
+R16
+!s100 kjzJ3l_LJGD0BAbg^Olc73
+!i10b 1
+Abehavior
+R2
+R3
+R18
+R4
+R5
+R6
+R7
+DEx4 work 8 alu_path 0 22 Qf5^S^iA>SSdE`XV0Gg821
+l29
+L23
+VNSJKOOOJ8KjFz1BNOG`X@3
+R11
+31
+R21
+R22
+R23
+R15
+R16
+!s100 3A`m?f5E8on_=SMnM`MMU1
+!i10b 1
+Eand32
+Z24 w1644047223
+R18
+R4
+R5
+R6
+R7
+R8
+Z25 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/and32.vhd
+Z26 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/and32.vhd
+l0
+L6
+VWC^7M>>2PECff?d5QUC000
+R11
+31
+Z27 !s108 1648496838.869000
+Z28 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/and32.vhd|
+Z29 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/and32.vhd|
+R15
+R16
+!s100 :gKQJJ[C[QbHNL9>o`T=Z1
+!i10b 1
+Alogic
+R18
+R4
+R5
+R6
+R7
+DEx4 work 5 and32 0 22 WC^7M>>2PECff?d5QUC000
+l15
+L14
+VnYoBe@WPY51`M98CVVa`32
+R11
+31
+R27
+R28
+R29
+R15
+R16
+!s100 f<>QWoTkBVhHP5PaEG;F20
+!i10b 1
+Ebooth_alu
+Z30 w1643927786
+R18
+R4
+R5
+R6
+R7
+R8
+Z31 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/booth_alu.vhd
+Z32 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/booth_alu.vhd
+l0
+L7
+Vk7cgne3[ZzKLK5=VfCPzI1
+R11
+31
+Z33 !s108 1648496838.568000
+Z34 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/booth_alu.vhd|
+Z35 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/booth_alu.vhd|
+R15
+R16
+!s100 jC3fSNm?m:g<<:_4KaBN23
+!i10b 1
+Alogic
+R18
+R4
+R5
+R6
+R7
+DEx4 work 9 booth_alu 0 22 k7cgne3[ZzKLK5=VfCPzI1
+l20
+L19
+Vg7V7j2ODNUn>6]^A4C3Y40
+R11
+31
+R33
+R34
+R35
+R15
+R16
+!s100 Gef5<dU9lJM;8QU5:RMN_1
+!i10b 1
+Pcomponentlib
+R2
+R6
+R7
+w1648153986
+R8
+8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/componentLib.vhd
+FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/componentLib.vhd
+l0
+L5
+VB1:j_UN:ZTObGdP?MOGbF2
+R11
+31
+R15
+R16
+!s100 j:QRcDAB1PMlT[=QaUbFQ1
+!i10b 1
+!s108 1648496839.360000
+!s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/componentLib.vhd|
+!s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/componentLib.vhd|
+Econff_logic
+Z36 w1647128900
+R4
+R5
+R6
+R7
+R8
+Z37 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/conff_logic.vhd
+Z38 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/conff_logic.vhd
+l0
+L5
+V=hRk_Fz=?bL::gKV`TCTP2
+R11
+31
+Z39 !s108 1648496839.235000
+Z40 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/conff_logic.vhd|
+Z41 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/conff_logic.vhd|
+R15
+R16
+!s100 GKjh9z<25g6NCinUg=?`<2
+!i10b 1
+Alogic
+R4
+R5
+R6
+R7
+DEx4 work 11 conff_logic 0 22 =hRk_Fz=?bL::gKV`TCTP2
+l24
+L16
+VK1QO[H=]Lnf_FGGz?5hM33
+R11
+31
+R39
+R40
+R41
+R15
+R16
+!s100 AdSX>`eziJ]SBgFaiJE:z1
+!i10b 1
+Econtrol_unit
+Z42 w1647986393
+R2
+R3
+R6
+R7
+R8
+Z43 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/control_unit.vhd
+Z44 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/control_unit.vhd
+l0
+L5
+VgKHlfc;MMn5D:CVgYTVI10
+R11
+31
+Z45 !s108 1648496839.606000
+Z46 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/control_unit.vhd|
+Z47 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/control_unit.vhd|
+R15
+R16
+!s100 =F@U=gGci=1hn52WOaJjJ3
+!i10b 1
+Abehavior
+R2
+R3
+R6
+R7
+DEx4 work 12 control_unit 0 22 gKHlfc;MMn5D:CVgYTVI10
+l95
+L35
+VS;WE5iO9NURmRUmFCE_T22
+R11
+31
+R45
+R46
+R47
+R15
+R16
+!s100 AJU@HAz1Z[@SO6B2hSoC[1
+!i10b 1
+Edatapath
+Z48 w1648153138
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z49 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/datapath.vhd
+Z50 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/datapath.vhd
+l0
+L7
+VW>1_WfSEZ?XEd[`=H34`91
+R11
+31
+Z51 !s108 1648496839.436000
+Z52 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/datapath.vhd|
+Z53 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/datapath.vhd|
+R15
+R16
+!s100 I9]aN1UUiV;>DP1_OU9N<0
+!i10b 1
+Abehavior
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 datapath 0 22 W>1_WfSEZ?XEd[`=H34`91
+l120
+L59
+VTjX;046UI`XfO[c`4i4aK0
+R11
+31
+R51
+R52
+R53
+R15
+R16
+!s100 G3FGKJRT0X3P8ZEX@9Cde1
+!i10b 1
+Eencoder32to5
+Z54 w1644044319
+R4
+R5
+R6
+R7
+R8
+Z55 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/encoder32to5.vhd
+Z56 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/encoder32to5.vhd
+l0
+L5
+Vf]@d?>Kj@KVXIKzE[]6_l1
+R11
+31
+Z57 !s108 1648496838.613000
+Z58 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/encoder32to5.vhd|
+Z59 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/encoder32to5.vhd|
+R15
+R16
+!s100 :]C3A6C2mh`_kSP]M9R_m2
+!i10b 1
+Abehavior
+R4
+R5
+R6
+R7
+DEx4 work 12 encoder32to5 0 22 f]@d?>Kj@KVXIKzE[]6_l1
+l13
+L12
+V0JbXSl1z?E7A6_W7_Kd`I0
+R11
+31
+R57
+R58
+R59
+R15
+R16
+!s100 Qm0zQBNc@SnJ?;za@OP0=2
+!i10b 1
+Elpm_add_sub0
+Z60 w1644564133
+R6
+R7
+R8
+Z61 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/lpm_add_sub0.vhd
+Z62 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/lpm_add_sub0.vhd
+l0
+L42
+VW:i93nH:J0o63NY;zjaLg2
+R11
+31
+Z63 !s108 1648496839.078000
+Z64 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/lpm_add_sub0.vhd|
+Z65 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/lpm_add_sub0.vhd|
+R15
+R16
+!s100 ahPn4Jo7?EV^@U6ZC7JOz2
+!i10b 1
+Asyn
+R6
+R7
+DEx4 work 12 lpm_add_sub0 0 22 W:i93nH:J0o63NY;zjaLg2
+l78
+L54
+VP7f:E0WDOCQeMER7X3IVf0
+R11
+31
+R63
+R64
+R65
+R15
+R16
+!s100 <Ez;`VS5R<H?8^ThXaAeE0
+!i10b 1
+Elpm_divide0
+Z66 w1644564284
+R6
+R7
+R8
+Z67 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/lpm_divide0.vhd
+Z68 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/lpm_divide0.vhd
+l0
+L42
+V7z6H1XL_0Fn5GzGVlJIPA0
+R11
+31
+Z69 !s108 1648496839.116000
+Z70 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/lpm_divide0.vhd|
+Z71 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/lpm_divide0.vhd|
+R15
+R16
+!s100 VJ`W9i^2J3CGFQ_HI3SZ82
+!i10b 1
+Asyn
+R6
+R7
+DEx4 work 11 lpm_divide0 0 22 7z6H1XL_0Fn5GzGVlJIPA0
+l77
+L53
+Vb5Z5B2mDGE_k4NcaCLUc`3
+R11
+31
+R69
+R70
+R71
+R15
+R16
+!s100 aCmT]@k`A^HPBCVIKNYUG3
+!i10b 1
+Emdr
+Z72 w1644045286
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z73 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/MDR.vhd
+Z74 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/MDR.vhd
+l0
+L6
+VL<?@nJDXQ1JchD?ngf5?f3
+R11
+31
+Z75 !s108 1648496839.394000
+Z76 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/MDR.vhd|
+Z77 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/MDR.vhd|
+R15
+R16
+!s100 AJa4jfHKf^VO8[h4IJ5Jn3
+!i10b 1
+Abehavior
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 3 mdr 0 22 L<?@nJDXQ1JchD?ngf5?f3
+l22
+L18
+V;9P6<[V35a_Na9V@Tj_dc2
+R11
+31
+R75
+R76
+R77
+R15
+R16
+!s100 b_lHTkl]UTIf]M9zzJ5jo3
+!i10b 1
+Emux32to1
+Z78 w1644562560
+R4
+R5
+R6
+R7
+R8
+Z79 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/mux32to1.vhd
+Z80 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/mux32to1.vhd
+l0
+L6
+VDJol9NHC7W?:oE4O3H5X>0
+R11
+31
+Z81 !s108 1648496839.035000
+Z82 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/mux32to1.vhd|
+Z83 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/mux32to1.vhd|
+R15
+R16
+!s100 RNW4oghGKIVY7h_>6C[2i1
+!i10b 1
+Abehavior
+R4
+R5
+R6
+R7
+DEx4 work 8 mux32to1 0 22 DJol9NHC7W?:oE4O3H5X>0
+l50
+L48
+V`m>m1NzOUSS>LRE4XUfG[0
+R11
+31
+R81
+R82
+R83
+R15
+R16
+!s100 4jjiXRFgh`;V3K;;;YIjD0
+!i10b 1
+Enegate32
+Z84 w1644047115
+R18
+R4
+R5
+R6
+R7
+R8
+Z85 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/negate32.vhd
+Z86 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/negate32.vhd
+l0
+L6
+VV7cO]h_IYd=EKR?W[W9_d1
+R11
+31
+Z87 !s108 1648496838.735000
+Z88 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/negate32.vhd|
+Z89 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/negate32.vhd|
+R15
+R16
+!s100 TJzGXj6indk4:N6K0hENL0
+!i10b 1
+Alogic
+R18
+R4
+R5
+R6
+R7
+DEx4 work 8 negate32 0 22 V7cO]h_IYd=EKR?W[W9_d1
+l14
+L13
+V20am74?^`WNn4^Z2S[cHi3
+R11
+31
+R87
+R88
+R89
+R15
+R16
+!s100 b_^zA<nWSfb[@_LjCk:Nd2
+!i10b 1
+Enot32
+Z90 w1644046833
+R18
+R4
+R5
+R6
+R7
+R8
+Z91 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/not32.vhd
+Z92 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/not32.vhd
+l0
+L6
+VNNlUdah1XNR@WTnaXSlKU3
+R11
+31
+Z93 !s108 1648496838.780000
+Z94 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/not32.vhd|
+Z95 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/not32.vhd|
+R15
+R16
+!s100 bCR1:`>X:AKMAWUO1]^n^1
+!i10b 1
+Alogic
+R18
+R4
+R5
+R6
+R7
+DEx4 work 5 not32 0 22 NNlUdah1XNR@WTnaXSlKU3
+l14
+L13
+VbVPojie7ILF7AJ3SRSi[13
+R11
+31
+R93
+R94
+R95
+R15
+R16
+!s100 2f1`P@dnTPo@jWU;UCf@S1
+!i10b 1
+Eor32
+Z96 w1644047194
+R18
+R4
+R5
+R6
+R7
+R8
+Z97 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/or32.vhd
+Z98 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/or32.vhd
+l0
+L6
+V4X6oMPSaIB1onEz;2R_nm3
+R11
+31
+Z99 !s108 1648496838.821000
+Z100 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/or32.vhd|
+Z101 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/or32.vhd|
+R15
+R16
+!s100 f?T[;3ElKLc0C;ToWMH;70
+!i10b 1
+Alogic
+R18
+R4
+R5
+R6
+R7
+DEx4 work 4 or32 0 22 4X6oMPSaIB1onEz;2R_nm3
+l15
+L14
+V:GSVY9I0T4@@7_]i=JI4B0
+R11
+31
+R99
+R100
+R101
+R15
+R16
+!s100 S=n`nU@F4>G9eSg_8R^g^3
+!i10b 1
+Ep1_bus
+Z102 w1646801679
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z103 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/P1_bus.vhd
+Z104 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/P1_bus.vhd
+l0
+L6
+VF`m0jlK]FG>0jZnO=H<eg1
+R11
+31
+Z105 !s108 1648496839.478000
+Z106 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/P1_bus.vhd|
+Z107 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/P1_bus.vhd|
+R15
+R16
+!s100 J@7HE>_5jd[_=eeNb<aER3
+!i10b 1
+Astructural
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 6 p1_bus 0 22 F`m0jlK]FG>0jZnO=H<eg1
+l50
+L47
+VYk_RA_>a[mk?eUUoeJiX21
+R11
+31
+R105
+R106
+R107
+R15
+R16
+!s100 KmM55^S9k1Scn3bJ32Zg_3
+!i10b 1
+Ep3_controlunit_tb
+Z108 w1648153367
+R2
+R3
+R6
+R7
+R8
+Z109 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/P3_controlUnit_tb.vhd
+Z110 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/P3_controlUnit_tb.vhd
+l0
+L5
+VP1YU4iXde[=<jKTzDfDQg0
+!s100 ^eHn3AHNL;=kk86AJEXz?2
+R11
+31
+!i10b 1
+Z111 !s108 1648496839.690000
+Z112 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/P3_controlUnit_tb.vhd|
+Z113 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/P3_controlUnit_tb.vhd|
+R15
+R16
+Alogic
+R2
+R3
+R6
+R7
+DEx4 work 17 p3_controlunit_tb 0 22 P1YU4iXde[=<jKTzDfDQg0
+l79
+L8
+Vf@Ra244bPS6=Z0UHMc<U80
+!s100 ZXoIhe9;@1VW1HoT:;Cfh1
+R11
+31
+!i10b 1
+R111
+R112
+R113
+R15
+R16
+Eram_function_512x32
+Z114 w1646951492
+Z115 DPx9 altera_mf 20 altera_mf_components 0 22 zh;bE09gCIPDVLK?MN49L3
+R6
+R7
+R8
+Z116 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/ram_function_512x32.vhd
+Z117 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/ram_function_512x32.vhd
+l0
+L42
+V6;@:E9VoTdagCgz`@h:h43
+R11
+31
+Z118 !s108 1648496839.310000
+Z119 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/ram_function_512x32.vhd|
+Z120 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/ram_function_512x32.vhd|
+R15
+R16
+!s100 IUkFN]WSEd@;bWE_@Q2Jf0
+!i10b 1
+Asyn
+R115
+R6
+R7
+DEx4 work 19 ram_function_512x32 0 22 6;@:E9VoTdagCgz`@h:h43
+l58
+L54
+V:KYm0L^F=5]fj4;9Hhi<R3
+R11
+31
+R118
+R119
+R120
+R15
+R16
+!s100 ?cNhhG_jUl5KHIPcaX<hA0
+!i10b 1
+Pram_initialization
+R6
+R7
+w1647490312
+R8
+8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/ram_initilization.vhd
+FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/ram_initilization.vhd
+l0
+L4
+VA?BYg0FcldjPhajBFX:lN2
+R11
+31
+R15
+R16
+!s100 _6VYW6cD36:J<jfLWz>><3
+!i10b 1
+!s108 1648496839.274000
+!s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/ram_initilization.vhd|
+!s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/ram_initilization.vhd|
+Eregister32bit
+Z121 w1644559126
+R5
+R4
+R6
+R7
+R8
+Z122 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/register32bit.vhd
+Z123 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/register32bit.vhd
+l0
+L6
+VR;m6=^mf>NNO6SQjjlm8<2
+R11
+31
+Z124 !s108 1648496838.493000
+Z125 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/register32bit.vhd|
+Z126 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/register32bit.vhd|
+R15
+R16
+!s100 JQNzjl6EOdldmZK0;2g:A1
+!i10b 1
+Abehavior
+R5
+R4
+R6
+R7
+DEx4 work 13 register32bit 0 22 R;m6=^mf>NNO6SQjjlm8<2
+l19
+L18
+VNWc>YH<h25MKg?TnZSg;73
+R11
+31
+R124
+R125
+R126
+R15
+R16
+!s100 =<_Oi]<>R=4NY]Y7gL[Go1
+!i10b 1
+Eregister64bit
+Z127 w1644560091
+R5
+R4
+R6
+R7
+R8
+Z128 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/register64bit.vhd
+Z129 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/register64bit.vhd
+l0
+L6
+VXm<4g1gDM:n2Wl<@Jz^eD2
+R11
+31
+Z130 !s108 1648496838.996000
+Z131 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/register64bit.vhd|
+Z132 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/register64bit.vhd|
+R15
+R16
+!s100 88Gnll6NEC]?jDJ1bd5<F1
+!i10b 1
+Abehavior
+R5
+R4
+R6
+R7
+DEx4 work 13 register64bit 0 22 Xm<4g1gDM:n2Wl<@Jz^eD2
+l20
+L19
+Vj4mA[h@d:Z9<W9XZYa@852
+R11
+31
+R130
+R131
+R132
+R15
+R16
+!s100 <7Xi`RgEcU8ZXBQBB4>Ma2
+!i10b 1
+Eregisterr0
+Z133 w1646792871
+R6
+R7
+R8
+Z134 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/registerR0.vhd
+Z135 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/registerR0.vhd
+l0
+L4
+VIR@Rf5i]k]R=VJ<bWFkYV3
+R11
+31
+Z136 !s108 1648496839.154000
+Z137 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/registerR0.vhd|
+Z138 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/registerR0.vhd|
+R15
+R16
+!s100 n:a]b6A4jiAQRXO_ObN[10
+!i10b 1
+Alogic
+R6
+R7
+DEx4 work 10 registerr0 0 22 IR@Rf5i]k]R=VJ<bWFkYV3
+l16
+L14
+VKz^CJmILDPU15n^:KjNOg1
+R11
+31
+R136
+R137
+R138
+R15
+R16
+!s100 <1aDCjb>okL>U1cUUW1X^1
+!i10b 1
+Erotateleft32
+Z139 w1647942494
+R18
+R4
+R5
+R6
+R7
+R8
+Z140 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/rotateleft32.vhd
+Z141 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/rotateleft32.vhd
+l0
+L6
+VQ=RID<`I15DoY`2]R10zJ0
+R11
+31
+Z142 !s108 1648496838.913000
+Z143 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/rotateleft32.vhd|
+Z144 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/rotateleft32.vhd|
+R15
+R16
+!s100 3bc:A7WEg5U6VWXBcUGWF0
+!i10b 1
+Alogic
+R18
+R4
+R5
+R6
+R7
+DEx4 work 12 rotateleft32 0 22 Q=RID<`I15DoY`2]R10zJ0
+l15
+L14
+VE8FKML8SM[FDH:]nB>OmH0
+R11
+31
+R142
+R143
+R144
+R15
+R16
+!s100 6k3F^bVbfeLU[_W[3:IoH1
+!i10b 1
+Erotateright32
+Z145 w1647942287
+R18
+R4
+R5
+R6
+R7
+R8
+Z146 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/rotateright32.vhd
+Z147 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/rotateright32.vhd
+l0
+L6
+VY7hU`E:c7HQOb5jS@Kf]O3
+R11
+31
+Z148 !s108 1648496838.955000
+Z149 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/rotateright32.vhd|
+Z150 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/rotateright32.vhd|
+R15
+R16
+!s100 :DckUC4:eaAc]:CQL<9Qa0
+!i10b 1
+Alogic
+R18
+R4
+R5
+R6
+R7
+DEx4 work 13 rotateright32 0 22 Y7hU`E:c7HQOb5jS@Kf]O3
+l15
+L14
+VKUzfnhXXAQV2DmgEnjD?n2
+R11
+31
+R148
+R149
+R150
+R15
+R16
+!s100 8i[C1gECnJa46^jB1SQbg0
+!i10b 1
+Esel_and_encode
+Z151 w1646946534
+R18
+R6
+R7
+R8
+Z152 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/sel_and_encode.vhd
+Z153 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/sel_and_encode.vhd
+l0
+L5
+Vd`YT=_EJZm<Hho2gfzaB[3
+R11
+31
+Z154 !s108 1648496839.192000
+Z155 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/sel_and_encode.vhd|
+Z156 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/sel_and_encode.vhd|
+R15
+R16
+!s100 H7fGJ5nPVnUVW1S7fBV_11
+!i10b 1
+Alogic
+R18
+R6
+R7
+DEx4 work 14 sel_and_encode 0 22 d`YT=_EJZm<Hho2gfzaB[3
+l25
+L19
+V=2^CAAiD<hNAP_6XnTnJ82
+R11
+31
+R154
+R155
+R156
+R15
+R16
+!s100 QChQB=bgBHAK:Lm6:;2lf1
+!i10b 1
+Eseven_seg_display
+Z157 w1648154867
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z158 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/Seven_Seg_Display.vhd
+Z159 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/Seven_Seg_Display.vhd
+l0
+L6
+V1HY@S>bfkkoW_H[QnD<bg0
+R11
+31
+Z160 !s108 1648496839.647000
+Z161 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/Seven_Seg_Display.vhd|
+Z162 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/Seven_Seg_Display.vhd|
+R15
+R16
+!s100 jo_5Gn_HNJPGmX4Wm3[O`2
+!i10b 1
+Abehavior
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 17 seven_seg_display 0 22 1HY@S>bfkkoW_H[QnD<bg0
+l60
+L15
+V:m=iQn69?Ij4LdZ[QgLIM2
+R11
+31
+R160
+R161
+R162
+R15
+R16
+!s100 oi2iab<gWMo2f`VYJ9j5`0
+!i10b 1
+Eshiftleft32
+Z163 w1647942367
+R18
+R4
+R5
+R6
+R7
+R8
+Z164 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/shiftleft32.vhd
+Z165 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/shiftleft32.vhd
+l0
+L6
+V^XDAV[j44>=d;T?W^m9;_3
+R11
+31
+Z166 !s108 1648496838.653000
+Z167 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/shiftleft32.vhd|
+Z168 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/shiftleft32.vhd|
+R15
+R16
+!s100 `FmlYncW:9WIjMC2ecMbG2
+!i10b 1
+Alogic
+R18
+R4
+R5
+R6
+R7
+DEx4 work 11 shiftleft32 0 22 ^XDAV[j44>=d;T?W^m9;_3
+l15
+L14
+V1ldAL@6jLTn<z49o=X4z00
+R11
+31
+R166
+R167
+R168
+R15
+R16
+!s100 J^mz4kHVoamR5EazO=J<F1
+!i10b 1
+Eshiftright32
+Z169 w1647942331
+R18
+R4
+R5
+R6
+R7
+R8
+Z170 8D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/shiftright32.vhd
+Z171 FD:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/shiftright32.vhd
+l0
+L6
+VJf=doGW;<4iD3Xi=>oFE50
+R11
+31
+Z172 !s108 1648496838.694000
+Z173 !s90 -reportprogress|300|-93|-work|work|D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/shiftright32.vhd|
+Z174 !s107 D:/GitWorkspace/elec374/RISC-V_CPU/RISC-V_CPU_project/shiftright32.vhd|
+R15
+R16
+!s100 md5_;fgjVKY?1k@00JVVK3
+!i10b 1
+Alogic
+R18
+R4
+R5
+R6
+R7
+DEx4 work 12 shiftright32 0 22 Jf=doGW;<4iD3Xi=>oFE50
+l15
+L14
+VWSc;?n^I?ZLz7`DTJ8eUk1
+R11
+31
+R172
+R173
+R174
+R15
+R16
+!s100 ]cCn^PI54LnSC8XGI?9bl0
+!i10b 1
