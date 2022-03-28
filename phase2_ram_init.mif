@@ -1,0 +1,80 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=512;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	0    :   09800087;
+	1    :   09980001;
+	2    :   01000075;
+	3    :   0917FFFE;
+	4    :   00900004;
+	5    :   08000001;
+	6    :   09800073;
+	7    :   91980003;
+	8    :   09980005;
+	9    :   039FFFFD;
+	10   :   C8000000;
+	11   :   93900002;
+	12   :   0A080006;
+	13   :   09A00002;
+	14   :   19918000;
+	15   :   5BB80003;
+	16   :   83B80000;
+	17   :   8BB80000;
+	18   :   63B8000F;
+	19   :   6B880003;
+	20   :   29180000;
+	21   :   11000058;
+	22   :   38880000;
+	23   :   41100000;
+	24   :   51180000;
+	25   :   48908000;
+	26   :   11080067;
+	27   :   21918000;
+	28   :   30900000;
+	29   :   0A000005;
+	30   :   0A80001D;
+	31   :   72A00000;
+	32   :   BB800000;
+	33   :   C3000000;
+	34   :   7AA00000;
+	35   :   0D200000;
+	36   :   0DA80002;
+	37   :   0E300000;
+	38   :   0EB80000;
+	39   :   A6700000;
+	40   :   B0800000;
+	41   :   D0000000;
+	[42..46]  :   00000000;
+	47   :   47000007;
+	[48..84]  :   00000000;
+	85   :   85000007;
+	[86..87]  :   00000000;
+	88   :   00000034;
+	[89..116]  :   00000000;
+	117  :   00000056;
+	[118..144]  :   00000000;
+	145  :   1CD60000;
+	146  :   245E8000;
+	147  :   24CC0000;
+	148  :   9F000000;
+	[149..511]  :   00000000;
+END;

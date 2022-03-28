@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity rotateright32 is
+	port(
+		data : in std_logic_vector(31 downto 0);	
+		interval : in std_logic_vector(31 downto 0);	
+		output : out std_logic_vector(31 downto 0)
+	);
+end entity rotateright32;
+
+architecture logic of rotateright32 is
+begin
+	output <= std_logic_vector(rotate_right(unsigned(data), to_integer(signed(interval))));
+end architecture logic;

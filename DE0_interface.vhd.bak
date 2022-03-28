@@ -1,0 +1,52 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use work.componentLib.all;
+
+
+entity DE0_interface is
+port(
+		clk: in std_logic;
+		reset	: in std_logic;
+		stop	: in std_logic;
+		run	: out std_logic;
+		in_port: in std_logic_vector (31 downto 0);
+		out_port: out std_logic_vector (31 downto 0);
+		seven_segment_out: out std_logic_vector (31 downto 0));
+end entity;
+
+component datapath is 
+	port (
+		clk: in std_logic;
+		reset	: in std_logic;
+		stop	: in std_logic;
+		run	: out std_logic;
+		in_port: in std_logic_vector (31 downto 0);
+		out_port: out std_logic_vector (31 downto 0);
+		seven_segment_out: out std_logic_vector (31 downto 0);
+		R0out	: out std_logic_vector(31 downto 0);
+		R1out	: out std_logic_vector(31 downto 0);
+		R2out	: out std_logic_vector(31 downto 0);
+		R3out	: out std_logic_vector(31 downto 0);
+		R4out	: out std_logic_vector(31 downto 0);
+		R5out	: out std_logic_vector(31 downto 0);
+		R6out	: out std_logic_vector(31 downto 0);
+		R7out	: out std_logic_vector(31 downto 0);
+		R8out	: out std_logic_vector(31 downto 0);
+		R9out	: out std_logic_vector(31 downto 0);
+		R10out : out std_logic_vector(31 downto 0);
+		R11out : out std_logic_vector(31 downto 0);
+		R12out : out std_logic_vector(31 downto 0);
+		R13out : out std_logic_vector(31 downto 0);
+		R14out : out std_logic_vector(31 downto 0);
+		R15out : out std_logic_vector(31 downto 0);
+		BusMuxOut: out std_logic_vector(31 downto 0);
+		MAR_out : out std_logic_vector (31 downto 0);
+		MDR_out : out std_logic_vector (31 downto 0);
+		PCout: out std_logic_vector (31 downto 0);
+		HIout	: out std_logic_vector(31 downto 0);
+		LOout	: out std_logic_vector(31 downto 0);
+		IRout	: out std_logic_vector(31 downto 0);
+		Zout: out std_logic_vector(63 downto 0);
+		ram_pop : out std_logic_vector(31 downto 0));
+end component datapath;

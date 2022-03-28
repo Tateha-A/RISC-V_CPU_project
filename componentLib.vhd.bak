@@ -1,0 +1,39 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+package componentLib is
+
+component register32bit is
+  port (
+    clk     : in std_logic;
+	 clr		: in std_logic;
+    R1in      : in std_logic; -- write/enable ld
+    BusMuxOut       : in std_logic_vector(31 downto 0); -- input D
+    BusMuxIn       : out std_logic_vector(31 downto 0) -- output Q
+  );
+end component;
+
+--------------------------------------------------
+
+component encoder32to5 is 
+	port(
+		input : in std_logic_vector(31 downto 0);
+		output: out std_logic_vector(4 downto 0)
+	);
+end component encoder32to5;
+
+--------------------------------------------------
+
+component booth_alu is 
+	generic (
+		base_bit : integer := 32
+		);
+		
+	port(
+		mutiplicant : in std_logic_vector(31 downto 0);
+		multiplier : in std_logic_vector(31 downto 0);
+		result : out std_logic_vector(63 downto 0)
+	);
+end component booth_alu;
+
+--------------------------------------------------

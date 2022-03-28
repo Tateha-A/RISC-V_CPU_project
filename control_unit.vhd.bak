@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.componentLib.all;
+
+entity control_unit is port (
+	clk: in std_logic;
+	reset: in std_logic;
+	stop: in std_logic;
+	IR: in std_logic_vector (31 downto 0);
+	con_ff: in std_logic; 
+	Rin: out std_logic;
+	Rout: out std_logic; 
+	Gra: out std_logic;
+	Grb: out std_logic;
+	Grc: out std_logic;
+	BAout: out std_logic;
+	encoder_in: out std_logic_vector (15 downto 0);
+	register_enable: out std_logic_vector (15 downto 0);
+	MDR_read: out std_logic;
+	MDR_write: out std_logic;
+	IncPC: out std_logic;
+	run: out std_logic;
+	clear: out std_logic;
+	OP_code: out std_logic_vector (4 downto 0); -- for alu selection
+	status: out state
+);
+end entity control_unit; 
