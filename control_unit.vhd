@@ -54,7 +54,7 @@ type state is
 			ori3, ori4, ori5, 
 			branch3, branch4, branch5, branch6,
 			jr3, jal3, jal4, 
-			in3, 
+			in3, in3_1,
 			mfhi3, 
 			mflo3, 
 			shr3, shr4, shr5, shl3, shl4, shl5, 
@@ -370,7 +370,9 @@ begin
 				present_state <= fetch0;				
 -------------------------------------------------					
 			when in3 =>
-				present_state <= fetch0;	
+				present_state <= in3_1;
+			when	in3_1 =>
+				present_state <= fetch0;
 -------------------------------------------------						
 			when out3 =>
 				present_state <= fetch0;
@@ -389,6 +391,9 @@ end process;
 
 process(present_state) 
 begin
+	case present_state is
+		when in3 =>
+		when others =>
 			Gra <= '0';
 			Grb <= '0';
 			Grc <= '0';
@@ -418,6 +423,7 @@ begin
 			In_in <= '0';
 			Out_in <= '0';
 			CONin <= '0';
+	end case;
 	case present_state is 
 		when reset_state0 => -- initializztion
 			clear <= '0'; -- clear all register
@@ -682,10 +688,17 @@ begin
 			Gra <= '1';
 			PCin <= '1';
 ----------------------------------------------------------	
+----------------------------------------------------------	
 		when in3 =>
 			Rin <= '1';
 			Gra <= '1';
-			inportout <= '1';
+			In_in <= '1';
+			Inportout <= '1';
+		when in3_1 =>
+			Rin <= '1';
+			Gra <= '1';
+			In_in <= '1';
+			Inportout <= '1';
 ----------------------------------------------------------		
 		when out3 =>
 			Gra <= '1';

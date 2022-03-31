@@ -120,11 +120,12 @@ end process clk_process;
 
 main: process
 begin
+	inport_tb <= x"00000088";
 	stop_tb <= '0';
 	reset_tb <= '1';
 	wait for 15 ns;
 	reset_tb <= '0';
-	wait for 9000 ns;
+	wait for 250000 ns;
 end process;
 end architecture;	
 
