@@ -103,7 +103,7 @@ begin
       clk_DE0 <= '0';
       prescaler <= (others => '0');
     elsif rising_edge(clk) then   -- rising clock edge
-		if prescaler = X"4" then     -- 50MHz / 4 = 12.5MHz
+		if prescaler = X"8" then     -- 50MHz / 8 = 6.25MHz
         prescaler <= (others => '0');
         clk_DE0 <= not clk_DE0;
       else
@@ -111,10 +111,12 @@ begin
       end if;
     end if;
 	end process gen_clk;
-
+	
+	--in_port(31 downto 8) <= (others => '0');
+	
 	DE0_map : datapath port map 
 									(
-									clk, 
+									clk_DE0, 
 									reset, 
 									stop, 
 									run, 

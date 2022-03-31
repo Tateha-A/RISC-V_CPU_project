@@ -1,5 +1,5 @@
 Flow report for phase1
-Mon Mar 28 15:54:38 2022
+Thu Mar 31 16:00:45 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Mar 28 15:54:37 2022      ;
+; Flow Status                        ; Successful - Thu Mar 31 16:00:45 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; phase1                                     ;
-; Top-level Entity Name              ; datapath                                   ;
+; Top-level Entity Name              ; DE0_interface                              ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C16F484C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 6,955                                      ;
-;     Total combinational functions  ; 6,219                                      ;
-;     Dedicated logic registers      ; 943                                        ;
-; Total registers                    ; 943                                        ;
-; Total pins                         ; 932                                        ;
+; Total logic elements               ; 7,009                                      ;
+;     Total combinational functions  ; 6,264                                      ;
+;     Dedicated logic registers      ; 978                                        ;
+; Total registers                    ; 978                                        ;
+; Total pins                         ; 100                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 16,384                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -64,88 +64,93 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/28/2022 15:54:22 ;
+; Start date & time ; 03/31/2022 16:00:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; phase1              ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                 ;
-+--------------------------------------+---------------------------------------------------------+---------------+-------------+-------------------+
-; Assignment Name                      ; Value                                                   ; Default Value ; Entity Name ; Section Id        ;
-+--------------------------------------+---------------------------------------------------------+---------------+-------------+-------------------+
-; COMPILER_SIGNATURE_ID                ; 198112239218816.164849726246488                         ; --            ; --          ; --                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --          ; ld_R1_85_tb       ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --          ; ldi_R1_85_tb      ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --          ; ld_R1_35_tb       ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --          ; ldi_r0_35r1_tb    ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --          ; P2_st_90_R1_tb    ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --          ; P2_st_90R1_R1_tb  ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --          ; P2_brzr_R2_35_tb  ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --          ; P3_controlUnit_tb ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; On                                                      ; --            ; --          ; eda_simulation    ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; P3_controlUnit_tb                                       ; --            ; --          ; eda_simulation    ;
-; EDA_NETLIST_WRITER_OUTPUT_DIR        ; D:/GitWorkspace/elec374/elec374project/simulation/qsim/ ; --            ; --          ; eda_simulation    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                                    ; --            ; --          ; eda_simulation    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                                  ; <None>        ; --          ; --                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                         ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_FILE                  ; ld_R1_85_tb.vhd                                         ; --            ; --          ; ld_R1_85_tb       ;
-; EDA_TEST_BENCH_FILE                  ; ldi_R1_85_tb.vhd                                        ; --            ; --          ; ldi_R1_85_tb      ;
-; EDA_TEST_BENCH_FILE                  ; ld_R1_35_tb.vhd                                         ; --            ; --          ; ld_R1_35_tb       ;
-; EDA_TEST_BENCH_FILE                  ; ldi_r0_35r1_tb.vhd                                      ; --            ; --          ; ldi_r0_35r1_tb    ;
-; EDA_TEST_BENCH_FILE                  ; P2_st_90_R1_tb.vhd                                      ; --            ; --          ; P2_st_90_R1_tb    ;
-; EDA_TEST_BENCH_FILE                  ; P2_st_90R1_R1_tb.vhd                                    ; --            ; --          ; P2_st_90R1_R1_tb  ;
-; EDA_TEST_BENCH_FILE                  ; P2_brzr_R2_35_tb.vhd                                    ; --            ; --          ; P2_brzr_R2_35_tb  ;
-; EDA_TEST_BENCH_FILE                  ; P3_controlUnit_tb.vhd                                   ; --            ; --          ; P3_controlUnit_tb ;
-; EDA_TEST_BENCH_MODULE_NAME           ; ld_R1_85_tb                                             ; --            ; --          ; ld_R1_85_tb       ;
-; EDA_TEST_BENCH_MODULE_NAME           ; ldi_R1_85_tb                                            ; --            ; --          ; ldi_R1_85_tb      ;
-; EDA_TEST_BENCH_MODULE_NAME           ; ld_R1_35_tb                                             ; --            ; --          ; ld_R1_35_tb       ;
-; EDA_TEST_BENCH_MODULE_NAME           ; ldi_r0_35r1_tb                                          ; --            ; --          ; ldi_r0_35r1_tb    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; P2_st_90_R1_tb                                          ; --            ; --          ; P2_st_90_R1_tb    ;
-; EDA_TEST_BENCH_MODULE_NAME           ; P2_st_90R1_R1_tb                                        ; --            ; --          ; P2_st_90R1_R1_tb  ;
-; EDA_TEST_BENCH_MODULE_NAME           ; P2_brzr_R2_35_tb                                        ; --            ; --          ; P2_brzr_R2_35_tb  ;
-; EDA_TEST_BENCH_MODULE_NAME           ; P3_controlUnit_tb                                       ; --            ; --          ; P3_controlUnit_tb ;
-; EDA_TEST_BENCH_NAME                  ; ld_R1_85_tb                                             ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_NAME                  ; ldi_R1_85_tb                                            ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_NAME                  ; ld_R1_35_tb                                             ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_NAME                  ; ldi_r0_35r1_tb                                          ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_NAME                  ; P2_st_90_R1_tb                                          ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_NAME                  ; P2_st_90R1_R1_tb                                        ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_NAME                  ; P2_brzr_R2_35_tb                                        ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_NAME                  ; P3_controlUnit_tb                                       ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --          ; ld_R1_85_tb       ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --          ; ldi_R1_85_tb      ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --          ; ld_R1_35_tb       ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --          ; ldi_r0_35r1_tb    ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --          ; P2_st_90_R1_tb    ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --          ; P2_st_90R1_R1_tb  ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --          ; P2_brzr_R2_35_tb  ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 9000 ns                                                 ; --            ; --          ; P3_controlUnit_tb ;
-; EDA_TIME_SCALE                       ; 1 ps                                                    ; --            ; --          ; eda_simulation    ;
-; IP_TOOL_NAME                         ; LPM_ADD_SUB                                             ; --            ; --          ; --                ;
-; IP_TOOL_NAME                         ; LPM_DIVIDE                                              ; --            ; --          ; --                ;
-; IP_TOOL_NAME                         ; RAM: 1-PORT                                             ; --            ; --          ; --                ;
-; IP_TOOL_VERSION                      ; 13.1                                                    ; --            ; --          ; --                ;
-; IP_TOOL_VERSION                      ; 13.1                                                    ; --            ; --          ; --                ;
-; IP_TOOL_VERSION                      ; 13.1                                                    ; --            ; --          ; --                ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                                      ; --            ; --          ; --                ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                                       ; --            ; --          ; --                ;
-; MISC_FILE                            ; lpm_add_sub0.bsf                                        ; --            ; --          ; --                ;
-; MISC_FILE                            ; lpm_add_sub0_inst.vhd                                   ; --            ; --          ; --                ;
-; MISC_FILE                            ; lpm_add_sub0.cmp                                        ; --            ; --          ; --                ;
-; MISC_FILE                            ; lpm_divide0.bsf                                         ; --            ; --          ; --                ;
-; MISC_FILE                            ; lpm_divide0_inst.vhd                                    ; --            ; --          ; --                ;
-; MISC_FILE                            ; lpm_divide0.cmp                                         ; --            ; --          ; --                ;
-; MISC_FILE                            ; ram_function_512x32.cmp                                 ; --            ; --          ; --                ;
-; PARTITION_COLOR                      ; 16764057                                                ; --            ; datapath    ; Top               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                                   ; --            ; datapath    ; Top               ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                                  ; --            ; datapath    ; Top               ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                     ; --            ; --          ; --                ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                   ; --            ; --          ; --                ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                                            ; --            ; --          ; --                ;
-; TOP_LEVEL_ENTITY                     ; datapath                                                ; phase1        ; --          ; --                ;
-+--------------------------------------+---------------------------------------------------------+---------------+-------------+-------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                   ;
++--------------------------------------+---------------------------------------------------------+---------------+---------------+-------------------+
+; Assignment Name                      ; Value                                                   ; Default Value ; Entity Name   ; Section Id        ;
++--------------------------------------+---------------------------------------------------------+---------------+---------------+-------------------+
+; COMPILER_SIGNATURE_ID                ; 198112239218816.164875682720120                         ; --            ; --            ; --                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --            ; ld_R1_85_tb       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --            ; ldi_R1_85_tb      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --            ; ld_R1_35_tb       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --            ; ldi_r0_35r1_tb    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --            ; P2_st_90_R1_tb    ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --            ; P2_st_90R1_R1_tb  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --            ; P2_brzr_R2_35_tb  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --            ; P3_controlUnit_tb ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --            ; P4_DE0_interface  ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; On                                                      ; --            ; --            ; eda_simulation    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; P4_DE0_interface                                        ; --            ; --            ; eda_simulation    ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR        ; D:/GitWorkspace/elec374/elec374project/simulation/qsim/ ; --            ; --            ; eda_simulation    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                                    ; --            ; --            ; eda_simulation    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                                  ; <None>        ; --            ; --                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                         ; --            ; --            ; eda_simulation    ;
+; EDA_TEST_BENCH_FILE                  ; ld_R1_85_tb.vhd                                         ; --            ; --            ; ld_R1_85_tb       ;
+; EDA_TEST_BENCH_FILE                  ; ldi_R1_85_tb.vhd                                        ; --            ; --            ; ldi_R1_85_tb      ;
+; EDA_TEST_BENCH_FILE                  ; ld_R1_35_tb.vhd                                         ; --            ; --            ; ld_R1_35_tb       ;
+; EDA_TEST_BENCH_FILE                  ; ldi_r0_35r1_tb.vhd                                      ; --            ; --            ; ldi_r0_35r1_tb    ;
+; EDA_TEST_BENCH_FILE                  ; P2_st_90_R1_tb.vhd                                      ; --            ; --            ; P2_st_90_R1_tb    ;
+; EDA_TEST_BENCH_FILE                  ; P2_st_90R1_R1_tb.vhd                                    ; --            ; --            ; P2_st_90R1_R1_tb  ;
+; EDA_TEST_BENCH_FILE                  ; P2_brzr_R2_35_tb.vhd                                    ; --            ; --            ; P2_brzr_R2_35_tb  ;
+; EDA_TEST_BENCH_FILE                  ; P3_controlUnit_tb.vhd                                   ; --            ; --            ; P3_controlUnit_tb ;
+; EDA_TEST_BENCH_FILE                  ; P4_DE0_interface.vhd                                    ; --            ; --            ; P4_DE0_interface  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ld_R1_85_tb                                             ; --            ; --            ; ld_R1_85_tb       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ldi_R1_85_tb                                            ; --            ; --            ; ldi_R1_85_tb      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ld_R1_35_tb                                             ; --            ; --            ; ld_R1_35_tb       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ldi_r0_35r1_tb                                          ; --            ; --            ; ldi_r0_35r1_tb    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; P2_st_90_R1_tb                                          ; --            ; --            ; P2_st_90_R1_tb    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; P2_st_90R1_R1_tb                                        ; --            ; --            ; P2_st_90R1_R1_tb  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; P2_brzr_R2_35_tb                                        ; --            ; --            ; P2_brzr_R2_35_tb  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; P3_controlUnit_tb                                       ; --            ; --            ; P3_controlUnit_tb ;
+; EDA_TEST_BENCH_MODULE_NAME           ; P4_DE0_interface                                        ; --            ; --            ; P4_DE0_interface  ;
+; EDA_TEST_BENCH_NAME                  ; ld_R1_85_tb                                             ; --            ; --            ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; ldi_R1_85_tb                                            ; --            ; --            ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; ld_R1_35_tb                                             ; --            ; --            ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; ldi_r0_35r1_tb                                          ; --            ; --            ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; P2_st_90_R1_tb                                          ; --            ; --            ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; P2_st_90R1_R1_tb                                        ; --            ; --            ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; P2_brzr_R2_35_tb                                        ; --            ; --            ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; P3_controlUnit_tb                                       ; --            ; --            ; eda_simulation    ;
+; EDA_TEST_BENCH_NAME                  ; P4_DE0_interface                                        ; --            ; --            ; eda_simulation    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --            ; ld_R1_85_tb       ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --            ; ldi_R1_85_tb      ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --            ; ld_R1_35_tb       ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --            ; ldi_r0_35r1_tb    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --            ; P2_st_90_R1_tb    ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --            ; P2_st_90R1_R1_tb  ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 500 ns                                                  ; --            ; --            ; P2_brzr_R2_35_tb  ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 250000 ns                                               ; --            ; --            ; P3_controlUnit_tb ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 250000 ns                                               ; --            ; --            ; P4_DE0_interface  ;
+; EDA_TIME_SCALE                       ; 1 ps                                                    ; --            ; --            ; eda_simulation    ;
+; IP_TOOL_NAME                         ; LPM_ADD_SUB                                             ; --            ; --            ; --                ;
+; IP_TOOL_NAME                         ; LPM_DIVIDE                                              ; --            ; --            ; --                ;
+; IP_TOOL_NAME                         ; RAM: 1-PORT                                             ; --            ; --            ; --                ;
+; IP_TOOL_VERSION                      ; 13.1                                                    ; --            ; --            ; --                ;
+; IP_TOOL_VERSION                      ; 13.1                                                    ; --            ; --            ; --                ;
+; IP_TOOL_VERSION                      ; 13.1                                                    ; --            ; --            ; --                ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                      ; --            ; --            ; --                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                       ; --            ; --            ; --                ;
+; MISC_FILE                            ; lpm_add_sub0.bsf                                        ; --            ; --            ; --                ;
+; MISC_FILE                            ; lpm_add_sub0_inst.vhd                                   ; --            ; --            ; --                ;
+; MISC_FILE                            ; lpm_add_sub0.cmp                                        ; --            ; --            ; --                ;
+; MISC_FILE                            ; lpm_divide0.bsf                                         ; --            ; --            ; --                ;
+; MISC_FILE                            ; lpm_divide0_inst.vhd                                    ; --            ; --            ; --                ;
+; MISC_FILE                            ; lpm_divide0.cmp                                         ; --            ; --            ; --                ;
+; MISC_FILE                            ; ram_function_512x32.cmp                                 ; --            ; --            ; --                ;
+; PARTITION_COLOR                      ; 16764057                                                ; --            ; DE0_interface ; Top               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                                   ; --            ; DE0_interface ; Top               ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                                  ; --            ; DE0_interface ; Top               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                     ; --            ; --            ; --                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                   ; --            ; --            ; --                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                            ; --            ; --            ; --                ;
+; TOP_LEVEL_ENTITY                     ; DE0_interface                                           ; phase1        ; --            ; --                ;
++--------------------------------------+---------------------------------------------------------+---------------+---------------+-------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -153,8 +158,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4782 MB             ; 00:00:14                           ;
-; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:14                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4795 MB             ; 00:00:17                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:17                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

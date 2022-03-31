@@ -1,4 +1,156 @@
-|datapath
+|DE0_interface
+clk => prescaler[0].CLK
+clk => prescaler[1].CLK
+clk => prescaler[2].CLK
+clk => prescaler[3].CLK
+clk => prescaler[4].CLK
+clk => prescaler[5].CLK
+clk => prescaler[6].CLK
+clk => prescaler[7].CLK
+clk => prescaler[8].CLK
+clk => prescaler[9].CLK
+clk => prescaler[10].CLK
+clk => prescaler[11].CLK
+clk => prescaler[12].CLK
+clk => prescaler[13].CLK
+clk => prescaler[14].CLK
+clk => prescaler[15].CLK
+clk => prescaler[16].CLK
+clk => prescaler[17].CLK
+clk => prescaler[18].CLK
+clk => prescaler[19].CLK
+clk => prescaler[20].CLK
+clk => prescaler[21].CLK
+clk => prescaler[22].CLK
+clk => prescaler[23].CLK
+clk => clk_DE0.CLK
+reset => datapath:DE0_map.reset
+reset => prescaler[0].ACLR
+reset => prescaler[1].ACLR
+reset => prescaler[2].ACLR
+reset => prescaler[3].ACLR
+reset => prescaler[4].ACLR
+reset => prescaler[5].ACLR
+reset => prescaler[6].ACLR
+reset => prescaler[7].ACLR
+reset => prescaler[8].ACLR
+reset => prescaler[9].ACLR
+reset => prescaler[10].ACLR
+reset => prescaler[11].ACLR
+reset => prescaler[12].ACLR
+reset => prescaler[13].ACLR
+reset => prescaler[14].ACLR
+reset => prescaler[15].ACLR
+reset => prescaler[16].ACLR
+reset => prescaler[17].ACLR
+reset => prescaler[18].ACLR
+reset => prescaler[19].ACLR
+reset => prescaler[20].ACLR
+reset => prescaler[21].ACLR
+reset => prescaler[22].ACLR
+reset => prescaler[23].ACLR
+reset => clk_DE0.ACLR
+stop => datapath:DE0_map.stop
+run << datapath:DE0_map.run
+in_port[0] => datapath:DE0_map.in_port[0]
+in_port[1] => datapath:DE0_map.in_port[1]
+in_port[2] => datapath:DE0_map.in_port[2]
+in_port[3] => datapath:DE0_map.in_port[3]
+in_port[4] => datapath:DE0_map.in_port[4]
+in_port[5] => datapath:DE0_map.in_port[5]
+in_port[6] => datapath:DE0_map.in_port[6]
+in_port[7] => datapath:DE0_map.in_port[7]
+in_port[8] => datapath:DE0_map.in_port[8]
+in_port[9] => datapath:DE0_map.in_port[9]
+in_port[10] => datapath:DE0_map.in_port[10]
+in_port[11] => datapath:DE0_map.in_port[11]
+in_port[12] => datapath:DE0_map.in_port[12]
+in_port[13] => datapath:DE0_map.in_port[13]
+in_port[14] => datapath:DE0_map.in_port[14]
+in_port[15] => datapath:DE0_map.in_port[15]
+in_port[16] => datapath:DE0_map.in_port[16]
+in_port[17] => datapath:DE0_map.in_port[17]
+in_port[18] => datapath:DE0_map.in_port[18]
+in_port[19] => datapath:DE0_map.in_port[19]
+in_port[20] => datapath:DE0_map.in_port[20]
+in_port[21] => datapath:DE0_map.in_port[21]
+in_port[22] => datapath:DE0_map.in_port[22]
+in_port[23] => datapath:DE0_map.in_port[23]
+in_port[24] => datapath:DE0_map.in_port[24]
+in_port[25] => datapath:DE0_map.in_port[25]
+in_port[26] => datapath:DE0_map.in_port[26]
+in_port[27] => datapath:DE0_map.in_port[27]
+in_port[28] => datapath:DE0_map.in_port[28]
+in_port[29] => datapath:DE0_map.in_port[29]
+in_port[30] => datapath:DE0_map.in_port[30]
+in_port[31] => datapath:DE0_map.in_port[31]
+out_port[0] << datapath:DE0_map.out_port[0]
+out_port[1] << datapath:DE0_map.out_port[1]
+out_port[2] << datapath:DE0_map.out_port[2]
+out_port[3] << datapath:DE0_map.out_port[3]
+out_port[4] << datapath:DE0_map.out_port[4]
+out_port[5] << datapath:DE0_map.out_port[5]
+out_port[6] << datapath:DE0_map.out_port[6]
+out_port[7] << datapath:DE0_map.out_port[7]
+out_port[8] << datapath:DE0_map.out_port[8]
+out_port[9] << datapath:DE0_map.out_port[9]
+out_port[10] << datapath:DE0_map.out_port[10]
+out_port[11] << datapath:DE0_map.out_port[11]
+out_port[12] << datapath:DE0_map.out_port[12]
+out_port[13] << datapath:DE0_map.out_port[13]
+out_port[14] << datapath:DE0_map.out_port[14]
+out_port[15] << datapath:DE0_map.out_port[15]
+out_port[16] << datapath:DE0_map.out_port[16]
+out_port[17] << datapath:DE0_map.out_port[17]
+out_port[18] << datapath:DE0_map.out_port[18]
+out_port[19] << datapath:DE0_map.out_port[19]
+out_port[20] << datapath:DE0_map.out_port[20]
+out_port[21] << datapath:DE0_map.out_port[21]
+out_port[22] << datapath:DE0_map.out_port[22]
+out_port[23] << datapath:DE0_map.out_port[23]
+out_port[24] << datapath:DE0_map.out_port[24]
+out_port[25] << datapath:DE0_map.out_port[25]
+out_port[26] << datapath:DE0_map.out_port[26]
+out_port[27] << datapath:DE0_map.out_port[27]
+out_port[28] << datapath:DE0_map.out_port[28]
+out_port[29] << datapath:DE0_map.out_port[29]
+out_port[30] << datapath:DE0_map.out_port[30]
+out_port[31] << datapath:DE0_map.out_port[31]
+seven_segment_out[0] << datapath:DE0_map.seven_segment_out[0]
+seven_segment_out[1] << datapath:DE0_map.seven_segment_out[1]
+seven_segment_out[2] << datapath:DE0_map.seven_segment_out[2]
+seven_segment_out[3] << datapath:DE0_map.seven_segment_out[3]
+seven_segment_out[4] << datapath:DE0_map.seven_segment_out[4]
+seven_segment_out[5] << datapath:DE0_map.seven_segment_out[5]
+seven_segment_out[6] << datapath:DE0_map.seven_segment_out[6]
+seven_segment_out[7] << datapath:DE0_map.seven_segment_out[7]
+seven_segment_out[8] << datapath:DE0_map.seven_segment_out[8]
+seven_segment_out[9] << datapath:DE0_map.seven_segment_out[9]
+seven_segment_out[10] << datapath:DE0_map.seven_segment_out[10]
+seven_segment_out[11] << datapath:DE0_map.seven_segment_out[11]
+seven_segment_out[12] << datapath:DE0_map.seven_segment_out[12]
+seven_segment_out[13] << datapath:DE0_map.seven_segment_out[13]
+seven_segment_out[14] << datapath:DE0_map.seven_segment_out[14]
+seven_segment_out[15] << datapath:DE0_map.seven_segment_out[15]
+seven_segment_out[16] << datapath:DE0_map.seven_segment_out[16]
+seven_segment_out[17] << datapath:DE0_map.seven_segment_out[17]
+seven_segment_out[18] << datapath:DE0_map.seven_segment_out[18]
+seven_segment_out[19] << datapath:DE0_map.seven_segment_out[19]
+seven_segment_out[20] << datapath:DE0_map.seven_segment_out[20]
+seven_segment_out[21] << datapath:DE0_map.seven_segment_out[21]
+seven_segment_out[22] << datapath:DE0_map.seven_segment_out[22]
+seven_segment_out[23] << datapath:DE0_map.seven_segment_out[23]
+seven_segment_out[24] << datapath:DE0_map.seven_segment_out[24]
+seven_segment_out[25] << datapath:DE0_map.seven_segment_out[25]
+seven_segment_out[26] << datapath:DE0_map.seven_segment_out[26]
+seven_segment_out[27] << datapath:DE0_map.seven_segment_out[27]
+seven_segment_out[28] << datapath:DE0_map.seven_segment_out[28]
+seven_segment_out[29] << datapath:DE0_map.seven_segment_out[29]
+seven_segment_out[30] << datapath:DE0_map.seven_segment_out[30]
+seven_segment_out[31] << datapath:DE0_map.seven_segment_out[31]
+
+
+|DE0_interface|datapath:DE0_map
 clk => registerR0:R0.clk
 clk => register32bit:R1.clk
 clk => register32bit:R2.clk
@@ -30,7 +182,7 @@ clk => ram_function_512x32:Ram.clock
 clk => control_unit:Control.clk
 reset => control_unit:Control.reset
 stop => control_unit:Control.stop
-run << control_unit:Control.run
+run <= control_unit:Control.run
 in_port[0] => register32bit:inport_register.BusMuxOut[0]
 in_port[1] => register32bit:inport_register.BusMuxOut[1]
 in_port[2] => register32bit:inport_register.BusMuxOut[2]
@@ -63,905 +215,905 @@ in_port[28] => register32bit:inport_register.BusMuxOut[28]
 in_port[29] => register32bit:inport_register.BusMuxOut[29]
 in_port[30] => register32bit:inport_register.BusMuxOut[30]
 in_port[31] => register32bit:inport_register.BusMuxOut[31]
-out_port[0] << register32bit:outport_register.BusMuxIn[0]
-out_port[1] << register32bit:outport_register.BusMuxIn[1]
-out_port[2] << register32bit:outport_register.BusMuxIn[2]
-out_port[3] << register32bit:outport_register.BusMuxIn[3]
-out_port[4] << register32bit:outport_register.BusMuxIn[4]
-out_port[5] << register32bit:outport_register.BusMuxIn[5]
-out_port[6] << register32bit:outport_register.BusMuxIn[6]
-out_port[7] << register32bit:outport_register.BusMuxIn[7]
-out_port[8] << register32bit:outport_register.BusMuxIn[8]
-out_port[9] << register32bit:outport_register.BusMuxIn[9]
-out_port[10] << register32bit:outport_register.BusMuxIn[10]
-out_port[11] << register32bit:outport_register.BusMuxIn[11]
-out_port[12] << register32bit:outport_register.BusMuxIn[12]
-out_port[13] << register32bit:outport_register.BusMuxIn[13]
-out_port[14] << register32bit:outport_register.BusMuxIn[14]
-out_port[15] << register32bit:outport_register.BusMuxIn[15]
-out_port[16] << register32bit:outport_register.BusMuxIn[16]
-out_port[17] << register32bit:outport_register.BusMuxIn[17]
-out_port[18] << register32bit:outport_register.BusMuxIn[18]
-out_port[19] << register32bit:outport_register.BusMuxIn[19]
-out_port[20] << register32bit:outport_register.BusMuxIn[20]
-out_port[21] << register32bit:outport_register.BusMuxIn[21]
-out_port[22] << register32bit:outport_register.BusMuxIn[22]
-out_port[23] << register32bit:outport_register.BusMuxIn[23]
-out_port[24] << register32bit:outport_register.BusMuxIn[24]
-out_port[25] << register32bit:outport_register.BusMuxIn[25]
-out_port[26] << register32bit:outport_register.BusMuxIn[26]
-out_port[27] << register32bit:outport_register.BusMuxIn[27]
-out_port[28] << register32bit:outport_register.BusMuxIn[28]
-out_port[29] << register32bit:outport_register.BusMuxIn[29]
-out_port[30] << register32bit:outport_register.BusMuxIn[30]
-out_port[31] << register32bit:outport_register.BusMuxIn[31]
-seven_segment_out[0] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[0]
-seven_segment_out[1] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[1]
-seven_segment_out[2] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[2]
-seven_segment_out[3] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[3]
-seven_segment_out[4] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[4]
-seven_segment_out[5] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[5]
-seven_segment_out[6] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[6]
-seven_segment_out[7] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[7]
-seven_segment_out[8] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[8]
-seven_segment_out[9] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[9]
-seven_segment_out[10] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[10]
-seven_segment_out[11] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[11]
-seven_segment_out[12] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[12]
-seven_segment_out[13] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[13]
-seven_segment_out[14] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[14]
-seven_segment_out[15] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[15]
-seven_segment_out[16] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[16]
-seven_segment_out[17] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[17]
-seven_segment_out[18] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[18]
-seven_segment_out[19] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[19]
-seven_segment_out[20] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[20]
-seven_segment_out[21] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[21]
-seven_segment_out[22] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[22]
-seven_segment_out[23] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[23]
-seven_segment_out[24] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[24]
-seven_segment_out[25] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[25]
-seven_segment_out[26] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[26]
-seven_segment_out[27] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[27]
-seven_segment_out[28] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[28]
-seven_segment_out[29] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[29]
-seven_segment_out[30] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[30]
-seven_segment_out[31] << Seven_Seg_Display:sevenSegDiplay_port.outputSegment[31]
-R0out[0] << registerR0:R0.BusMuxInR0[0]
-R0out[1] << registerR0:R0.BusMuxInR0[1]
-R0out[2] << registerR0:R0.BusMuxInR0[2]
-R0out[3] << registerR0:R0.BusMuxInR0[3]
-R0out[4] << registerR0:R0.BusMuxInR0[4]
-R0out[5] << registerR0:R0.BusMuxInR0[5]
-R0out[6] << registerR0:R0.BusMuxInR0[6]
-R0out[7] << registerR0:R0.BusMuxInR0[7]
-R0out[8] << registerR0:R0.BusMuxInR0[8]
-R0out[9] << registerR0:R0.BusMuxInR0[9]
-R0out[10] << registerR0:R0.BusMuxInR0[10]
-R0out[11] << registerR0:R0.BusMuxInR0[11]
-R0out[12] << registerR0:R0.BusMuxInR0[12]
-R0out[13] << registerR0:R0.BusMuxInR0[13]
-R0out[14] << registerR0:R0.BusMuxInR0[14]
-R0out[15] << registerR0:R0.BusMuxInR0[15]
-R0out[16] << registerR0:R0.BusMuxInR0[16]
-R0out[17] << registerR0:R0.BusMuxInR0[17]
-R0out[18] << registerR0:R0.BusMuxInR0[18]
-R0out[19] << registerR0:R0.BusMuxInR0[19]
-R0out[20] << registerR0:R0.BusMuxInR0[20]
-R0out[21] << registerR0:R0.BusMuxInR0[21]
-R0out[22] << registerR0:R0.BusMuxInR0[22]
-R0out[23] << registerR0:R0.BusMuxInR0[23]
-R0out[24] << registerR0:R0.BusMuxInR0[24]
-R0out[25] << registerR0:R0.BusMuxInR0[25]
-R0out[26] << registerR0:R0.BusMuxInR0[26]
-R0out[27] << registerR0:R0.BusMuxInR0[27]
-R0out[28] << registerR0:R0.BusMuxInR0[28]
-R0out[29] << registerR0:R0.BusMuxInR0[29]
-R0out[30] << registerR0:R0.BusMuxInR0[30]
-R0out[31] << registerR0:R0.BusMuxInR0[31]
-R1out[0] << register32bit:R1.BusMuxIn[0]
-R1out[1] << register32bit:R1.BusMuxIn[1]
-R1out[2] << register32bit:R1.BusMuxIn[2]
-R1out[3] << register32bit:R1.BusMuxIn[3]
-R1out[4] << register32bit:R1.BusMuxIn[4]
-R1out[5] << register32bit:R1.BusMuxIn[5]
-R1out[6] << register32bit:R1.BusMuxIn[6]
-R1out[7] << register32bit:R1.BusMuxIn[7]
-R1out[8] << register32bit:R1.BusMuxIn[8]
-R1out[9] << register32bit:R1.BusMuxIn[9]
-R1out[10] << register32bit:R1.BusMuxIn[10]
-R1out[11] << register32bit:R1.BusMuxIn[11]
-R1out[12] << register32bit:R1.BusMuxIn[12]
-R1out[13] << register32bit:R1.BusMuxIn[13]
-R1out[14] << register32bit:R1.BusMuxIn[14]
-R1out[15] << register32bit:R1.BusMuxIn[15]
-R1out[16] << register32bit:R1.BusMuxIn[16]
-R1out[17] << register32bit:R1.BusMuxIn[17]
-R1out[18] << register32bit:R1.BusMuxIn[18]
-R1out[19] << register32bit:R1.BusMuxIn[19]
-R1out[20] << register32bit:R1.BusMuxIn[20]
-R1out[21] << register32bit:R1.BusMuxIn[21]
-R1out[22] << register32bit:R1.BusMuxIn[22]
-R1out[23] << register32bit:R1.BusMuxIn[23]
-R1out[24] << register32bit:R1.BusMuxIn[24]
-R1out[25] << register32bit:R1.BusMuxIn[25]
-R1out[26] << register32bit:R1.BusMuxIn[26]
-R1out[27] << register32bit:R1.BusMuxIn[27]
-R1out[28] << register32bit:R1.BusMuxIn[28]
-R1out[29] << register32bit:R1.BusMuxIn[29]
-R1out[30] << register32bit:R1.BusMuxIn[30]
-R1out[31] << register32bit:R1.BusMuxIn[31]
-R2out[0] << register32bit:R2.BusMuxIn[0]
-R2out[1] << register32bit:R2.BusMuxIn[1]
-R2out[2] << register32bit:R2.BusMuxIn[2]
-R2out[3] << register32bit:R2.BusMuxIn[3]
-R2out[4] << register32bit:R2.BusMuxIn[4]
-R2out[5] << register32bit:R2.BusMuxIn[5]
-R2out[6] << register32bit:R2.BusMuxIn[6]
-R2out[7] << register32bit:R2.BusMuxIn[7]
-R2out[8] << register32bit:R2.BusMuxIn[8]
-R2out[9] << register32bit:R2.BusMuxIn[9]
-R2out[10] << register32bit:R2.BusMuxIn[10]
-R2out[11] << register32bit:R2.BusMuxIn[11]
-R2out[12] << register32bit:R2.BusMuxIn[12]
-R2out[13] << register32bit:R2.BusMuxIn[13]
-R2out[14] << register32bit:R2.BusMuxIn[14]
-R2out[15] << register32bit:R2.BusMuxIn[15]
-R2out[16] << register32bit:R2.BusMuxIn[16]
-R2out[17] << register32bit:R2.BusMuxIn[17]
-R2out[18] << register32bit:R2.BusMuxIn[18]
-R2out[19] << register32bit:R2.BusMuxIn[19]
-R2out[20] << register32bit:R2.BusMuxIn[20]
-R2out[21] << register32bit:R2.BusMuxIn[21]
-R2out[22] << register32bit:R2.BusMuxIn[22]
-R2out[23] << register32bit:R2.BusMuxIn[23]
-R2out[24] << register32bit:R2.BusMuxIn[24]
-R2out[25] << register32bit:R2.BusMuxIn[25]
-R2out[26] << register32bit:R2.BusMuxIn[26]
-R2out[27] << register32bit:R2.BusMuxIn[27]
-R2out[28] << register32bit:R2.BusMuxIn[28]
-R2out[29] << register32bit:R2.BusMuxIn[29]
-R2out[30] << register32bit:R2.BusMuxIn[30]
-R2out[31] << register32bit:R2.BusMuxIn[31]
-R3out[0] << register32bit:R3.BusMuxIn[0]
-R3out[1] << register32bit:R3.BusMuxIn[1]
-R3out[2] << register32bit:R3.BusMuxIn[2]
-R3out[3] << register32bit:R3.BusMuxIn[3]
-R3out[4] << register32bit:R3.BusMuxIn[4]
-R3out[5] << register32bit:R3.BusMuxIn[5]
-R3out[6] << register32bit:R3.BusMuxIn[6]
-R3out[7] << register32bit:R3.BusMuxIn[7]
-R3out[8] << register32bit:R3.BusMuxIn[8]
-R3out[9] << register32bit:R3.BusMuxIn[9]
-R3out[10] << register32bit:R3.BusMuxIn[10]
-R3out[11] << register32bit:R3.BusMuxIn[11]
-R3out[12] << register32bit:R3.BusMuxIn[12]
-R3out[13] << register32bit:R3.BusMuxIn[13]
-R3out[14] << register32bit:R3.BusMuxIn[14]
-R3out[15] << register32bit:R3.BusMuxIn[15]
-R3out[16] << register32bit:R3.BusMuxIn[16]
-R3out[17] << register32bit:R3.BusMuxIn[17]
-R3out[18] << register32bit:R3.BusMuxIn[18]
-R3out[19] << register32bit:R3.BusMuxIn[19]
-R3out[20] << register32bit:R3.BusMuxIn[20]
-R3out[21] << register32bit:R3.BusMuxIn[21]
-R3out[22] << register32bit:R3.BusMuxIn[22]
-R3out[23] << register32bit:R3.BusMuxIn[23]
-R3out[24] << register32bit:R3.BusMuxIn[24]
-R3out[25] << register32bit:R3.BusMuxIn[25]
-R3out[26] << register32bit:R3.BusMuxIn[26]
-R3out[27] << register32bit:R3.BusMuxIn[27]
-R3out[28] << register32bit:R3.BusMuxIn[28]
-R3out[29] << register32bit:R3.BusMuxIn[29]
-R3out[30] << register32bit:R3.BusMuxIn[30]
-R3out[31] << register32bit:R3.BusMuxIn[31]
-R4out[0] << register32bit:R4.BusMuxIn[0]
-R4out[1] << register32bit:R4.BusMuxIn[1]
-R4out[2] << register32bit:R4.BusMuxIn[2]
-R4out[3] << register32bit:R4.BusMuxIn[3]
-R4out[4] << register32bit:R4.BusMuxIn[4]
-R4out[5] << register32bit:R4.BusMuxIn[5]
-R4out[6] << register32bit:R4.BusMuxIn[6]
-R4out[7] << register32bit:R4.BusMuxIn[7]
-R4out[8] << register32bit:R4.BusMuxIn[8]
-R4out[9] << register32bit:R4.BusMuxIn[9]
-R4out[10] << register32bit:R4.BusMuxIn[10]
-R4out[11] << register32bit:R4.BusMuxIn[11]
-R4out[12] << register32bit:R4.BusMuxIn[12]
-R4out[13] << register32bit:R4.BusMuxIn[13]
-R4out[14] << register32bit:R4.BusMuxIn[14]
-R4out[15] << register32bit:R4.BusMuxIn[15]
-R4out[16] << register32bit:R4.BusMuxIn[16]
-R4out[17] << register32bit:R4.BusMuxIn[17]
-R4out[18] << register32bit:R4.BusMuxIn[18]
-R4out[19] << register32bit:R4.BusMuxIn[19]
-R4out[20] << register32bit:R4.BusMuxIn[20]
-R4out[21] << register32bit:R4.BusMuxIn[21]
-R4out[22] << register32bit:R4.BusMuxIn[22]
-R4out[23] << register32bit:R4.BusMuxIn[23]
-R4out[24] << register32bit:R4.BusMuxIn[24]
-R4out[25] << register32bit:R4.BusMuxIn[25]
-R4out[26] << register32bit:R4.BusMuxIn[26]
-R4out[27] << register32bit:R4.BusMuxIn[27]
-R4out[28] << register32bit:R4.BusMuxIn[28]
-R4out[29] << register32bit:R4.BusMuxIn[29]
-R4out[30] << register32bit:R4.BusMuxIn[30]
-R4out[31] << register32bit:R4.BusMuxIn[31]
-R5out[0] << register32bit:R5.BusMuxIn[0]
-R5out[1] << register32bit:R5.BusMuxIn[1]
-R5out[2] << register32bit:R5.BusMuxIn[2]
-R5out[3] << register32bit:R5.BusMuxIn[3]
-R5out[4] << register32bit:R5.BusMuxIn[4]
-R5out[5] << register32bit:R5.BusMuxIn[5]
-R5out[6] << register32bit:R5.BusMuxIn[6]
-R5out[7] << register32bit:R5.BusMuxIn[7]
-R5out[8] << register32bit:R5.BusMuxIn[8]
-R5out[9] << register32bit:R5.BusMuxIn[9]
-R5out[10] << register32bit:R5.BusMuxIn[10]
-R5out[11] << register32bit:R5.BusMuxIn[11]
-R5out[12] << register32bit:R5.BusMuxIn[12]
-R5out[13] << register32bit:R5.BusMuxIn[13]
-R5out[14] << register32bit:R5.BusMuxIn[14]
-R5out[15] << register32bit:R5.BusMuxIn[15]
-R5out[16] << register32bit:R5.BusMuxIn[16]
-R5out[17] << register32bit:R5.BusMuxIn[17]
-R5out[18] << register32bit:R5.BusMuxIn[18]
-R5out[19] << register32bit:R5.BusMuxIn[19]
-R5out[20] << register32bit:R5.BusMuxIn[20]
-R5out[21] << register32bit:R5.BusMuxIn[21]
-R5out[22] << register32bit:R5.BusMuxIn[22]
-R5out[23] << register32bit:R5.BusMuxIn[23]
-R5out[24] << register32bit:R5.BusMuxIn[24]
-R5out[25] << register32bit:R5.BusMuxIn[25]
-R5out[26] << register32bit:R5.BusMuxIn[26]
-R5out[27] << register32bit:R5.BusMuxIn[27]
-R5out[28] << register32bit:R5.BusMuxIn[28]
-R5out[29] << register32bit:R5.BusMuxIn[29]
-R5out[30] << register32bit:R5.BusMuxIn[30]
-R5out[31] << register32bit:R5.BusMuxIn[31]
-R6out[0] << register32bit:R6.BusMuxIn[0]
-R6out[1] << register32bit:R6.BusMuxIn[1]
-R6out[2] << register32bit:R6.BusMuxIn[2]
-R6out[3] << register32bit:R6.BusMuxIn[3]
-R6out[4] << register32bit:R6.BusMuxIn[4]
-R6out[5] << register32bit:R6.BusMuxIn[5]
-R6out[6] << register32bit:R6.BusMuxIn[6]
-R6out[7] << register32bit:R6.BusMuxIn[7]
-R6out[8] << register32bit:R6.BusMuxIn[8]
-R6out[9] << register32bit:R6.BusMuxIn[9]
-R6out[10] << register32bit:R6.BusMuxIn[10]
-R6out[11] << register32bit:R6.BusMuxIn[11]
-R6out[12] << register32bit:R6.BusMuxIn[12]
-R6out[13] << register32bit:R6.BusMuxIn[13]
-R6out[14] << register32bit:R6.BusMuxIn[14]
-R6out[15] << register32bit:R6.BusMuxIn[15]
-R6out[16] << register32bit:R6.BusMuxIn[16]
-R6out[17] << register32bit:R6.BusMuxIn[17]
-R6out[18] << register32bit:R6.BusMuxIn[18]
-R6out[19] << register32bit:R6.BusMuxIn[19]
-R6out[20] << register32bit:R6.BusMuxIn[20]
-R6out[21] << register32bit:R6.BusMuxIn[21]
-R6out[22] << register32bit:R6.BusMuxIn[22]
-R6out[23] << register32bit:R6.BusMuxIn[23]
-R6out[24] << register32bit:R6.BusMuxIn[24]
-R6out[25] << register32bit:R6.BusMuxIn[25]
-R6out[26] << register32bit:R6.BusMuxIn[26]
-R6out[27] << register32bit:R6.BusMuxIn[27]
-R6out[28] << register32bit:R6.BusMuxIn[28]
-R6out[29] << register32bit:R6.BusMuxIn[29]
-R6out[30] << register32bit:R6.BusMuxIn[30]
-R6out[31] << register32bit:R6.BusMuxIn[31]
-R7out[0] << register32bit:R7.BusMuxIn[0]
-R7out[1] << register32bit:R7.BusMuxIn[1]
-R7out[2] << register32bit:R7.BusMuxIn[2]
-R7out[3] << register32bit:R7.BusMuxIn[3]
-R7out[4] << register32bit:R7.BusMuxIn[4]
-R7out[5] << register32bit:R7.BusMuxIn[5]
-R7out[6] << register32bit:R7.BusMuxIn[6]
-R7out[7] << register32bit:R7.BusMuxIn[7]
-R7out[8] << register32bit:R7.BusMuxIn[8]
-R7out[9] << register32bit:R7.BusMuxIn[9]
-R7out[10] << register32bit:R7.BusMuxIn[10]
-R7out[11] << register32bit:R7.BusMuxIn[11]
-R7out[12] << register32bit:R7.BusMuxIn[12]
-R7out[13] << register32bit:R7.BusMuxIn[13]
-R7out[14] << register32bit:R7.BusMuxIn[14]
-R7out[15] << register32bit:R7.BusMuxIn[15]
-R7out[16] << register32bit:R7.BusMuxIn[16]
-R7out[17] << register32bit:R7.BusMuxIn[17]
-R7out[18] << register32bit:R7.BusMuxIn[18]
-R7out[19] << register32bit:R7.BusMuxIn[19]
-R7out[20] << register32bit:R7.BusMuxIn[20]
-R7out[21] << register32bit:R7.BusMuxIn[21]
-R7out[22] << register32bit:R7.BusMuxIn[22]
-R7out[23] << register32bit:R7.BusMuxIn[23]
-R7out[24] << register32bit:R7.BusMuxIn[24]
-R7out[25] << register32bit:R7.BusMuxIn[25]
-R7out[26] << register32bit:R7.BusMuxIn[26]
-R7out[27] << register32bit:R7.BusMuxIn[27]
-R7out[28] << register32bit:R7.BusMuxIn[28]
-R7out[29] << register32bit:R7.BusMuxIn[29]
-R7out[30] << register32bit:R7.BusMuxIn[30]
-R7out[31] << register32bit:R7.BusMuxIn[31]
-R8out[0] << register32bit:R8.BusMuxIn[0]
-R8out[1] << register32bit:R8.BusMuxIn[1]
-R8out[2] << register32bit:R8.BusMuxIn[2]
-R8out[3] << register32bit:R8.BusMuxIn[3]
-R8out[4] << register32bit:R8.BusMuxIn[4]
-R8out[5] << register32bit:R8.BusMuxIn[5]
-R8out[6] << register32bit:R8.BusMuxIn[6]
-R8out[7] << register32bit:R8.BusMuxIn[7]
-R8out[8] << register32bit:R8.BusMuxIn[8]
-R8out[9] << register32bit:R8.BusMuxIn[9]
-R8out[10] << register32bit:R8.BusMuxIn[10]
-R8out[11] << register32bit:R8.BusMuxIn[11]
-R8out[12] << register32bit:R8.BusMuxIn[12]
-R8out[13] << register32bit:R8.BusMuxIn[13]
-R8out[14] << register32bit:R8.BusMuxIn[14]
-R8out[15] << register32bit:R8.BusMuxIn[15]
-R8out[16] << register32bit:R8.BusMuxIn[16]
-R8out[17] << register32bit:R8.BusMuxIn[17]
-R8out[18] << register32bit:R8.BusMuxIn[18]
-R8out[19] << register32bit:R8.BusMuxIn[19]
-R8out[20] << register32bit:R8.BusMuxIn[20]
-R8out[21] << register32bit:R8.BusMuxIn[21]
-R8out[22] << register32bit:R8.BusMuxIn[22]
-R8out[23] << register32bit:R8.BusMuxIn[23]
-R8out[24] << register32bit:R8.BusMuxIn[24]
-R8out[25] << register32bit:R8.BusMuxIn[25]
-R8out[26] << register32bit:R8.BusMuxIn[26]
-R8out[27] << register32bit:R8.BusMuxIn[27]
-R8out[28] << register32bit:R8.BusMuxIn[28]
-R8out[29] << register32bit:R8.BusMuxIn[29]
-R8out[30] << register32bit:R8.BusMuxIn[30]
-R8out[31] << register32bit:R8.BusMuxIn[31]
-R9out[0] << register32bit:R9.BusMuxIn[0]
-R9out[1] << register32bit:R9.BusMuxIn[1]
-R9out[2] << register32bit:R9.BusMuxIn[2]
-R9out[3] << register32bit:R9.BusMuxIn[3]
-R9out[4] << register32bit:R9.BusMuxIn[4]
-R9out[5] << register32bit:R9.BusMuxIn[5]
-R9out[6] << register32bit:R9.BusMuxIn[6]
-R9out[7] << register32bit:R9.BusMuxIn[7]
-R9out[8] << register32bit:R9.BusMuxIn[8]
-R9out[9] << register32bit:R9.BusMuxIn[9]
-R9out[10] << register32bit:R9.BusMuxIn[10]
-R9out[11] << register32bit:R9.BusMuxIn[11]
-R9out[12] << register32bit:R9.BusMuxIn[12]
-R9out[13] << register32bit:R9.BusMuxIn[13]
-R9out[14] << register32bit:R9.BusMuxIn[14]
-R9out[15] << register32bit:R9.BusMuxIn[15]
-R9out[16] << register32bit:R9.BusMuxIn[16]
-R9out[17] << register32bit:R9.BusMuxIn[17]
-R9out[18] << register32bit:R9.BusMuxIn[18]
-R9out[19] << register32bit:R9.BusMuxIn[19]
-R9out[20] << register32bit:R9.BusMuxIn[20]
-R9out[21] << register32bit:R9.BusMuxIn[21]
-R9out[22] << register32bit:R9.BusMuxIn[22]
-R9out[23] << register32bit:R9.BusMuxIn[23]
-R9out[24] << register32bit:R9.BusMuxIn[24]
-R9out[25] << register32bit:R9.BusMuxIn[25]
-R9out[26] << register32bit:R9.BusMuxIn[26]
-R9out[27] << register32bit:R9.BusMuxIn[27]
-R9out[28] << register32bit:R9.BusMuxIn[28]
-R9out[29] << register32bit:R9.BusMuxIn[29]
-R9out[30] << register32bit:R9.BusMuxIn[30]
-R9out[31] << register32bit:R9.BusMuxIn[31]
-R10out[0] << register32bit:R10.BusMuxIn[0]
-R10out[1] << register32bit:R10.BusMuxIn[1]
-R10out[2] << register32bit:R10.BusMuxIn[2]
-R10out[3] << register32bit:R10.BusMuxIn[3]
-R10out[4] << register32bit:R10.BusMuxIn[4]
-R10out[5] << register32bit:R10.BusMuxIn[5]
-R10out[6] << register32bit:R10.BusMuxIn[6]
-R10out[7] << register32bit:R10.BusMuxIn[7]
-R10out[8] << register32bit:R10.BusMuxIn[8]
-R10out[9] << register32bit:R10.BusMuxIn[9]
-R10out[10] << register32bit:R10.BusMuxIn[10]
-R10out[11] << register32bit:R10.BusMuxIn[11]
-R10out[12] << register32bit:R10.BusMuxIn[12]
-R10out[13] << register32bit:R10.BusMuxIn[13]
-R10out[14] << register32bit:R10.BusMuxIn[14]
-R10out[15] << register32bit:R10.BusMuxIn[15]
-R10out[16] << register32bit:R10.BusMuxIn[16]
-R10out[17] << register32bit:R10.BusMuxIn[17]
-R10out[18] << register32bit:R10.BusMuxIn[18]
-R10out[19] << register32bit:R10.BusMuxIn[19]
-R10out[20] << register32bit:R10.BusMuxIn[20]
-R10out[21] << register32bit:R10.BusMuxIn[21]
-R10out[22] << register32bit:R10.BusMuxIn[22]
-R10out[23] << register32bit:R10.BusMuxIn[23]
-R10out[24] << register32bit:R10.BusMuxIn[24]
-R10out[25] << register32bit:R10.BusMuxIn[25]
-R10out[26] << register32bit:R10.BusMuxIn[26]
-R10out[27] << register32bit:R10.BusMuxIn[27]
-R10out[28] << register32bit:R10.BusMuxIn[28]
-R10out[29] << register32bit:R10.BusMuxIn[29]
-R10out[30] << register32bit:R10.BusMuxIn[30]
-R10out[31] << register32bit:R10.BusMuxIn[31]
-R11out[0] << register32bit:R11.BusMuxIn[0]
-R11out[1] << register32bit:R11.BusMuxIn[1]
-R11out[2] << register32bit:R11.BusMuxIn[2]
-R11out[3] << register32bit:R11.BusMuxIn[3]
-R11out[4] << register32bit:R11.BusMuxIn[4]
-R11out[5] << register32bit:R11.BusMuxIn[5]
-R11out[6] << register32bit:R11.BusMuxIn[6]
-R11out[7] << register32bit:R11.BusMuxIn[7]
-R11out[8] << register32bit:R11.BusMuxIn[8]
-R11out[9] << register32bit:R11.BusMuxIn[9]
-R11out[10] << register32bit:R11.BusMuxIn[10]
-R11out[11] << register32bit:R11.BusMuxIn[11]
-R11out[12] << register32bit:R11.BusMuxIn[12]
-R11out[13] << register32bit:R11.BusMuxIn[13]
-R11out[14] << register32bit:R11.BusMuxIn[14]
-R11out[15] << register32bit:R11.BusMuxIn[15]
-R11out[16] << register32bit:R11.BusMuxIn[16]
-R11out[17] << register32bit:R11.BusMuxIn[17]
-R11out[18] << register32bit:R11.BusMuxIn[18]
-R11out[19] << register32bit:R11.BusMuxIn[19]
-R11out[20] << register32bit:R11.BusMuxIn[20]
-R11out[21] << register32bit:R11.BusMuxIn[21]
-R11out[22] << register32bit:R11.BusMuxIn[22]
-R11out[23] << register32bit:R11.BusMuxIn[23]
-R11out[24] << register32bit:R11.BusMuxIn[24]
-R11out[25] << register32bit:R11.BusMuxIn[25]
-R11out[26] << register32bit:R11.BusMuxIn[26]
-R11out[27] << register32bit:R11.BusMuxIn[27]
-R11out[28] << register32bit:R11.BusMuxIn[28]
-R11out[29] << register32bit:R11.BusMuxIn[29]
-R11out[30] << register32bit:R11.BusMuxIn[30]
-R11out[31] << register32bit:R11.BusMuxIn[31]
-R12out[0] << register32bit:R12.BusMuxIn[0]
-R12out[1] << register32bit:R12.BusMuxIn[1]
-R12out[2] << register32bit:R12.BusMuxIn[2]
-R12out[3] << register32bit:R12.BusMuxIn[3]
-R12out[4] << register32bit:R12.BusMuxIn[4]
-R12out[5] << register32bit:R12.BusMuxIn[5]
-R12out[6] << register32bit:R12.BusMuxIn[6]
-R12out[7] << register32bit:R12.BusMuxIn[7]
-R12out[8] << register32bit:R12.BusMuxIn[8]
-R12out[9] << register32bit:R12.BusMuxIn[9]
-R12out[10] << register32bit:R12.BusMuxIn[10]
-R12out[11] << register32bit:R12.BusMuxIn[11]
-R12out[12] << register32bit:R12.BusMuxIn[12]
-R12out[13] << register32bit:R12.BusMuxIn[13]
-R12out[14] << register32bit:R12.BusMuxIn[14]
-R12out[15] << register32bit:R12.BusMuxIn[15]
-R12out[16] << register32bit:R12.BusMuxIn[16]
-R12out[17] << register32bit:R12.BusMuxIn[17]
-R12out[18] << register32bit:R12.BusMuxIn[18]
-R12out[19] << register32bit:R12.BusMuxIn[19]
-R12out[20] << register32bit:R12.BusMuxIn[20]
-R12out[21] << register32bit:R12.BusMuxIn[21]
-R12out[22] << register32bit:R12.BusMuxIn[22]
-R12out[23] << register32bit:R12.BusMuxIn[23]
-R12out[24] << register32bit:R12.BusMuxIn[24]
-R12out[25] << register32bit:R12.BusMuxIn[25]
-R12out[26] << register32bit:R12.BusMuxIn[26]
-R12out[27] << register32bit:R12.BusMuxIn[27]
-R12out[28] << register32bit:R12.BusMuxIn[28]
-R12out[29] << register32bit:R12.BusMuxIn[29]
-R12out[30] << register32bit:R12.BusMuxIn[30]
-R12out[31] << register32bit:R12.BusMuxIn[31]
-R13out[0] << register32bit:R13.BusMuxIn[0]
-R13out[1] << register32bit:R13.BusMuxIn[1]
-R13out[2] << register32bit:R13.BusMuxIn[2]
-R13out[3] << register32bit:R13.BusMuxIn[3]
-R13out[4] << register32bit:R13.BusMuxIn[4]
-R13out[5] << register32bit:R13.BusMuxIn[5]
-R13out[6] << register32bit:R13.BusMuxIn[6]
-R13out[7] << register32bit:R13.BusMuxIn[7]
-R13out[8] << register32bit:R13.BusMuxIn[8]
-R13out[9] << register32bit:R13.BusMuxIn[9]
-R13out[10] << register32bit:R13.BusMuxIn[10]
-R13out[11] << register32bit:R13.BusMuxIn[11]
-R13out[12] << register32bit:R13.BusMuxIn[12]
-R13out[13] << register32bit:R13.BusMuxIn[13]
-R13out[14] << register32bit:R13.BusMuxIn[14]
-R13out[15] << register32bit:R13.BusMuxIn[15]
-R13out[16] << register32bit:R13.BusMuxIn[16]
-R13out[17] << register32bit:R13.BusMuxIn[17]
-R13out[18] << register32bit:R13.BusMuxIn[18]
-R13out[19] << register32bit:R13.BusMuxIn[19]
-R13out[20] << register32bit:R13.BusMuxIn[20]
-R13out[21] << register32bit:R13.BusMuxIn[21]
-R13out[22] << register32bit:R13.BusMuxIn[22]
-R13out[23] << register32bit:R13.BusMuxIn[23]
-R13out[24] << register32bit:R13.BusMuxIn[24]
-R13out[25] << register32bit:R13.BusMuxIn[25]
-R13out[26] << register32bit:R13.BusMuxIn[26]
-R13out[27] << register32bit:R13.BusMuxIn[27]
-R13out[28] << register32bit:R13.BusMuxIn[28]
-R13out[29] << register32bit:R13.BusMuxIn[29]
-R13out[30] << register32bit:R13.BusMuxIn[30]
-R13out[31] << register32bit:R13.BusMuxIn[31]
-R14out[0] << register32bit:R14.BusMuxIn[0]
-R14out[1] << register32bit:R14.BusMuxIn[1]
-R14out[2] << register32bit:R14.BusMuxIn[2]
-R14out[3] << register32bit:R14.BusMuxIn[3]
-R14out[4] << register32bit:R14.BusMuxIn[4]
-R14out[5] << register32bit:R14.BusMuxIn[5]
-R14out[6] << register32bit:R14.BusMuxIn[6]
-R14out[7] << register32bit:R14.BusMuxIn[7]
-R14out[8] << register32bit:R14.BusMuxIn[8]
-R14out[9] << register32bit:R14.BusMuxIn[9]
-R14out[10] << register32bit:R14.BusMuxIn[10]
-R14out[11] << register32bit:R14.BusMuxIn[11]
-R14out[12] << register32bit:R14.BusMuxIn[12]
-R14out[13] << register32bit:R14.BusMuxIn[13]
-R14out[14] << register32bit:R14.BusMuxIn[14]
-R14out[15] << register32bit:R14.BusMuxIn[15]
-R14out[16] << register32bit:R14.BusMuxIn[16]
-R14out[17] << register32bit:R14.BusMuxIn[17]
-R14out[18] << register32bit:R14.BusMuxIn[18]
-R14out[19] << register32bit:R14.BusMuxIn[19]
-R14out[20] << register32bit:R14.BusMuxIn[20]
-R14out[21] << register32bit:R14.BusMuxIn[21]
-R14out[22] << register32bit:R14.BusMuxIn[22]
-R14out[23] << register32bit:R14.BusMuxIn[23]
-R14out[24] << register32bit:R14.BusMuxIn[24]
-R14out[25] << register32bit:R14.BusMuxIn[25]
-R14out[26] << register32bit:R14.BusMuxIn[26]
-R14out[27] << register32bit:R14.BusMuxIn[27]
-R14out[28] << register32bit:R14.BusMuxIn[28]
-R14out[29] << register32bit:R14.BusMuxIn[29]
-R14out[30] << register32bit:R14.BusMuxIn[30]
-R14out[31] << register32bit:R14.BusMuxIn[31]
-R15out[0] << register32bit:R15.BusMuxIn[0]
-R15out[1] << register32bit:R15.BusMuxIn[1]
-R15out[2] << register32bit:R15.BusMuxIn[2]
-R15out[3] << register32bit:R15.BusMuxIn[3]
-R15out[4] << register32bit:R15.BusMuxIn[4]
-R15out[5] << register32bit:R15.BusMuxIn[5]
-R15out[6] << register32bit:R15.BusMuxIn[6]
-R15out[7] << register32bit:R15.BusMuxIn[7]
-R15out[8] << register32bit:R15.BusMuxIn[8]
-R15out[9] << register32bit:R15.BusMuxIn[9]
-R15out[10] << register32bit:R15.BusMuxIn[10]
-R15out[11] << register32bit:R15.BusMuxIn[11]
-R15out[12] << register32bit:R15.BusMuxIn[12]
-R15out[13] << register32bit:R15.BusMuxIn[13]
-R15out[14] << register32bit:R15.BusMuxIn[14]
-R15out[15] << register32bit:R15.BusMuxIn[15]
-R15out[16] << register32bit:R15.BusMuxIn[16]
-R15out[17] << register32bit:R15.BusMuxIn[17]
-R15out[18] << register32bit:R15.BusMuxIn[18]
-R15out[19] << register32bit:R15.BusMuxIn[19]
-R15out[20] << register32bit:R15.BusMuxIn[20]
-R15out[21] << register32bit:R15.BusMuxIn[21]
-R15out[22] << register32bit:R15.BusMuxIn[22]
-R15out[23] << register32bit:R15.BusMuxIn[23]
-R15out[24] << register32bit:R15.BusMuxIn[24]
-R15out[25] << register32bit:R15.BusMuxIn[25]
-R15out[26] << register32bit:R15.BusMuxIn[26]
-R15out[27] << register32bit:R15.BusMuxIn[27]
-R15out[28] << register32bit:R15.BusMuxIn[28]
-R15out[29] << register32bit:R15.BusMuxIn[29]
-R15out[30] << register32bit:R15.BusMuxIn[30]
-R15out[31] << register32bit:R15.BusMuxIn[31]
-BusMuxOut[0] << P1_bus:datapathBus.BusMuxOut[0]
-BusMuxOut[1] << P1_bus:datapathBus.BusMuxOut[1]
-BusMuxOut[2] << P1_bus:datapathBus.BusMuxOut[2]
-BusMuxOut[3] << P1_bus:datapathBus.BusMuxOut[3]
-BusMuxOut[4] << P1_bus:datapathBus.BusMuxOut[4]
-BusMuxOut[5] << P1_bus:datapathBus.BusMuxOut[5]
-BusMuxOut[6] << P1_bus:datapathBus.BusMuxOut[6]
-BusMuxOut[7] << P1_bus:datapathBus.BusMuxOut[7]
-BusMuxOut[8] << P1_bus:datapathBus.BusMuxOut[8]
-BusMuxOut[9] << P1_bus:datapathBus.BusMuxOut[9]
-BusMuxOut[10] << P1_bus:datapathBus.BusMuxOut[10]
-BusMuxOut[11] << P1_bus:datapathBus.BusMuxOut[11]
-BusMuxOut[12] << P1_bus:datapathBus.BusMuxOut[12]
-BusMuxOut[13] << P1_bus:datapathBus.BusMuxOut[13]
-BusMuxOut[14] << P1_bus:datapathBus.BusMuxOut[14]
-BusMuxOut[15] << P1_bus:datapathBus.BusMuxOut[15]
-BusMuxOut[16] << P1_bus:datapathBus.BusMuxOut[16]
-BusMuxOut[17] << P1_bus:datapathBus.BusMuxOut[17]
-BusMuxOut[18] << P1_bus:datapathBus.BusMuxOut[18]
-BusMuxOut[19] << P1_bus:datapathBus.BusMuxOut[19]
-BusMuxOut[20] << P1_bus:datapathBus.BusMuxOut[20]
-BusMuxOut[21] << P1_bus:datapathBus.BusMuxOut[21]
-BusMuxOut[22] << P1_bus:datapathBus.BusMuxOut[22]
-BusMuxOut[23] << P1_bus:datapathBus.BusMuxOut[23]
-BusMuxOut[24] << P1_bus:datapathBus.BusMuxOut[24]
-BusMuxOut[25] << P1_bus:datapathBus.BusMuxOut[25]
-BusMuxOut[26] << P1_bus:datapathBus.BusMuxOut[26]
-BusMuxOut[27] << P1_bus:datapathBus.BusMuxOut[27]
-BusMuxOut[28] << P1_bus:datapathBus.BusMuxOut[28]
-BusMuxOut[29] << P1_bus:datapathBus.BusMuxOut[29]
-BusMuxOut[30] << P1_bus:datapathBus.BusMuxOut[30]
-BusMuxOut[31] << P1_bus:datapathBus.BusMuxOut[31]
-MAR_out[0] << register32bit:MAR.BusMuxIn[0]
-MAR_out[1] << register32bit:MAR.BusMuxIn[1]
-MAR_out[2] << register32bit:MAR.BusMuxIn[2]
-MAR_out[3] << register32bit:MAR.BusMuxIn[3]
-MAR_out[4] << register32bit:MAR.BusMuxIn[4]
-MAR_out[5] << register32bit:MAR.BusMuxIn[5]
-MAR_out[6] << register32bit:MAR.BusMuxIn[6]
-MAR_out[7] << register32bit:MAR.BusMuxIn[7]
-MAR_out[8] << register32bit:MAR.BusMuxIn[8]
-MAR_out[9] << register32bit:MAR.BusMuxIn[9]
-MAR_out[10] << register32bit:MAR.BusMuxIn[10]
-MAR_out[11] << register32bit:MAR.BusMuxIn[11]
-MAR_out[12] << register32bit:MAR.BusMuxIn[12]
-MAR_out[13] << register32bit:MAR.BusMuxIn[13]
-MAR_out[14] << register32bit:MAR.BusMuxIn[14]
-MAR_out[15] << register32bit:MAR.BusMuxIn[15]
-MAR_out[16] << register32bit:MAR.BusMuxIn[16]
-MAR_out[17] << register32bit:MAR.BusMuxIn[17]
-MAR_out[18] << register32bit:MAR.BusMuxIn[18]
-MAR_out[19] << register32bit:MAR.BusMuxIn[19]
-MAR_out[20] << register32bit:MAR.BusMuxIn[20]
-MAR_out[21] << register32bit:MAR.BusMuxIn[21]
-MAR_out[22] << register32bit:MAR.BusMuxIn[22]
-MAR_out[23] << register32bit:MAR.BusMuxIn[23]
-MAR_out[24] << register32bit:MAR.BusMuxIn[24]
-MAR_out[25] << register32bit:MAR.BusMuxIn[25]
-MAR_out[26] << register32bit:MAR.BusMuxIn[26]
-MAR_out[27] << register32bit:MAR.BusMuxIn[27]
-MAR_out[28] << register32bit:MAR.BusMuxIn[28]
-MAR_out[29] << register32bit:MAR.BusMuxIn[29]
-MAR_out[30] << register32bit:MAR.BusMuxIn[30]
-MAR_out[31] << register32bit:MAR.BusMuxIn[31]
-MDR_out[0] << MDR:MDR_register.MDR_out[0]
-MDR_out[1] << MDR:MDR_register.MDR_out[1]
-MDR_out[2] << MDR:MDR_register.MDR_out[2]
-MDR_out[3] << MDR:MDR_register.MDR_out[3]
-MDR_out[4] << MDR:MDR_register.MDR_out[4]
-MDR_out[5] << MDR:MDR_register.MDR_out[5]
-MDR_out[6] << MDR:MDR_register.MDR_out[6]
-MDR_out[7] << MDR:MDR_register.MDR_out[7]
-MDR_out[8] << MDR:MDR_register.MDR_out[8]
-MDR_out[9] << MDR:MDR_register.MDR_out[9]
-MDR_out[10] << MDR:MDR_register.MDR_out[10]
-MDR_out[11] << MDR:MDR_register.MDR_out[11]
-MDR_out[12] << MDR:MDR_register.MDR_out[12]
-MDR_out[13] << MDR:MDR_register.MDR_out[13]
-MDR_out[14] << MDR:MDR_register.MDR_out[14]
-MDR_out[15] << MDR:MDR_register.MDR_out[15]
-MDR_out[16] << MDR:MDR_register.MDR_out[16]
-MDR_out[17] << MDR:MDR_register.MDR_out[17]
-MDR_out[18] << MDR:MDR_register.MDR_out[18]
-MDR_out[19] << MDR:MDR_register.MDR_out[19]
-MDR_out[20] << MDR:MDR_register.MDR_out[20]
-MDR_out[21] << MDR:MDR_register.MDR_out[21]
-MDR_out[22] << MDR:MDR_register.MDR_out[22]
-MDR_out[23] << MDR:MDR_register.MDR_out[23]
-MDR_out[24] << MDR:MDR_register.MDR_out[24]
-MDR_out[25] << MDR:MDR_register.MDR_out[25]
-MDR_out[26] << MDR:MDR_register.MDR_out[26]
-MDR_out[27] << MDR:MDR_register.MDR_out[27]
-MDR_out[28] << MDR:MDR_register.MDR_out[28]
-MDR_out[29] << MDR:MDR_register.MDR_out[29]
-MDR_out[30] << MDR:MDR_register.MDR_out[30]
-MDR_out[31] << MDR:MDR_register.MDR_out[31]
-PCout[0] << register32bit:PC.BusMuxIn[0]
-PCout[1] << register32bit:PC.BusMuxIn[1]
-PCout[2] << register32bit:PC.BusMuxIn[2]
-PCout[3] << register32bit:PC.BusMuxIn[3]
-PCout[4] << register32bit:PC.BusMuxIn[4]
-PCout[5] << register32bit:PC.BusMuxIn[5]
-PCout[6] << register32bit:PC.BusMuxIn[6]
-PCout[7] << register32bit:PC.BusMuxIn[7]
-PCout[8] << register32bit:PC.BusMuxIn[8]
-PCout[9] << register32bit:PC.BusMuxIn[9]
-PCout[10] << register32bit:PC.BusMuxIn[10]
-PCout[11] << register32bit:PC.BusMuxIn[11]
-PCout[12] << register32bit:PC.BusMuxIn[12]
-PCout[13] << register32bit:PC.BusMuxIn[13]
-PCout[14] << register32bit:PC.BusMuxIn[14]
-PCout[15] << register32bit:PC.BusMuxIn[15]
-PCout[16] << register32bit:PC.BusMuxIn[16]
-PCout[17] << register32bit:PC.BusMuxIn[17]
-PCout[18] << register32bit:PC.BusMuxIn[18]
-PCout[19] << register32bit:PC.BusMuxIn[19]
-PCout[20] << register32bit:PC.BusMuxIn[20]
-PCout[21] << register32bit:PC.BusMuxIn[21]
-PCout[22] << register32bit:PC.BusMuxIn[22]
-PCout[23] << register32bit:PC.BusMuxIn[23]
-PCout[24] << register32bit:PC.BusMuxIn[24]
-PCout[25] << register32bit:PC.BusMuxIn[25]
-PCout[26] << register32bit:PC.BusMuxIn[26]
-PCout[27] << register32bit:PC.BusMuxIn[27]
-PCout[28] << register32bit:PC.BusMuxIn[28]
-PCout[29] << register32bit:PC.BusMuxIn[29]
-PCout[30] << register32bit:PC.BusMuxIn[30]
-PCout[31] << register32bit:PC.BusMuxIn[31]
-HIout[0] << register32bit:HI.BusMuxIn[0]
-HIout[1] << register32bit:HI.BusMuxIn[1]
-HIout[2] << register32bit:HI.BusMuxIn[2]
-HIout[3] << register32bit:HI.BusMuxIn[3]
-HIout[4] << register32bit:HI.BusMuxIn[4]
-HIout[5] << register32bit:HI.BusMuxIn[5]
-HIout[6] << register32bit:HI.BusMuxIn[6]
-HIout[7] << register32bit:HI.BusMuxIn[7]
-HIout[8] << register32bit:HI.BusMuxIn[8]
-HIout[9] << register32bit:HI.BusMuxIn[9]
-HIout[10] << register32bit:HI.BusMuxIn[10]
-HIout[11] << register32bit:HI.BusMuxIn[11]
-HIout[12] << register32bit:HI.BusMuxIn[12]
-HIout[13] << register32bit:HI.BusMuxIn[13]
-HIout[14] << register32bit:HI.BusMuxIn[14]
-HIout[15] << register32bit:HI.BusMuxIn[15]
-HIout[16] << register32bit:HI.BusMuxIn[16]
-HIout[17] << register32bit:HI.BusMuxIn[17]
-HIout[18] << register32bit:HI.BusMuxIn[18]
-HIout[19] << register32bit:HI.BusMuxIn[19]
-HIout[20] << register32bit:HI.BusMuxIn[20]
-HIout[21] << register32bit:HI.BusMuxIn[21]
-HIout[22] << register32bit:HI.BusMuxIn[22]
-HIout[23] << register32bit:HI.BusMuxIn[23]
-HIout[24] << register32bit:HI.BusMuxIn[24]
-HIout[25] << register32bit:HI.BusMuxIn[25]
-HIout[26] << register32bit:HI.BusMuxIn[26]
-HIout[27] << register32bit:HI.BusMuxIn[27]
-HIout[28] << register32bit:HI.BusMuxIn[28]
-HIout[29] << register32bit:HI.BusMuxIn[29]
-HIout[30] << register32bit:HI.BusMuxIn[30]
-HIout[31] << register32bit:HI.BusMuxIn[31]
-LOout[0] << register32bit:LO.BusMuxIn[0]
-LOout[1] << register32bit:LO.BusMuxIn[1]
-LOout[2] << register32bit:LO.BusMuxIn[2]
-LOout[3] << register32bit:LO.BusMuxIn[3]
-LOout[4] << register32bit:LO.BusMuxIn[4]
-LOout[5] << register32bit:LO.BusMuxIn[5]
-LOout[6] << register32bit:LO.BusMuxIn[6]
-LOout[7] << register32bit:LO.BusMuxIn[7]
-LOout[8] << register32bit:LO.BusMuxIn[8]
-LOout[9] << register32bit:LO.BusMuxIn[9]
-LOout[10] << register32bit:LO.BusMuxIn[10]
-LOout[11] << register32bit:LO.BusMuxIn[11]
-LOout[12] << register32bit:LO.BusMuxIn[12]
-LOout[13] << register32bit:LO.BusMuxIn[13]
-LOout[14] << register32bit:LO.BusMuxIn[14]
-LOout[15] << register32bit:LO.BusMuxIn[15]
-LOout[16] << register32bit:LO.BusMuxIn[16]
-LOout[17] << register32bit:LO.BusMuxIn[17]
-LOout[18] << register32bit:LO.BusMuxIn[18]
-LOout[19] << register32bit:LO.BusMuxIn[19]
-LOout[20] << register32bit:LO.BusMuxIn[20]
-LOout[21] << register32bit:LO.BusMuxIn[21]
-LOout[22] << register32bit:LO.BusMuxIn[22]
-LOout[23] << register32bit:LO.BusMuxIn[23]
-LOout[24] << register32bit:LO.BusMuxIn[24]
-LOout[25] << register32bit:LO.BusMuxIn[25]
-LOout[26] << register32bit:LO.BusMuxIn[26]
-LOout[27] << register32bit:LO.BusMuxIn[27]
-LOout[28] << register32bit:LO.BusMuxIn[28]
-LOout[29] << register32bit:LO.BusMuxIn[29]
-LOout[30] << register32bit:LO.BusMuxIn[30]
-LOout[31] << register32bit:LO.BusMuxIn[31]
-IRout[0] << register32bit:IR.BusMuxIn[0]
-IRout[1] << register32bit:IR.BusMuxIn[1]
-IRout[2] << register32bit:IR.BusMuxIn[2]
-IRout[3] << register32bit:IR.BusMuxIn[3]
-IRout[4] << register32bit:IR.BusMuxIn[4]
-IRout[5] << register32bit:IR.BusMuxIn[5]
-IRout[6] << register32bit:IR.BusMuxIn[6]
-IRout[7] << register32bit:IR.BusMuxIn[7]
-IRout[8] << register32bit:IR.BusMuxIn[8]
-IRout[9] << register32bit:IR.BusMuxIn[9]
-IRout[10] << register32bit:IR.BusMuxIn[10]
-IRout[11] << register32bit:IR.BusMuxIn[11]
-IRout[12] << register32bit:IR.BusMuxIn[12]
-IRout[13] << register32bit:IR.BusMuxIn[13]
-IRout[14] << register32bit:IR.BusMuxIn[14]
-IRout[15] << register32bit:IR.BusMuxIn[15]
-IRout[16] << register32bit:IR.BusMuxIn[16]
-IRout[17] << register32bit:IR.BusMuxIn[17]
-IRout[18] << register32bit:IR.BusMuxIn[18]
-IRout[19] << register32bit:IR.BusMuxIn[19]
-IRout[20] << register32bit:IR.BusMuxIn[20]
-IRout[21] << register32bit:IR.BusMuxIn[21]
-IRout[22] << register32bit:IR.BusMuxIn[22]
-IRout[23] << register32bit:IR.BusMuxIn[23]
-IRout[24] << register32bit:IR.BusMuxIn[24]
-IRout[25] << register32bit:IR.BusMuxIn[25]
-IRout[26] << register32bit:IR.BusMuxIn[26]
-IRout[27] << register32bit:IR.BusMuxIn[27]
-IRout[28] << register32bit:IR.BusMuxIn[28]
-IRout[29] << register32bit:IR.BusMuxIn[29]
-IRout[30] << register32bit:IR.BusMuxIn[30]
-IRout[31] << register32bit:IR.BusMuxIn[31]
-Zout[0] << alu_path:alu_datapath.Zlow[0]
-Zout[1] << alu_path:alu_datapath.Zlow[1]
-Zout[2] << alu_path:alu_datapath.Zlow[2]
-Zout[3] << alu_path:alu_datapath.Zlow[3]
-Zout[4] << alu_path:alu_datapath.Zlow[4]
-Zout[5] << alu_path:alu_datapath.Zlow[5]
-Zout[6] << alu_path:alu_datapath.Zlow[6]
-Zout[7] << alu_path:alu_datapath.Zlow[7]
-Zout[8] << alu_path:alu_datapath.Zlow[8]
-Zout[9] << alu_path:alu_datapath.Zlow[9]
-Zout[10] << alu_path:alu_datapath.Zlow[10]
-Zout[11] << alu_path:alu_datapath.Zlow[11]
-Zout[12] << alu_path:alu_datapath.Zlow[12]
-Zout[13] << alu_path:alu_datapath.Zlow[13]
-Zout[14] << alu_path:alu_datapath.Zlow[14]
-Zout[15] << alu_path:alu_datapath.Zlow[15]
-Zout[16] << alu_path:alu_datapath.Zlow[16]
-Zout[17] << alu_path:alu_datapath.Zlow[17]
-Zout[18] << alu_path:alu_datapath.Zlow[18]
-Zout[19] << alu_path:alu_datapath.Zlow[19]
-Zout[20] << alu_path:alu_datapath.Zlow[20]
-Zout[21] << alu_path:alu_datapath.Zlow[21]
-Zout[22] << alu_path:alu_datapath.Zlow[22]
-Zout[23] << alu_path:alu_datapath.Zlow[23]
-Zout[24] << alu_path:alu_datapath.Zlow[24]
-Zout[25] << alu_path:alu_datapath.Zlow[25]
-Zout[26] << alu_path:alu_datapath.Zlow[26]
-Zout[27] << alu_path:alu_datapath.Zlow[27]
-Zout[28] << alu_path:alu_datapath.Zlow[28]
-Zout[29] << alu_path:alu_datapath.Zlow[29]
-Zout[30] << alu_path:alu_datapath.Zlow[30]
-Zout[31] << alu_path:alu_datapath.Zlow[31]
-Zout[32] << alu_path:alu_datapath.Zhigh[0]
-Zout[33] << alu_path:alu_datapath.Zhigh[1]
-Zout[34] << alu_path:alu_datapath.Zhigh[2]
-Zout[35] << alu_path:alu_datapath.Zhigh[3]
-Zout[36] << alu_path:alu_datapath.Zhigh[4]
-Zout[37] << alu_path:alu_datapath.Zhigh[5]
-Zout[38] << alu_path:alu_datapath.Zhigh[6]
-Zout[39] << alu_path:alu_datapath.Zhigh[7]
-Zout[40] << alu_path:alu_datapath.Zhigh[8]
-Zout[41] << alu_path:alu_datapath.Zhigh[9]
-Zout[42] << alu_path:alu_datapath.Zhigh[10]
-Zout[43] << alu_path:alu_datapath.Zhigh[11]
-Zout[44] << alu_path:alu_datapath.Zhigh[12]
-Zout[45] << alu_path:alu_datapath.Zhigh[13]
-Zout[46] << alu_path:alu_datapath.Zhigh[14]
-Zout[47] << alu_path:alu_datapath.Zhigh[15]
-Zout[48] << alu_path:alu_datapath.Zhigh[16]
-Zout[49] << alu_path:alu_datapath.Zhigh[17]
-Zout[50] << alu_path:alu_datapath.Zhigh[18]
-Zout[51] << alu_path:alu_datapath.Zhigh[19]
-Zout[52] << alu_path:alu_datapath.Zhigh[20]
-Zout[53] << alu_path:alu_datapath.Zhigh[21]
-Zout[54] << alu_path:alu_datapath.Zhigh[22]
-Zout[55] << alu_path:alu_datapath.Zhigh[23]
-Zout[56] << alu_path:alu_datapath.Zhigh[24]
-Zout[57] << alu_path:alu_datapath.Zhigh[25]
-Zout[58] << alu_path:alu_datapath.Zhigh[26]
-Zout[59] << alu_path:alu_datapath.Zhigh[27]
-Zout[60] << alu_path:alu_datapath.Zhigh[28]
-Zout[61] << alu_path:alu_datapath.Zhigh[29]
-Zout[62] << alu_path:alu_datapath.Zhigh[30]
-Zout[63] << alu_path:alu_datapath.Zhigh[31]
-ram_pop[0] << ram_function_512x32:Ram.q[0]
-ram_pop[1] << ram_function_512x32:Ram.q[1]
-ram_pop[2] << ram_function_512x32:Ram.q[2]
-ram_pop[3] << ram_function_512x32:Ram.q[3]
-ram_pop[4] << ram_function_512x32:Ram.q[4]
-ram_pop[5] << ram_function_512x32:Ram.q[5]
-ram_pop[6] << ram_function_512x32:Ram.q[6]
-ram_pop[7] << ram_function_512x32:Ram.q[7]
-ram_pop[8] << ram_function_512x32:Ram.q[8]
-ram_pop[9] << ram_function_512x32:Ram.q[9]
-ram_pop[10] << ram_function_512x32:Ram.q[10]
-ram_pop[11] << ram_function_512x32:Ram.q[11]
-ram_pop[12] << ram_function_512x32:Ram.q[12]
-ram_pop[13] << ram_function_512x32:Ram.q[13]
-ram_pop[14] << ram_function_512x32:Ram.q[14]
-ram_pop[15] << ram_function_512x32:Ram.q[15]
-ram_pop[16] << ram_function_512x32:Ram.q[16]
-ram_pop[17] << ram_function_512x32:Ram.q[17]
-ram_pop[18] << ram_function_512x32:Ram.q[18]
-ram_pop[19] << ram_function_512x32:Ram.q[19]
-ram_pop[20] << ram_function_512x32:Ram.q[20]
-ram_pop[21] << ram_function_512x32:Ram.q[21]
-ram_pop[22] << ram_function_512x32:Ram.q[22]
-ram_pop[23] << ram_function_512x32:Ram.q[23]
-ram_pop[24] << ram_function_512x32:Ram.q[24]
-ram_pop[25] << ram_function_512x32:Ram.q[25]
-ram_pop[26] << ram_function_512x32:Ram.q[26]
-ram_pop[27] << ram_function_512x32:Ram.q[27]
-ram_pop[28] << ram_function_512x32:Ram.q[28]
-ram_pop[29] << ram_function_512x32:Ram.q[29]
-ram_pop[30] << ram_function_512x32:Ram.q[30]
-ram_pop[31] << ram_function_512x32:Ram.q[31]
+out_port[0] <= register32bit:outport_register.BusMuxIn[0]
+out_port[1] <= register32bit:outport_register.BusMuxIn[1]
+out_port[2] <= register32bit:outport_register.BusMuxIn[2]
+out_port[3] <= register32bit:outport_register.BusMuxIn[3]
+out_port[4] <= register32bit:outport_register.BusMuxIn[4]
+out_port[5] <= register32bit:outport_register.BusMuxIn[5]
+out_port[6] <= register32bit:outport_register.BusMuxIn[6]
+out_port[7] <= register32bit:outport_register.BusMuxIn[7]
+out_port[8] <= register32bit:outport_register.BusMuxIn[8]
+out_port[9] <= register32bit:outport_register.BusMuxIn[9]
+out_port[10] <= register32bit:outport_register.BusMuxIn[10]
+out_port[11] <= register32bit:outport_register.BusMuxIn[11]
+out_port[12] <= register32bit:outport_register.BusMuxIn[12]
+out_port[13] <= register32bit:outport_register.BusMuxIn[13]
+out_port[14] <= register32bit:outport_register.BusMuxIn[14]
+out_port[15] <= register32bit:outport_register.BusMuxIn[15]
+out_port[16] <= register32bit:outport_register.BusMuxIn[16]
+out_port[17] <= register32bit:outport_register.BusMuxIn[17]
+out_port[18] <= register32bit:outport_register.BusMuxIn[18]
+out_port[19] <= register32bit:outport_register.BusMuxIn[19]
+out_port[20] <= register32bit:outport_register.BusMuxIn[20]
+out_port[21] <= register32bit:outport_register.BusMuxIn[21]
+out_port[22] <= register32bit:outport_register.BusMuxIn[22]
+out_port[23] <= register32bit:outport_register.BusMuxIn[23]
+out_port[24] <= register32bit:outport_register.BusMuxIn[24]
+out_port[25] <= register32bit:outport_register.BusMuxIn[25]
+out_port[26] <= register32bit:outport_register.BusMuxIn[26]
+out_port[27] <= register32bit:outport_register.BusMuxIn[27]
+out_port[28] <= register32bit:outport_register.BusMuxIn[28]
+out_port[29] <= register32bit:outport_register.BusMuxIn[29]
+out_port[30] <= register32bit:outport_register.BusMuxIn[30]
+out_port[31] <= register32bit:outport_register.BusMuxIn[31]
+seven_segment_out[0] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[0]
+seven_segment_out[1] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[1]
+seven_segment_out[2] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[2]
+seven_segment_out[3] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[3]
+seven_segment_out[4] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[4]
+seven_segment_out[5] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[5]
+seven_segment_out[6] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[6]
+seven_segment_out[7] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[7]
+seven_segment_out[8] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[8]
+seven_segment_out[9] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[9]
+seven_segment_out[10] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[10]
+seven_segment_out[11] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[11]
+seven_segment_out[12] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[12]
+seven_segment_out[13] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[13]
+seven_segment_out[14] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[14]
+seven_segment_out[15] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[15]
+seven_segment_out[16] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[16]
+seven_segment_out[17] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[17]
+seven_segment_out[18] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[18]
+seven_segment_out[19] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[19]
+seven_segment_out[20] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[20]
+seven_segment_out[21] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[21]
+seven_segment_out[22] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[22]
+seven_segment_out[23] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[23]
+seven_segment_out[24] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[24]
+seven_segment_out[25] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[25]
+seven_segment_out[26] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[26]
+seven_segment_out[27] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[27]
+seven_segment_out[28] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[28]
+seven_segment_out[29] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[29]
+seven_segment_out[30] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[30]
+seven_segment_out[31] <= Seven_Seg_Display:sevenSegDiplay_port.outputSegment[31]
+R0out[0] <= registerR0:R0.BusMuxInR0[0]
+R0out[1] <= registerR0:R0.BusMuxInR0[1]
+R0out[2] <= registerR0:R0.BusMuxInR0[2]
+R0out[3] <= registerR0:R0.BusMuxInR0[3]
+R0out[4] <= registerR0:R0.BusMuxInR0[4]
+R0out[5] <= registerR0:R0.BusMuxInR0[5]
+R0out[6] <= registerR0:R0.BusMuxInR0[6]
+R0out[7] <= registerR0:R0.BusMuxInR0[7]
+R0out[8] <= registerR0:R0.BusMuxInR0[8]
+R0out[9] <= registerR0:R0.BusMuxInR0[9]
+R0out[10] <= registerR0:R0.BusMuxInR0[10]
+R0out[11] <= registerR0:R0.BusMuxInR0[11]
+R0out[12] <= registerR0:R0.BusMuxInR0[12]
+R0out[13] <= registerR0:R0.BusMuxInR0[13]
+R0out[14] <= registerR0:R0.BusMuxInR0[14]
+R0out[15] <= registerR0:R0.BusMuxInR0[15]
+R0out[16] <= registerR0:R0.BusMuxInR0[16]
+R0out[17] <= registerR0:R0.BusMuxInR0[17]
+R0out[18] <= registerR0:R0.BusMuxInR0[18]
+R0out[19] <= registerR0:R0.BusMuxInR0[19]
+R0out[20] <= registerR0:R0.BusMuxInR0[20]
+R0out[21] <= registerR0:R0.BusMuxInR0[21]
+R0out[22] <= registerR0:R0.BusMuxInR0[22]
+R0out[23] <= registerR0:R0.BusMuxInR0[23]
+R0out[24] <= registerR0:R0.BusMuxInR0[24]
+R0out[25] <= registerR0:R0.BusMuxInR0[25]
+R0out[26] <= registerR0:R0.BusMuxInR0[26]
+R0out[27] <= registerR0:R0.BusMuxInR0[27]
+R0out[28] <= registerR0:R0.BusMuxInR0[28]
+R0out[29] <= registerR0:R0.BusMuxInR0[29]
+R0out[30] <= registerR0:R0.BusMuxInR0[30]
+R0out[31] <= registerR0:R0.BusMuxInR0[31]
+R1out[0] <= register32bit:R1.BusMuxIn[0]
+R1out[1] <= register32bit:R1.BusMuxIn[1]
+R1out[2] <= register32bit:R1.BusMuxIn[2]
+R1out[3] <= register32bit:R1.BusMuxIn[3]
+R1out[4] <= register32bit:R1.BusMuxIn[4]
+R1out[5] <= register32bit:R1.BusMuxIn[5]
+R1out[6] <= register32bit:R1.BusMuxIn[6]
+R1out[7] <= register32bit:R1.BusMuxIn[7]
+R1out[8] <= register32bit:R1.BusMuxIn[8]
+R1out[9] <= register32bit:R1.BusMuxIn[9]
+R1out[10] <= register32bit:R1.BusMuxIn[10]
+R1out[11] <= register32bit:R1.BusMuxIn[11]
+R1out[12] <= register32bit:R1.BusMuxIn[12]
+R1out[13] <= register32bit:R1.BusMuxIn[13]
+R1out[14] <= register32bit:R1.BusMuxIn[14]
+R1out[15] <= register32bit:R1.BusMuxIn[15]
+R1out[16] <= register32bit:R1.BusMuxIn[16]
+R1out[17] <= register32bit:R1.BusMuxIn[17]
+R1out[18] <= register32bit:R1.BusMuxIn[18]
+R1out[19] <= register32bit:R1.BusMuxIn[19]
+R1out[20] <= register32bit:R1.BusMuxIn[20]
+R1out[21] <= register32bit:R1.BusMuxIn[21]
+R1out[22] <= register32bit:R1.BusMuxIn[22]
+R1out[23] <= register32bit:R1.BusMuxIn[23]
+R1out[24] <= register32bit:R1.BusMuxIn[24]
+R1out[25] <= register32bit:R1.BusMuxIn[25]
+R1out[26] <= register32bit:R1.BusMuxIn[26]
+R1out[27] <= register32bit:R1.BusMuxIn[27]
+R1out[28] <= register32bit:R1.BusMuxIn[28]
+R1out[29] <= register32bit:R1.BusMuxIn[29]
+R1out[30] <= register32bit:R1.BusMuxIn[30]
+R1out[31] <= register32bit:R1.BusMuxIn[31]
+R2out[0] <= register32bit:R2.BusMuxIn[0]
+R2out[1] <= register32bit:R2.BusMuxIn[1]
+R2out[2] <= register32bit:R2.BusMuxIn[2]
+R2out[3] <= register32bit:R2.BusMuxIn[3]
+R2out[4] <= register32bit:R2.BusMuxIn[4]
+R2out[5] <= register32bit:R2.BusMuxIn[5]
+R2out[6] <= register32bit:R2.BusMuxIn[6]
+R2out[7] <= register32bit:R2.BusMuxIn[7]
+R2out[8] <= register32bit:R2.BusMuxIn[8]
+R2out[9] <= register32bit:R2.BusMuxIn[9]
+R2out[10] <= register32bit:R2.BusMuxIn[10]
+R2out[11] <= register32bit:R2.BusMuxIn[11]
+R2out[12] <= register32bit:R2.BusMuxIn[12]
+R2out[13] <= register32bit:R2.BusMuxIn[13]
+R2out[14] <= register32bit:R2.BusMuxIn[14]
+R2out[15] <= register32bit:R2.BusMuxIn[15]
+R2out[16] <= register32bit:R2.BusMuxIn[16]
+R2out[17] <= register32bit:R2.BusMuxIn[17]
+R2out[18] <= register32bit:R2.BusMuxIn[18]
+R2out[19] <= register32bit:R2.BusMuxIn[19]
+R2out[20] <= register32bit:R2.BusMuxIn[20]
+R2out[21] <= register32bit:R2.BusMuxIn[21]
+R2out[22] <= register32bit:R2.BusMuxIn[22]
+R2out[23] <= register32bit:R2.BusMuxIn[23]
+R2out[24] <= register32bit:R2.BusMuxIn[24]
+R2out[25] <= register32bit:R2.BusMuxIn[25]
+R2out[26] <= register32bit:R2.BusMuxIn[26]
+R2out[27] <= register32bit:R2.BusMuxIn[27]
+R2out[28] <= register32bit:R2.BusMuxIn[28]
+R2out[29] <= register32bit:R2.BusMuxIn[29]
+R2out[30] <= register32bit:R2.BusMuxIn[30]
+R2out[31] <= register32bit:R2.BusMuxIn[31]
+R3out[0] <= register32bit:R3.BusMuxIn[0]
+R3out[1] <= register32bit:R3.BusMuxIn[1]
+R3out[2] <= register32bit:R3.BusMuxIn[2]
+R3out[3] <= register32bit:R3.BusMuxIn[3]
+R3out[4] <= register32bit:R3.BusMuxIn[4]
+R3out[5] <= register32bit:R3.BusMuxIn[5]
+R3out[6] <= register32bit:R3.BusMuxIn[6]
+R3out[7] <= register32bit:R3.BusMuxIn[7]
+R3out[8] <= register32bit:R3.BusMuxIn[8]
+R3out[9] <= register32bit:R3.BusMuxIn[9]
+R3out[10] <= register32bit:R3.BusMuxIn[10]
+R3out[11] <= register32bit:R3.BusMuxIn[11]
+R3out[12] <= register32bit:R3.BusMuxIn[12]
+R3out[13] <= register32bit:R3.BusMuxIn[13]
+R3out[14] <= register32bit:R3.BusMuxIn[14]
+R3out[15] <= register32bit:R3.BusMuxIn[15]
+R3out[16] <= register32bit:R3.BusMuxIn[16]
+R3out[17] <= register32bit:R3.BusMuxIn[17]
+R3out[18] <= register32bit:R3.BusMuxIn[18]
+R3out[19] <= register32bit:R3.BusMuxIn[19]
+R3out[20] <= register32bit:R3.BusMuxIn[20]
+R3out[21] <= register32bit:R3.BusMuxIn[21]
+R3out[22] <= register32bit:R3.BusMuxIn[22]
+R3out[23] <= register32bit:R3.BusMuxIn[23]
+R3out[24] <= register32bit:R3.BusMuxIn[24]
+R3out[25] <= register32bit:R3.BusMuxIn[25]
+R3out[26] <= register32bit:R3.BusMuxIn[26]
+R3out[27] <= register32bit:R3.BusMuxIn[27]
+R3out[28] <= register32bit:R3.BusMuxIn[28]
+R3out[29] <= register32bit:R3.BusMuxIn[29]
+R3out[30] <= register32bit:R3.BusMuxIn[30]
+R3out[31] <= register32bit:R3.BusMuxIn[31]
+R4out[0] <= register32bit:R4.BusMuxIn[0]
+R4out[1] <= register32bit:R4.BusMuxIn[1]
+R4out[2] <= register32bit:R4.BusMuxIn[2]
+R4out[3] <= register32bit:R4.BusMuxIn[3]
+R4out[4] <= register32bit:R4.BusMuxIn[4]
+R4out[5] <= register32bit:R4.BusMuxIn[5]
+R4out[6] <= register32bit:R4.BusMuxIn[6]
+R4out[7] <= register32bit:R4.BusMuxIn[7]
+R4out[8] <= register32bit:R4.BusMuxIn[8]
+R4out[9] <= register32bit:R4.BusMuxIn[9]
+R4out[10] <= register32bit:R4.BusMuxIn[10]
+R4out[11] <= register32bit:R4.BusMuxIn[11]
+R4out[12] <= register32bit:R4.BusMuxIn[12]
+R4out[13] <= register32bit:R4.BusMuxIn[13]
+R4out[14] <= register32bit:R4.BusMuxIn[14]
+R4out[15] <= register32bit:R4.BusMuxIn[15]
+R4out[16] <= register32bit:R4.BusMuxIn[16]
+R4out[17] <= register32bit:R4.BusMuxIn[17]
+R4out[18] <= register32bit:R4.BusMuxIn[18]
+R4out[19] <= register32bit:R4.BusMuxIn[19]
+R4out[20] <= register32bit:R4.BusMuxIn[20]
+R4out[21] <= register32bit:R4.BusMuxIn[21]
+R4out[22] <= register32bit:R4.BusMuxIn[22]
+R4out[23] <= register32bit:R4.BusMuxIn[23]
+R4out[24] <= register32bit:R4.BusMuxIn[24]
+R4out[25] <= register32bit:R4.BusMuxIn[25]
+R4out[26] <= register32bit:R4.BusMuxIn[26]
+R4out[27] <= register32bit:R4.BusMuxIn[27]
+R4out[28] <= register32bit:R4.BusMuxIn[28]
+R4out[29] <= register32bit:R4.BusMuxIn[29]
+R4out[30] <= register32bit:R4.BusMuxIn[30]
+R4out[31] <= register32bit:R4.BusMuxIn[31]
+R5out[0] <= register32bit:R5.BusMuxIn[0]
+R5out[1] <= register32bit:R5.BusMuxIn[1]
+R5out[2] <= register32bit:R5.BusMuxIn[2]
+R5out[3] <= register32bit:R5.BusMuxIn[3]
+R5out[4] <= register32bit:R5.BusMuxIn[4]
+R5out[5] <= register32bit:R5.BusMuxIn[5]
+R5out[6] <= register32bit:R5.BusMuxIn[6]
+R5out[7] <= register32bit:R5.BusMuxIn[7]
+R5out[8] <= register32bit:R5.BusMuxIn[8]
+R5out[9] <= register32bit:R5.BusMuxIn[9]
+R5out[10] <= register32bit:R5.BusMuxIn[10]
+R5out[11] <= register32bit:R5.BusMuxIn[11]
+R5out[12] <= register32bit:R5.BusMuxIn[12]
+R5out[13] <= register32bit:R5.BusMuxIn[13]
+R5out[14] <= register32bit:R5.BusMuxIn[14]
+R5out[15] <= register32bit:R5.BusMuxIn[15]
+R5out[16] <= register32bit:R5.BusMuxIn[16]
+R5out[17] <= register32bit:R5.BusMuxIn[17]
+R5out[18] <= register32bit:R5.BusMuxIn[18]
+R5out[19] <= register32bit:R5.BusMuxIn[19]
+R5out[20] <= register32bit:R5.BusMuxIn[20]
+R5out[21] <= register32bit:R5.BusMuxIn[21]
+R5out[22] <= register32bit:R5.BusMuxIn[22]
+R5out[23] <= register32bit:R5.BusMuxIn[23]
+R5out[24] <= register32bit:R5.BusMuxIn[24]
+R5out[25] <= register32bit:R5.BusMuxIn[25]
+R5out[26] <= register32bit:R5.BusMuxIn[26]
+R5out[27] <= register32bit:R5.BusMuxIn[27]
+R5out[28] <= register32bit:R5.BusMuxIn[28]
+R5out[29] <= register32bit:R5.BusMuxIn[29]
+R5out[30] <= register32bit:R5.BusMuxIn[30]
+R5out[31] <= register32bit:R5.BusMuxIn[31]
+R6out[0] <= register32bit:R6.BusMuxIn[0]
+R6out[1] <= register32bit:R6.BusMuxIn[1]
+R6out[2] <= register32bit:R6.BusMuxIn[2]
+R6out[3] <= register32bit:R6.BusMuxIn[3]
+R6out[4] <= register32bit:R6.BusMuxIn[4]
+R6out[5] <= register32bit:R6.BusMuxIn[5]
+R6out[6] <= register32bit:R6.BusMuxIn[6]
+R6out[7] <= register32bit:R6.BusMuxIn[7]
+R6out[8] <= register32bit:R6.BusMuxIn[8]
+R6out[9] <= register32bit:R6.BusMuxIn[9]
+R6out[10] <= register32bit:R6.BusMuxIn[10]
+R6out[11] <= register32bit:R6.BusMuxIn[11]
+R6out[12] <= register32bit:R6.BusMuxIn[12]
+R6out[13] <= register32bit:R6.BusMuxIn[13]
+R6out[14] <= register32bit:R6.BusMuxIn[14]
+R6out[15] <= register32bit:R6.BusMuxIn[15]
+R6out[16] <= register32bit:R6.BusMuxIn[16]
+R6out[17] <= register32bit:R6.BusMuxIn[17]
+R6out[18] <= register32bit:R6.BusMuxIn[18]
+R6out[19] <= register32bit:R6.BusMuxIn[19]
+R6out[20] <= register32bit:R6.BusMuxIn[20]
+R6out[21] <= register32bit:R6.BusMuxIn[21]
+R6out[22] <= register32bit:R6.BusMuxIn[22]
+R6out[23] <= register32bit:R6.BusMuxIn[23]
+R6out[24] <= register32bit:R6.BusMuxIn[24]
+R6out[25] <= register32bit:R6.BusMuxIn[25]
+R6out[26] <= register32bit:R6.BusMuxIn[26]
+R6out[27] <= register32bit:R6.BusMuxIn[27]
+R6out[28] <= register32bit:R6.BusMuxIn[28]
+R6out[29] <= register32bit:R6.BusMuxIn[29]
+R6out[30] <= register32bit:R6.BusMuxIn[30]
+R6out[31] <= register32bit:R6.BusMuxIn[31]
+R7out[0] <= register32bit:R7.BusMuxIn[0]
+R7out[1] <= register32bit:R7.BusMuxIn[1]
+R7out[2] <= register32bit:R7.BusMuxIn[2]
+R7out[3] <= register32bit:R7.BusMuxIn[3]
+R7out[4] <= register32bit:R7.BusMuxIn[4]
+R7out[5] <= register32bit:R7.BusMuxIn[5]
+R7out[6] <= register32bit:R7.BusMuxIn[6]
+R7out[7] <= register32bit:R7.BusMuxIn[7]
+R7out[8] <= register32bit:R7.BusMuxIn[8]
+R7out[9] <= register32bit:R7.BusMuxIn[9]
+R7out[10] <= register32bit:R7.BusMuxIn[10]
+R7out[11] <= register32bit:R7.BusMuxIn[11]
+R7out[12] <= register32bit:R7.BusMuxIn[12]
+R7out[13] <= register32bit:R7.BusMuxIn[13]
+R7out[14] <= register32bit:R7.BusMuxIn[14]
+R7out[15] <= register32bit:R7.BusMuxIn[15]
+R7out[16] <= register32bit:R7.BusMuxIn[16]
+R7out[17] <= register32bit:R7.BusMuxIn[17]
+R7out[18] <= register32bit:R7.BusMuxIn[18]
+R7out[19] <= register32bit:R7.BusMuxIn[19]
+R7out[20] <= register32bit:R7.BusMuxIn[20]
+R7out[21] <= register32bit:R7.BusMuxIn[21]
+R7out[22] <= register32bit:R7.BusMuxIn[22]
+R7out[23] <= register32bit:R7.BusMuxIn[23]
+R7out[24] <= register32bit:R7.BusMuxIn[24]
+R7out[25] <= register32bit:R7.BusMuxIn[25]
+R7out[26] <= register32bit:R7.BusMuxIn[26]
+R7out[27] <= register32bit:R7.BusMuxIn[27]
+R7out[28] <= register32bit:R7.BusMuxIn[28]
+R7out[29] <= register32bit:R7.BusMuxIn[29]
+R7out[30] <= register32bit:R7.BusMuxIn[30]
+R7out[31] <= register32bit:R7.BusMuxIn[31]
+R8out[0] <= register32bit:R8.BusMuxIn[0]
+R8out[1] <= register32bit:R8.BusMuxIn[1]
+R8out[2] <= register32bit:R8.BusMuxIn[2]
+R8out[3] <= register32bit:R8.BusMuxIn[3]
+R8out[4] <= register32bit:R8.BusMuxIn[4]
+R8out[5] <= register32bit:R8.BusMuxIn[5]
+R8out[6] <= register32bit:R8.BusMuxIn[6]
+R8out[7] <= register32bit:R8.BusMuxIn[7]
+R8out[8] <= register32bit:R8.BusMuxIn[8]
+R8out[9] <= register32bit:R8.BusMuxIn[9]
+R8out[10] <= register32bit:R8.BusMuxIn[10]
+R8out[11] <= register32bit:R8.BusMuxIn[11]
+R8out[12] <= register32bit:R8.BusMuxIn[12]
+R8out[13] <= register32bit:R8.BusMuxIn[13]
+R8out[14] <= register32bit:R8.BusMuxIn[14]
+R8out[15] <= register32bit:R8.BusMuxIn[15]
+R8out[16] <= register32bit:R8.BusMuxIn[16]
+R8out[17] <= register32bit:R8.BusMuxIn[17]
+R8out[18] <= register32bit:R8.BusMuxIn[18]
+R8out[19] <= register32bit:R8.BusMuxIn[19]
+R8out[20] <= register32bit:R8.BusMuxIn[20]
+R8out[21] <= register32bit:R8.BusMuxIn[21]
+R8out[22] <= register32bit:R8.BusMuxIn[22]
+R8out[23] <= register32bit:R8.BusMuxIn[23]
+R8out[24] <= register32bit:R8.BusMuxIn[24]
+R8out[25] <= register32bit:R8.BusMuxIn[25]
+R8out[26] <= register32bit:R8.BusMuxIn[26]
+R8out[27] <= register32bit:R8.BusMuxIn[27]
+R8out[28] <= register32bit:R8.BusMuxIn[28]
+R8out[29] <= register32bit:R8.BusMuxIn[29]
+R8out[30] <= register32bit:R8.BusMuxIn[30]
+R8out[31] <= register32bit:R8.BusMuxIn[31]
+R9out[0] <= register32bit:R9.BusMuxIn[0]
+R9out[1] <= register32bit:R9.BusMuxIn[1]
+R9out[2] <= register32bit:R9.BusMuxIn[2]
+R9out[3] <= register32bit:R9.BusMuxIn[3]
+R9out[4] <= register32bit:R9.BusMuxIn[4]
+R9out[5] <= register32bit:R9.BusMuxIn[5]
+R9out[6] <= register32bit:R9.BusMuxIn[6]
+R9out[7] <= register32bit:R9.BusMuxIn[7]
+R9out[8] <= register32bit:R9.BusMuxIn[8]
+R9out[9] <= register32bit:R9.BusMuxIn[9]
+R9out[10] <= register32bit:R9.BusMuxIn[10]
+R9out[11] <= register32bit:R9.BusMuxIn[11]
+R9out[12] <= register32bit:R9.BusMuxIn[12]
+R9out[13] <= register32bit:R9.BusMuxIn[13]
+R9out[14] <= register32bit:R9.BusMuxIn[14]
+R9out[15] <= register32bit:R9.BusMuxIn[15]
+R9out[16] <= register32bit:R9.BusMuxIn[16]
+R9out[17] <= register32bit:R9.BusMuxIn[17]
+R9out[18] <= register32bit:R9.BusMuxIn[18]
+R9out[19] <= register32bit:R9.BusMuxIn[19]
+R9out[20] <= register32bit:R9.BusMuxIn[20]
+R9out[21] <= register32bit:R9.BusMuxIn[21]
+R9out[22] <= register32bit:R9.BusMuxIn[22]
+R9out[23] <= register32bit:R9.BusMuxIn[23]
+R9out[24] <= register32bit:R9.BusMuxIn[24]
+R9out[25] <= register32bit:R9.BusMuxIn[25]
+R9out[26] <= register32bit:R9.BusMuxIn[26]
+R9out[27] <= register32bit:R9.BusMuxIn[27]
+R9out[28] <= register32bit:R9.BusMuxIn[28]
+R9out[29] <= register32bit:R9.BusMuxIn[29]
+R9out[30] <= register32bit:R9.BusMuxIn[30]
+R9out[31] <= register32bit:R9.BusMuxIn[31]
+R10out[0] <= register32bit:R10.BusMuxIn[0]
+R10out[1] <= register32bit:R10.BusMuxIn[1]
+R10out[2] <= register32bit:R10.BusMuxIn[2]
+R10out[3] <= register32bit:R10.BusMuxIn[3]
+R10out[4] <= register32bit:R10.BusMuxIn[4]
+R10out[5] <= register32bit:R10.BusMuxIn[5]
+R10out[6] <= register32bit:R10.BusMuxIn[6]
+R10out[7] <= register32bit:R10.BusMuxIn[7]
+R10out[8] <= register32bit:R10.BusMuxIn[8]
+R10out[9] <= register32bit:R10.BusMuxIn[9]
+R10out[10] <= register32bit:R10.BusMuxIn[10]
+R10out[11] <= register32bit:R10.BusMuxIn[11]
+R10out[12] <= register32bit:R10.BusMuxIn[12]
+R10out[13] <= register32bit:R10.BusMuxIn[13]
+R10out[14] <= register32bit:R10.BusMuxIn[14]
+R10out[15] <= register32bit:R10.BusMuxIn[15]
+R10out[16] <= register32bit:R10.BusMuxIn[16]
+R10out[17] <= register32bit:R10.BusMuxIn[17]
+R10out[18] <= register32bit:R10.BusMuxIn[18]
+R10out[19] <= register32bit:R10.BusMuxIn[19]
+R10out[20] <= register32bit:R10.BusMuxIn[20]
+R10out[21] <= register32bit:R10.BusMuxIn[21]
+R10out[22] <= register32bit:R10.BusMuxIn[22]
+R10out[23] <= register32bit:R10.BusMuxIn[23]
+R10out[24] <= register32bit:R10.BusMuxIn[24]
+R10out[25] <= register32bit:R10.BusMuxIn[25]
+R10out[26] <= register32bit:R10.BusMuxIn[26]
+R10out[27] <= register32bit:R10.BusMuxIn[27]
+R10out[28] <= register32bit:R10.BusMuxIn[28]
+R10out[29] <= register32bit:R10.BusMuxIn[29]
+R10out[30] <= register32bit:R10.BusMuxIn[30]
+R10out[31] <= register32bit:R10.BusMuxIn[31]
+R11out[0] <= register32bit:R11.BusMuxIn[0]
+R11out[1] <= register32bit:R11.BusMuxIn[1]
+R11out[2] <= register32bit:R11.BusMuxIn[2]
+R11out[3] <= register32bit:R11.BusMuxIn[3]
+R11out[4] <= register32bit:R11.BusMuxIn[4]
+R11out[5] <= register32bit:R11.BusMuxIn[5]
+R11out[6] <= register32bit:R11.BusMuxIn[6]
+R11out[7] <= register32bit:R11.BusMuxIn[7]
+R11out[8] <= register32bit:R11.BusMuxIn[8]
+R11out[9] <= register32bit:R11.BusMuxIn[9]
+R11out[10] <= register32bit:R11.BusMuxIn[10]
+R11out[11] <= register32bit:R11.BusMuxIn[11]
+R11out[12] <= register32bit:R11.BusMuxIn[12]
+R11out[13] <= register32bit:R11.BusMuxIn[13]
+R11out[14] <= register32bit:R11.BusMuxIn[14]
+R11out[15] <= register32bit:R11.BusMuxIn[15]
+R11out[16] <= register32bit:R11.BusMuxIn[16]
+R11out[17] <= register32bit:R11.BusMuxIn[17]
+R11out[18] <= register32bit:R11.BusMuxIn[18]
+R11out[19] <= register32bit:R11.BusMuxIn[19]
+R11out[20] <= register32bit:R11.BusMuxIn[20]
+R11out[21] <= register32bit:R11.BusMuxIn[21]
+R11out[22] <= register32bit:R11.BusMuxIn[22]
+R11out[23] <= register32bit:R11.BusMuxIn[23]
+R11out[24] <= register32bit:R11.BusMuxIn[24]
+R11out[25] <= register32bit:R11.BusMuxIn[25]
+R11out[26] <= register32bit:R11.BusMuxIn[26]
+R11out[27] <= register32bit:R11.BusMuxIn[27]
+R11out[28] <= register32bit:R11.BusMuxIn[28]
+R11out[29] <= register32bit:R11.BusMuxIn[29]
+R11out[30] <= register32bit:R11.BusMuxIn[30]
+R11out[31] <= register32bit:R11.BusMuxIn[31]
+R12out[0] <= register32bit:R12.BusMuxIn[0]
+R12out[1] <= register32bit:R12.BusMuxIn[1]
+R12out[2] <= register32bit:R12.BusMuxIn[2]
+R12out[3] <= register32bit:R12.BusMuxIn[3]
+R12out[4] <= register32bit:R12.BusMuxIn[4]
+R12out[5] <= register32bit:R12.BusMuxIn[5]
+R12out[6] <= register32bit:R12.BusMuxIn[6]
+R12out[7] <= register32bit:R12.BusMuxIn[7]
+R12out[8] <= register32bit:R12.BusMuxIn[8]
+R12out[9] <= register32bit:R12.BusMuxIn[9]
+R12out[10] <= register32bit:R12.BusMuxIn[10]
+R12out[11] <= register32bit:R12.BusMuxIn[11]
+R12out[12] <= register32bit:R12.BusMuxIn[12]
+R12out[13] <= register32bit:R12.BusMuxIn[13]
+R12out[14] <= register32bit:R12.BusMuxIn[14]
+R12out[15] <= register32bit:R12.BusMuxIn[15]
+R12out[16] <= register32bit:R12.BusMuxIn[16]
+R12out[17] <= register32bit:R12.BusMuxIn[17]
+R12out[18] <= register32bit:R12.BusMuxIn[18]
+R12out[19] <= register32bit:R12.BusMuxIn[19]
+R12out[20] <= register32bit:R12.BusMuxIn[20]
+R12out[21] <= register32bit:R12.BusMuxIn[21]
+R12out[22] <= register32bit:R12.BusMuxIn[22]
+R12out[23] <= register32bit:R12.BusMuxIn[23]
+R12out[24] <= register32bit:R12.BusMuxIn[24]
+R12out[25] <= register32bit:R12.BusMuxIn[25]
+R12out[26] <= register32bit:R12.BusMuxIn[26]
+R12out[27] <= register32bit:R12.BusMuxIn[27]
+R12out[28] <= register32bit:R12.BusMuxIn[28]
+R12out[29] <= register32bit:R12.BusMuxIn[29]
+R12out[30] <= register32bit:R12.BusMuxIn[30]
+R12out[31] <= register32bit:R12.BusMuxIn[31]
+R13out[0] <= register32bit:R13.BusMuxIn[0]
+R13out[1] <= register32bit:R13.BusMuxIn[1]
+R13out[2] <= register32bit:R13.BusMuxIn[2]
+R13out[3] <= register32bit:R13.BusMuxIn[3]
+R13out[4] <= register32bit:R13.BusMuxIn[4]
+R13out[5] <= register32bit:R13.BusMuxIn[5]
+R13out[6] <= register32bit:R13.BusMuxIn[6]
+R13out[7] <= register32bit:R13.BusMuxIn[7]
+R13out[8] <= register32bit:R13.BusMuxIn[8]
+R13out[9] <= register32bit:R13.BusMuxIn[9]
+R13out[10] <= register32bit:R13.BusMuxIn[10]
+R13out[11] <= register32bit:R13.BusMuxIn[11]
+R13out[12] <= register32bit:R13.BusMuxIn[12]
+R13out[13] <= register32bit:R13.BusMuxIn[13]
+R13out[14] <= register32bit:R13.BusMuxIn[14]
+R13out[15] <= register32bit:R13.BusMuxIn[15]
+R13out[16] <= register32bit:R13.BusMuxIn[16]
+R13out[17] <= register32bit:R13.BusMuxIn[17]
+R13out[18] <= register32bit:R13.BusMuxIn[18]
+R13out[19] <= register32bit:R13.BusMuxIn[19]
+R13out[20] <= register32bit:R13.BusMuxIn[20]
+R13out[21] <= register32bit:R13.BusMuxIn[21]
+R13out[22] <= register32bit:R13.BusMuxIn[22]
+R13out[23] <= register32bit:R13.BusMuxIn[23]
+R13out[24] <= register32bit:R13.BusMuxIn[24]
+R13out[25] <= register32bit:R13.BusMuxIn[25]
+R13out[26] <= register32bit:R13.BusMuxIn[26]
+R13out[27] <= register32bit:R13.BusMuxIn[27]
+R13out[28] <= register32bit:R13.BusMuxIn[28]
+R13out[29] <= register32bit:R13.BusMuxIn[29]
+R13out[30] <= register32bit:R13.BusMuxIn[30]
+R13out[31] <= register32bit:R13.BusMuxIn[31]
+R14out[0] <= register32bit:R14.BusMuxIn[0]
+R14out[1] <= register32bit:R14.BusMuxIn[1]
+R14out[2] <= register32bit:R14.BusMuxIn[2]
+R14out[3] <= register32bit:R14.BusMuxIn[3]
+R14out[4] <= register32bit:R14.BusMuxIn[4]
+R14out[5] <= register32bit:R14.BusMuxIn[5]
+R14out[6] <= register32bit:R14.BusMuxIn[6]
+R14out[7] <= register32bit:R14.BusMuxIn[7]
+R14out[8] <= register32bit:R14.BusMuxIn[8]
+R14out[9] <= register32bit:R14.BusMuxIn[9]
+R14out[10] <= register32bit:R14.BusMuxIn[10]
+R14out[11] <= register32bit:R14.BusMuxIn[11]
+R14out[12] <= register32bit:R14.BusMuxIn[12]
+R14out[13] <= register32bit:R14.BusMuxIn[13]
+R14out[14] <= register32bit:R14.BusMuxIn[14]
+R14out[15] <= register32bit:R14.BusMuxIn[15]
+R14out[16] <= register32bit:R14.BusMuxIn[16]
+R14out[17] <= register32bit:R14.BusMuxIn[17]
+R14out[18] <= register32bit:R14.BusMuxIn[18]
+R14out[19] <= register32bit:R14.BusMuxIn[19]
+R14out[20] <= register32bit:R14.BusMuxIn[20]
+R14out[21] <= register32bit:R14.BusMuxIn[21]
+R14out[22] <= register32bit:R14.BusMuxIn[22]
+R14out[23] <= register32bit:R14.BusMuxIn[23]
+R14out[24] <= register32bit:R14.BusMuxIn[24]
+R14out[25] <= register32bit:R14.BusMuxIn[25]
+R14out[26] <= register32bit:R14.BusMuxIn[26]
+R14out[27] <= register32bit:R14.BusMuxIn[27]
+R14out[28] <= register32bit:R14.BusMuxIn[28]
+R14out[29] <= register32bit:R14.BusMuxIn[29]
+R14out[30] <= register32bit:R14.BusMuxIn[30]
+R14out[31] <= register32bit:R14.BusMuxIn[31]
+R15out[0] <= register32bit:R15.BusMuxIn[0]
+R15out[1] <= register32bit:R15.BusMuxIn[1]
+R15out[2] <= register32bit:R15.BusMuxIn[2]
+R15out[3] <= register32bit:R15.BusMuxIn[3]
+R15out[4] <= register32bit:R15.BusMuxIn[4]
+R15out[5] <= register32bit:R15.BusMuxIn[5]
+R15out[6] <= register32bit:R15.BusMuxIn[6]
+R15out[7] <= register32bit:R15.BusMuxIn[7]
+R15out[8] <= register32bit:R15.BusMuxIn[8]
+R15out[9] <= register32bit:R15.BusMuxIn[9]
+R15out[10] <= register32bit:R15.BusMuxIn[10]
+R15out[11] <= register32bit:R15.BusMuxIn[11]
+R15out[12] <= register32bit:R15.BusMuxIn[12]
+R15out[13] <= register32bit:R15.BusMuxIn[13]
+R15out[14] <= register32bit:R15.BusMuxIn[14]
+R15out[15] <= register32bit:R15.BusMuxIn[15]
+R15out[16] <= register32bit:R15.BusMuxIn[16]
+R15out[17] <= register32bit:R15.BusMuxIn[17]
+R15out[18] <= register32bit:R15.BusMuxIn[18]
+R15out[19] <= register32bit:R15.BusMuxIn[19]
+R15out[20] <= register32bit:R15.BusMuxIn[20]
+R15out[21] <= register32bit:R15.BusMuxIn[21]
+R15out[22] <= register32bit:R15.BusMuxIn[22]
+R15out[23] <= register32bit:R15.BusMuxIn[23]
+R15out[24] <= register32bit:R15.BusMuxIn[24]
+R15out[25] <= register32bit:R15.BusMuxIn[25]
+R15out[26] <= register32bit:R15.BusMuxIn[26]
+R15out[27] <= register32bit:R15.BusMuxIn[27]
+R15out[28] <= register32bit:R15.BusMuxIn[28]
+R15out[29] <= register32bit:R15.BusMuxIn[29]
+R15out[30] <= register32bit:R15.BusMuxIn[30]
+R15out[31] <= register32bit:R15.BusMuxIn[31]
+BusMuxOut[0] <= P1_bus:datapathBus.BusMuxOut[0]
+BusMuxOut[1] <= P1_bus:datapathBus.BusMuxOut[1]
+BusMuxOut[2] <= P1_bus:datapathBus.BusMuxOut[2]
+BusMuxOut[3] <= P1_bus:datapathBus.BusMuxOut[3]
+BusMuxOut[4] <= P1_bus:datapathBus.BusMuxOut[4]
+BusMuxOut[5] <= P1_bus:datapathBus.BusMuxOut[5]
+BusMuxOut[6] <= P1_bus:datapathBus.BusMuxOut[6]
+BusMuxOut[7] <= P1_bus:datapathBus.BusMuxOut[7]
+BusMuxOut[8] <= P1_bus:datapathBus.BusMuxOut[8]
+BusMuxOut[9] <= P1_bus:datapathBus.BusMuxOut[9]
+BusMuxOut[10] <= P1_bus:datapathBus.BusMuxOut[10]
+BusMuxOut[11] <= P1_bus:datapathBus.BusMuxOut[11]
+BusMuxOut[12] <= P1_bus:datapathBus.BusMuxOut[12]
+BusMuxOut[13] <= P1_bus:datapathBus.BusMuxOut[13]
+BusMuxOut[14] <= P1_bus:datapathBus.BusMuxOut[14]
+BusMuxOut[15] <= P1_bus:datapathBus.BusMuxOut[15]
+BusMuxOut[16] <= P1_bus:datapathBus.BusMuxOut[16]
+BusMuxOut[17] <= P1_bus:datapathBus.BusMuxOut[17]
+BusMuxOut[18] <= P1_bus:datapathBus.BusMuxOut[18]
+BusMuxOut[19] <= P1_bus:datapathBus.BusMuxOut[19]
+BusMuxOut[20] <= P1_bus:datapathBus.BusMuxOut[20]
+BusMuxOut[21] <= P1_bus:datapathBus.BusMuxOut[21]
+BusMuxOut[22] <= P1_bus:datapathBus.BusMuxOut[22]
+BusMuxOut[23] <= P1_bus:datapathBus.BusMuxOut[23]
+BusMuxOut[24] <= P1_bus:datapathBus.BusMuxOut[24]
+BusMuxOut[25] <= P1_bus:datapathBus.BusMuxOut[25]
+BusMuxOut[26] <= P1_bus:datapathBus.BusMuxOut[26]
+BusMuxOut[27] <= P1_bus:datapathBus.BusMuxOut[27]
+BusMuxOut[28] <= P1_bus:datapathBus.BusMuxOut[28]
+BusMuxOut[29] <= P1_bus:datapathBus.BusMuxOut[29]
+BusMuxOut[30] <= P1_bus:datapathBus.BusMuxOut[30]
+BusMuxOut[31] <= P1_bus:datapathBus.BusMuxOut[31]
+MAR_out[0] <= register32bit:MAR.BusMuxIn[0]
+MAR_out[1] <= register32bit:MAR.BusMuxIn[1]
+MAR_out[2] <= register32bit:MAR.BusMuxIn[2]
+MAR_out[3] <= register32bit:MAR.BusMuxIn[3]
+MAR_out[4] <= register32bit:MAR.BusMuxIn[4]
+MAR_out[5] <= register32bit:MAR.BusMuxIn[5]
+MAR_out[6] <= register32bit:MAR.BusMuxIn[6]
+MAR_out[7] <= register32bit:MAR.BusMuxIn[7]
+MAR_out[8] <= register32bit:MAR.BusMuxIn[8]
+MAR_out[9] <= register32bit:MAR.BusMuxIn[9]
+MAR_out[10] <= register32bit:MAR.BusMuxIn[10]
+MAR_out[11] <= register32bit:MAR.BusMuxIn[11]
+MAR_out[12] <= register32bit:MAR.BusMuxIn[12]
+MAR_out[13] <= register32bit:MAR.BusMuxIn[13]
+MAR_out[14] <= register32bit:MAR.BusMuxIn[14]
+MAR_out[15] <= register32bit:MAR.BusMuxIn[15]
+MAR_out[16] <= register32bit:MAR.BusMuxIn[16]
+MAR_out[17] <= register32bit:MAR.BusMuxIn[17]
+MAR_out[18] <= register32bit:MAR.BusMuxIn[18]
+MAR_out[19] <= register32bit:MAR.BusMuxIn[19]
+MAR_out[20] <= register32bit:MAR.BusMuxIn[20]
+MAR_out[21] <= register32bit:MAR.BusMuxIn[21]
+MAR_out[22] <= register32bit:MAR.BusMuxIn[22]
+MAR_out[23] <= register32bit:MAR.BusMuxIn[23]
+MAR_out[24] <= register32bit:MAR.BusMuxIn[24]
+MAR_out[25] <= register32bit:MAR.BusMuxIn[25]
+MAR_out[26] <= register32bit:MAR.BusMuxIn[26]
+MAR_out[27] <= register32bit:MAR.BusMuxIn[27]
+MAR_out[28] <= register32bit:MAR.BusMuxIn[28]
+MAR_out[29] <= register32bit:MAR.BusMuxIn[29]
+MAR_out[30] <= register32bit:MAR.BusMuxIn[30]
+MAR_out[31] <= register32bit:MAR.BusMuxIn[31]
+MDR_out[0] <= MDR:MDR_register.MDR_out[0]
+MDR_out[1] <= MDR:MDR_register.MDR_out[1]
+MDR_out[2] <= MDR:MDR_register.MDR_out[2]
+MDR_out[3] <= MDR:MDR_register.MDR_out[3]
+MDR_out[4] <= MDR:MDR_register.MDR_out[4]
+MDR_out[5] <= MDR:MDR_register.MDR_out[5]
+MDR_out[6] <= MDR:MDR_register.MDR_out[6]
+MDR_out[7] <= MDR:MDR_register.MDR_out[7]
+MDR_out[8] <= MDR:MDR_register.MDR_out[8]
+MDR_out[9] <= MDR:MDR_register.MDR_out[9]
+MDR_out[10] <= MDR:MDR_register.MDR_out[10]
+MDR_out[11] <= MDR:MDR_register.MDR_out[11]
+MDR_out[12] <= MDR:MDR_register.MDR_out[12]
+MDR_out[13] <= MDR:MDR_register.MDR_out[13]
+MDR_out[14] <= MDR:MDR_register.MDR_out[14]
+MDR_out[15] <= MDR:MDR_register.MDR_out[15]
+MDR_out[16] <= MDR:MDR_register.MDR_out[16]
+MDR_out[17] <= MDR:MDR_register.MDR_out[17]
+MDR_out[18] <= MDR:MDR_register.MDR_out[18]
+MDR_out[19] <= MDR:MDR_register.MDR_out[19]
+MDR_out[20] <= MDR:MDR_register.MDR_out[20]
+MDR_out[21] <= MDR:MDR_register.MDR_out[21]
+MDR_out[22] <= MDR:MDR_register.MDR_out[22]
+MDR_out[23] <= MDR:MDR_register.MDR_out[23]
+MDR_out[24] <= MDR:MDR_register.MDR_out[24]
+MDR_out[25] <= MDR:MDR_register.MDR_out[25]
+MDR_out[26] <= MDR:MDR_register.MDR_out[26]
+MDR_out[27] <= MDR:MDR_register.MDR_out[27]
+MDR_out[28] <= MDR:MDR_register.MDR_out[28]
+MDR_out[29] <= MDR:MDR_register.MDR_out[29]
+MDR_out[30] <= MDR:MDR_register.MDR_out[30]
+MDR_out[31] <= MDR:MDR_register.MDR_out[31]
+PCout[0] <= register32bit:PC.BusMuxIn[0]
+PCout[1] <= register32bit:PC.BusMuxIn[1]
+PCout[2] <= register32bit:PC.BusMuxIn[2]
+PCout[3] <= register32bit:PC.BusMuxIn[3]
+PCout[4] <= register32bit:PC.BusMuxIn[4]
+PCout[5] <= register32bit:PC.BusMuxIn[5]
+PCout[6] <= register32bit:PC.BusMuxIn[6]
+PCout[7] <= register32bit:PC.BusMuxIn[7]
+PCout[8] <= register32bit:PC.BusMuxIn[8]
+PCout[9] <= register32bit:PC.BusMuxIn[9]
+PCout[10] <= register32bit:PC.BusMuxIn[10]
+PCout[11] <= register32bit:PC.BusMuxIn[11]
+PCout[12] <= register32bit:PC.BusMuxIn[12]
+PCout[13] <= register32bit:PC.BusMuxIn[13]
+PCout[14] <= register32bit:PC.BusMuxIn[14]
+PCout[15] <= register32bit:PC.BusMuxIn[15]
+PCout[16] <= register32bit:PC.BusMuxIn[16]
+PCout[17] <= register32bit:PC.BusMuxIn[17]
+PCout[18] <= register32bit:PC.BusMuxIn[18]
+PCout[19] <= register32bit:PC.BusMuxIn[19]
+PCout[20] <= register32bit:PC.BusMuxIn[20]
+PCout[21] <= register32bit:PC.BusMuxIn[21]
+PCout[22] <= register32bit:PC.BusMuxIn[22]
+PCout[23] <= register32bit:PC.BusMuxIn[23]
+PCout[24] <= register32bit:PC.BusMuxIn[24]
+PCout[25] <= register32bit:PC.BusMuxIn[25]
+PCout[26] <= register32bit:PC.BusMuxIn[26]
+PCout[27] <= register32bit:PC.BusMuxIn[27]
+PCout[28] <= register32bit:PC.BusMuxIn[28]
+PCout[29] <= register32bit:PC.BusMuxIn[29]
+PCout[30] <= register32bit:PC.BusMuxIn[30]
+PCout[31] <= register32bit:PC.BusMuxIn[31]
+HIout[0] <= register32bit:HI.BusMuxIn[0]
+HIout[1] <= register32bit:HI.BusMuxIn[1]
+HIout[2] <= register32bit:HI.BusMuxIn[2]
+HIout[3] <= register32bit:HI.BusMuxIn[3]
+HIout[4] <= register32bit:HI.BusMuxIn[4]
+HIout[5] <= register32bit:HI.BusMuxIn[5]
+HIout[6] <= register32bit:HI.BusMuxIn[6]
+HIout[7] <= register32bit:HI.BusMuxIn[7]
+HIout[8] <= register32bit:HI.BusMuxIn[8]
+HIout[9] <= register32bit:HI.BusMuxIn[9]
+HIout[10] <= register32bit:HI.BusMuxIn[10]
+HIout[11] <= register32bit:HI.BusMuxIn[11]
+HIout[12] <= register32bit:HI.BusMuxIn[12]
+HIout[13] <= register32bit:HI.BusMuxIn[13]
+HIout[14] <= register32bit:HI.BusMuxIn[14]
+HIout[15] <= register32bit:HI.BusMuxIn[15]
+HIout[16] <= register32bit:HI.BusMuxIn[16]
+HIout[17] <= register32bit:HI.BusMuxIn[17]
+HIout[18] <= register32bit:HI.BusMuxIn[18]
+HIout[19] <= register32bit:HI.BusMuxIn[19]
+HIout[20] <= register32bit:HI.BusMuxIn[20]
+HIout[21] <= register32bit:HI.BusMuxIn[21]
+HIout[22] <= register32bit:HI.BusMuxIn[22]
+HIout[23] <= register32bit:HI.BusMuxIn[23]
+HIout[24] <= register32bit:HI.BusMuxIn[24]
+HIout[25] <= register32bit:HI.BusMuxIn[25]
+HIout[26] <= register32bit:HI.BusMuxIn[26]
+HIout[27] <= register32bit:HI.BusMuxIn[27]
+HIout[28] <= register32bit:HI.BusMuxIn[28]
+HIout[29] <= register32bit:HI.BusMuxIn[29]
+HIout[30] <= register32bit:HI.BusMuxIn[30]
+HIout[31] <= register32bit:HI.BusMuxIn[31]
+LOout[0] <= register32bit:LO.BusMuxIn[0]
+LOout[1] <= register32bit:LO.BusMuxIn[1]
+LOout[2] <= register32bit:LO.BusMuxIn[2]
+LOout[3] <= register32bit:LO.BusMuxIn[3]
+LOout[4] <= register32bit:LO.BusMuxIn[4]
+LOout[5] <= register32bit:LO.BusMuxIn[5]
+LOout[6] <= register32bit:LO.BusMuxIn[6]
+LOout[7] <= register32bit:LO.BusMuxIn[7]
+LOout[8] <= register32bit:LO.BusMuxIn[8]
+LOout[9] <= register32bit:LO.BusMuxIn[9]
+LOout[10] <= register32bit:LO.BusMuxIn[10]
+LOout[11] <= register32bit:LO.BusMuxIn[11]
+LOout[12] <= register32bit:LO.BusMuxIn[12]
+LOout[13] <= register32bit:LO.BusMuxIn[13]
+LOout[14] <= register32bit:LO.BusMuxIn[14]
+LOout[15] <= register32bit:LO.BusMuxIn[15]
+LOout[16] <= register32bit:LO.BusMuxIn[16]
+LOout[17] <= register32bit:LO.BusMuxIn[17]
+LOout[18] <= register32bit:LO.BusMuxIn[18]
+LOout[19] <= register32bit:LO.BusMuxIn[19]
+LOout[20] <= register32bit:LO.BusMuxIn[20]
+LOout[21] <= register32bit:LO.BusMuxIn[21]
+LOout[22] <= register32bit:LO.BusMuxIn[22]
+LOout[23] <= register32bit:LO.BusMuxIn[23]
+LOout[24] <= register32bit:LO.BusMuxIn[24]
+LOout[25] <= register32bit:LO.BusMuxIn[25]
+LOout[26] <= register32bit:LO.BusMuxIn[26]
+LOout[27] <= register32bit:LO.BusMuxIn[27]
+LOout[28] <= register32bit:LO.BusMuxIn[28]
+LOout[29] <= register32bit:LO.BusMuxIn[29]
+LOout[30] <= register32bit:LO.BusMuxIn[30]
+LOout[31] <= register32bit:LO.BusMuxIn[31]
+IRout[0] <= register32bit:IR.BusMuxIn[0]
+IRout[1] <= register32bit:IR.BusMuxIn[1]
+IRout[2] <= register32bit:IR.BusMuxIn[2]
+IRout[3] <= register32bit:IR.BusMuxIn[3]
+IRout[4] <= register32bit:IR.BusMuxIn[4]
+IRout[5] <= register32bit:IR.BusMuxIn[5]
+IRout[6] <= register32bit:IR.BusMuxIn[6]
+IRout[7] <= register32bit:IR.BusMuxIn[7]
+IRout[8] <= register32bit:IR.BusMuxIn[8]
+IRout[9] <= register32bit:IR.BusMuxIn[9]
+IRout[10] <= register32bit:IR.BusMuxIn[10]
+IRout[11] <= register32bit:IR.BusMuxIn[11]
+IRout[12] <= register32bit:IR.BusMuxIn[12]
+IRout[13] <= register32bit:IR.BusMuxIn[13]
+IRout[14] <= register32bit:IR.BusMuxIn[14]
+IRout[15] <= register32bit:IR.BusMuxIn[15]
+IRout[16] <= register32bit:IR.BusMuxIn[16]
+IRout[17] <= register32bit:IR.BusMuxIn[17]
+IRout[18] <= register32bit:IR.BusMuxIn[18]
+IRout[19] <= register32bit:IR.BusMuxIn[19]
+IRout[20] <= register32bit:IR.BusMuxIn[20]
+IRout[21] <= register32bit:IR.BusMuxIn[21]
+IRout[22] <= register32bit:IR.BusMuxIn[22]
+IRout[23] <= register32bit:IR.BusMuxIn[23]
+IRout[24] <= register32bit:IR.BusMuxIn[24]
+IRout[25] <= register32bit:IR.BusMuxIn[25]
+IRout[26] <= register32bit:IR.BusMuxIn[26]
+IRout[27] <= register32bit:IR.BusMuxIn[27]
+IRout[28] <= register32bit:IR.BusMuxIn[28]
+IRout[29] <= register32bit:IR.BusMuxIn[29]
+IRout[30] <= register32bit:IR.BusMuxIn[30]
+IRout[31] <= register32bit:IR.BusMuxIn[31]
+Zout[0] <= alu_path:alu_datapath.Zlow[0]
+Zout[1] <= alu_path:alu_datapath.Zlow[1]
+Zout[2] <= alu_path:alu_datapath.Zlow[2]
+Zout[3] <= alu_path:alu_datapath.Zlow[3]
+Zout[4] <= alu_path:alu_datapath.Zlow[4]
+Zout[5] <= alu_path:alu_datapath.Zlow[5]
+Zout[6] <= alu_path:alu_datapath.Zlow[6]
+Zout[7] <= alu_path:alu_datapath.Zlow[7]
+Zout[8] <= alu_path:alu_datapath.Zlow[8]
+Zout[9] <= alu_path:alu_datapath.Zlow[9]
+Zout[10] <= alu_path:alu_datapath.Zlow[10]
+Zout[11] <= alu_path:alu_datapath.Zlow[11]
+Zout[12] <= alu_path:alu_datapath.Zlow[12]
+Zout[13] <= alu_path:alu_datapath.Zlow[13]
+Zout[14] <= alu_path:alu_datapath.Zlow[14]
+Zout[15] <= alu_path:alu_datapath.Zlow[15]
+Zout[16] <= alu_path:alu_datapath.Zlow[16]
+Zout[17] <= alu_path:alu_datapath.Zlow[17]
+Zout[18] <= alu_path:alu_datapath.Zlow[18]
+Zout[19] <= alu_path:alu_datapath.Zlow[19]
+Zout[20] <= alu_path:alu_datapath.Zlow[20]
+Zout[21] <= alu_path:alu_datapath.Zlow[21]
+Zout[22] <= alu_path:alu_datapath.Zlow[22]
+Zout[23] <= alu_path:alu_datapath.Zlow[23]
+Zout[24] <= alu_path:alu_datapath.Zlow[24]
+Zout[25] <= alu_path:alu_datapath.Zlow[25]
+Zout[26] <= alu_path:alu_datapath.Zlow[26]
+Zout[27] <= alu_path:alu_datapath.Zlow[27]
+Zout[28] <= alu_path:alu_datapath.Zlow[28]
+Zout[29] <= alu_path:alu_datapath.Zlow[29]
+Zout[30] <= alu_path:alu_datapath.Zlow[30]
+Zout[31] <= alu_path:alu_datapath.Zlow[31]
+Zout[32] <= alu_path:alu_datapath.Zhigh[0]
+Zout[33] <= alu_path:alu_datapath.Zhigh[1]
+Zout[34] <= alu_path:alu_datapath.Zhigh[2]
+Zout[35] <= alu_path:alu_datapath.Zhigh[3]
+Zout[36] <= alu_path:alu_datapath.Zhigh[4]
+Zout[37] <= alu_path:alu_datapath.Zhigh[5]
+Zout[38] <= alu_path:alu_datapath.Zhigh[6]
+Zout[39] <= alu_path:alu_datapath.Zhigh[7]
+Zout[40] <= alu_path:alu_datapath.Zhigh[8]
+Zout[41] <= alu_path:alu_datapath.Zhigh[9]
+Zout[42] <= alu_path:alu_datapath.Zhigh[10]
+Zout[43] <= alu_path:alu_datapath.Zhigh[11]
+Zout[44] <= alu_path:alu_datapath.Zhigh[12]
+Zout[45] <= alu_path:alu_datapath.Zhigh[13]
+Zout[46] <= alu_path:alu_datapath.Zhigh[14]
+Zout[47] <= alu_path:alu_datapath.Zhigh[15]
+Zout[48] <= alu_path:alu_datapath.Zhigh[16]
+Zout[49] <= alu_path:alu_datapath.Zhigh[17]
+Zout[50] <= alu_path:alu_datapath.Zhigh[18]
+Zout[51] <= alu_path:alu_datapath.Zhigh[19]
+Zout[52] <= alu_path:alu_datapath.Zhigh[20]
+Zout[53] <= alu_path:alu_datapath.Zhigh[21]
+Zout[54] <= alu_path:alu_datapath.Zhigh[22]
+Zout[55] <= alu_path:alu_datapath.Zhigh[23]
+Zout[56] <= alu_path:alu_datapath.Zhigh[24]
+Zout[57] <= alu_path:alu_datapath.Zhigh[25]
+Zout[58] <= alu_path:alu_datapath.Zhigh[26]
+Zout[59] <= alu_path:alu_datapath.Zhigh[27]
+Zout[60] <= alu_path:alu_datapath.Zhigh[28]
+Zout[61] <= alu_path:alu_datapath.Zhigh[29]
+Zout[62] <= alu_path:alu_datapath.Zhigh[30]
+Zout[63] <= alu_path:alu_datapath.Zhigh[31]
+ram_pop[0] <= ram_function_512x32:Ram.q[0]
+ram_pop[1] <= ram_function_512x32:Ram.q[1]
+ram_pop[2] <= ram_function_512x32:Ram.q[2]
+ram_pop[3] <= ram_function_512x32:Ram.q[3]
+ram_pop[4] <= ram_function_512x32:Ram.q[4]
+ram_pop[5] <= ram_function_512x32:Ram.q[5]
+ram_pop[6] <= ram_function_512x32:Ram.q[6]
+ram_pop[7] <= ram_function_512x32:Ram.q[7]
+ram_pop[8] <= ram_function_512x32:Ram.q[8]
+ram_pop[9] <= ram_function_512x32:Ram.q[9]
+ram_pop[10] <= ram_function_512x32:Ram.q[10]
+ram_pop[11] <= ram_function_512x32:Ram.q[11]
+ram_pop[12] <= ram_function_512x32:Ram.q[12]
+ram_pop[13] <= ram_function_512x32:Ram.q[13]
+ram_pop[14] <= ram_function_512x32:Ram.q[14]
+ram_pop[15] <= ram_function_512x32:Ram.q[15]
+ram_pop[16] <= ram_function_512x32:Ram.q[16]
+ram_pop[17] <= ram_function_512x32:Ram.q[17]
+ram_pop[18] <= ram_function_512x32:Ram.q[18]
+ram_pop[19] <= ram_function_512x32:Ram.q[19]
+ram_pop[20] <= ram_function_512x32:Ram.q[20]
+ram_pop[21] <= ram_function_512x32:Ram.q[21]
+ram_pop[22] <= ram_function_512x32:Ram.q[22]
+ram_pop[23] <= ram_function_512x32:Ram.q[23]
+ram_pop[24] <= ram_function_512x32:Ram.q[24]
+ram_pop[25] <= ram_function_512x32:Ram.q[25]
+ram_pop[26] <= ram_function_512x32:Ram.q[26]
+ram_pop[27] <= ram_function_512x32:Ram.q[27]
+ram_pop[28] <= ram_function_512x32:Ram.q[28]
+ram_pop[29] <= ram_function_512x32:Ram.q[29]
+ram_pop[30] <= ram_function_512x32:Ram.q[30]
+ram_pop[31] <= ram_function_512x32:Ram.q[31]
 
 
-|datapath|registerR0:R0
+|DE0_interface|datapath:DE0_map|registerR0:R0
 BusMuxOutR0[0] => q[0].DATAIN
 BusMuxOutR0[1] => q[1].DATAIN
 BusMuxOutR0[2] => q[2].DATAIN
@@ -1156,7 +1308,7 @@ BusMuxInR0[30] <= BusMuxInR0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxInR0[31] <= BusMuxInR0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R1
+|DE0_interface|datapath:DE0_map|register32bit:R1
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -1319,7 +1471,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R2
+|DE0_interface|datapath:DE0_map|register32bit:R2
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -1482,7 +1634,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R3
+|DE0_interface|datapath:DE0_map|register32bit:R3
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -1645,7 +1797,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R4
+|DE0_interface|datapath:DE0_map|register32bit:R4
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -1808,7 +1960,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R5
+|DE0_interface|datapath:DE0_map|register32bit:R5
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -1971,7 +2123,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R6
+|DE0_interface|datapath:DE0_map|register32bit:R6
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -2134,7 +2286,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R7
+|DE0_interface|datapath:DE0_map|register32bit:R7
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -2297,7 +2449,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R8
+|DE0_interface|datapath:DE0_map|register32bit:R8
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -2460,7 +2612,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R9
+|DE0_interface|datapath:DE0_map|register32bit:R9
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -2623,7 +2775,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R10
+|DE0_interface|datapath:DE0_map|register32bit:R10
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -2786,7 +2938,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R11
+|DE0_interface|datapath:DE0_map|register32bit:R11
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -2949,7 +3101,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R12
+|DE0_interface|datapath:DE0_map|register32bit:R12
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -3112,7 +3264,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R13
+|DE0_interface|datapath:DE0_map|register32bit:R13
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -3275,7 +3427,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R14
+|DE0_interface|datapath:DE0_map|register32bit:R14
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -3438,7 +3590,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:R15
+|DE0_interface|datapath:DE0_map|register32bit:R15
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -3601,7 +3753,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:HI
+|DE0_interface|datapath:DE0_map|register32bit:HI
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -3764,7 +3916,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:LO
+|DE0_interface|datapath:DE0_map|register32bit:LO
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -3927,7 +4079,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:PC
+|DE0_interface|datapath:DE0_map|register32bit:PC
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -4090,7 +4242,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:IR
+|DE0_interface|datapath:DE0_map|register32bit:IR
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -4253,7 +4405,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|MDR:MDR_register
+|DE0_interface|datapath:DE0_map|MDR:MDR_register
 MDMux_read => MDMux_out[31].OUTPUTSELECT
 MDMux_read => MDMux_out[30].OUTPUTSELECT
 MDMux_read => MDMux_out[29].OUTPUTSELECT
@@ -4387,7 +4539,7 @@ MDR_out[30] <= register32bit:MDR_instance.BusMuxIn[30]
 MDR_out[31] <= register32bit:MDR_instance.BusMuxIn[31]
 
 
-|datapath|MDR:MDR_register|register32bit:MDR_instance
+|DE0_interface|datapath:DE0_map|MDR:MDR_register|register32bit:MDR_instance
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -4550,7 +4702,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:MAR
+|DE0_interface|datapath:DE0_map|register32bit:MAR
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -4713,7 +4865,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath
 clk => register32bit:register_Y.clk
 clk => register64bit:register_Z.clk
 clr => register32bit:register_Y.clr
@@ -4952,7 +5104,7 @@ Zhigh[30] <= register64bit:register_Z.BusMuxIn1[30]
 Zhigh[31] <= register64bit:register_Z.BusMuxIn1[31]
 
 
-|datapath|alu_path:alu_datapath|register32bit:register_Y
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|register32bit:register_Y
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -5115,7 +5267,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit
 A[0] => booth_alu:aluMul.mutiplicant[0]
 A[0] => lpm_divide0:aluDiv.numer[0]
 A[0] => lpm_add_sub0:aluAddSub.dataa[0]
@@ -5883,7 +6035,7 @@ C[62] <= C.DB_MAX_OUTPUT_PORT_TYPE
 C[63] <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|booth_alu:aluMul
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|booth_alu:aluMul
 mutiplicant[0] => sum.DATAB
 mutiplicant[0] => Add2.IN124
 mutiplicant[0] => Add3.IN122
@@ -9207,7 +9359,7 @@ result[62] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 result[63] <= sum.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv
 denom[0] => lpm_divide:LPM_DIVIDE_component.denom[0]
 denom[1] => lpm_divide:LPM_DIVIDE_component.denom[1]
 denom[2] => lpm_divide:LPM_DIVIDE_component.denom[2]
@@ -9338,7 +9490,7 @@ remain[30] <= lpm_divide:LPM_DIVIDE_component.remain[30]
 remain[31] <= lpm_divide:LPM_DIVIDE_component.remain[31]
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component
 numer[0] => lpm_divide_hjp:auto_generated.numer[0]
 numer[1] => lpm_divide_hjp:auto_generated.numer[1]
 numer[2] => lpm_divide_hjp:auto_generated.numer[2]
@@ -9472,7 +9624,7 @@ remain[30] <= lpm_divide_hjp:auto_generated.remain[30]
 remain[31] <= lpm_divide_hjp:auto_generated.remain[31]
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component|lpm_divide_hjp:auto_generated
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component|lpm_divide_hjp:auto_generated
 denom[0] => sign_div_unsign_39h:divider.denominator[0]
 denom[1] => sign_div_unsign_39h:divider.denominator[1]
 denom[2] => sign_div_unsign_39h:divider.denominator[2]
@@ -9603,7 +9755,7 @@ remain[30] <= sign_div_unsign_39h:divider.remainder[30]
 remain[31] <= sign_div_unsign_39h:divider.remainder[31]
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component|lpm_divide_hjp:auto_generated|sign_div_unsign_39h:divider
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component|lpm_divide_hjp:auto_generated|sign_div_unsign_39h:divider
 denominator[0] => compl_adder1_dataa[0].IN0
 denominator[0] => den_choice[0].IN0
 denominator[1] => compl_adder1_dataa[1].IN0
@@ -9963,7 +10115,7 @@ remainder[30] <= remainder[30].DB_MAX_OUTPUT_PORT_TYPE
 remainder[31] <= remainder[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component|lpm_divide_hjp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_t8f:divider
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component|lpm_divide_hjp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_t8f:divider
 denominator[0] => add_sub_unc:add_sub_0.datab[0]
 denominator[0] => add_sub_vnc:add_sub_1.datab[0]
 denominator[0] => op_11.IN8
@@ -11645,7 +11797,7 @@ remainder[30] <= StageOut[1022].DB_MAX_OUTPUT_PORT_TYPE
 remainder[31] <= StageOut[1023].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component|lpm_divide_hjp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_t8f:divider|add_sub_unc:add_sub_0
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component|lpm_divide_hjp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_t8f:divider|add_sub_unc:add_sub_0
 cout <= carry_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => carry_eqn[0].IN0
 dataa[0] => _.IN0
@@ -11654,7 +11806,7 @@ datab[0] => datab_node[0].IN0
 result[0] <= sum_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component|lpm_divide_hjp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_t8f:divider|add_sub_vnc:add_sub_1
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component|lpm_divide_hjp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_t8f:divider|add_sub_vnc:add_sub_1
 cout <= carry_eqn[1].DB_MAX_OUTPUT_PORT_TYPE
 dataa[0] => carry_eqn[0].IN0
 dataa[0] => _.IN0
@@ -11668,7 +11820,7 @@ result[0] <= sum_eqn[0].DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= sum_eqn[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|lpm_add_sub0:aluAddSub
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_add_sub0:aluAddSub
 add_sub => lpm_add_sub:LPM_ADD_SUB_component.add_sub
 dataa[0] => lpm_add_sub:LPM_ADD_SUB_component.dataa[0]
 dataa[1] => lpm_add_sub:LPM_ADD_SUB_component.dataa[1]
@@ -11769,7 +11921,7 @@ result[30] <= lpm_add_sub:LPM_ADD_SUB_component.result[30]
 result[31] <= lpm_add_sub:LPM_ADD_SUB_component.result[31]
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|lpm_add_sub0:aluAddSub|lpm_add_sub:LPM_ADD_SUB_component
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_add_sub0:aluAddSub|lpm_add_sub:LPM_ADD_SUB_component
 dataa[0] => add_sub_ich:auto_generated.dataa[0]
 dataa[1] => add_sub_ich:auto_generated.dataa[1]
 dataa[2] => add_sub_ich:auto_generated.dataa[2]
@@ -11875,7 +12027,7 @@ cout <= <GND>
 overflow <= add_sub_ich:auto_generated.overflow
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|lpm_add_sub0:aluAddSub|lpm_add_sub:LPM_ADD_SUB_component|add_sub_ich:auto_generated
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_add_sub0:aluAddSub|lpm_add_sub:LPM_ADD_SUB_component|add_sub_ich:auto_generated
 add_sub => _.IN0
 add_sub => _.IN0
 add_sub => _.IN0
@@ -11982,7 +12134,7 @@ result[30] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= op_1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|shiftleft32:aluShl
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|shiftleft32:aluShl
 data[0] => ShiftLeft0.IN32
 data[1] => ShiftLeft0.IN31
 data[2] => ShiftLeft0.IN30
@@ -12081,7 +12233,7 @@ output[30] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 output[31] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|shiftright32:aluShr
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|shiftright32:aluShr
 data[0] => ShiftRight0.IN32
 data[1] => ShiftRight0.IN31
 data[2] => ShiftRight0.IN30
@@ -12180,7 +12332,7 @@ output[30] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 output[31] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|negate32:aluNeg
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|negate32:aluNeg
 data[0] => Add0.IN64
 data[1] => Add0.IN63
 data[2] => Add0.IN62
@@ -12247,7 +12399,7 @@ output[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 output[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|not32:aluNot
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|not32:aluNot
 data[0] => output[0].DATAIN
 data[1] => output[1].DATAIN
 data[2] => output[2].DATAIN
@@ -12314,7 +12466,7 @@ output[30] <= data[30].DB_MAX_OUTPUT_PORT_TYPE
 output[31] <= data[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|or32:aluOr
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|or32:aluOr
 data0[0] => output.IN0
 data0[1] => output.IN0
 data0[2] => output.IN0
@@ -12413,7 +12565,7 @@ output[30] <= output.DB_MAX_OUTPUT_PORT_TYPE
 output[31] <= output.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|and32:aluAnd
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|and32:aluAnd
 data0[0] => output.IN0
 data0[1] => output.IN0
 data0[2] => output.IN0
@@ -12512,7 +12664,7 @@ output[30] <= output.DB_MAX_OUTPUT_PORT_TYPE
 output[31] <= output.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|rotateleft32:aluRol
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|rotateleft32:aluRol
 data[0] => RotateLeft0.IN31
 data[1] => RotateLeft0.IN30
 data[2] => RotateLeft0.IN29
@@ -12611,7 +12763,7 @@ output[30] <= RotateLeft0.DB_MAX_OUTPUT_PORT_TYPE
 output[31] <= RotateLeft0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|alu:alu_unit|rotateright32:aluRor
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|rotateright32:aluRor
 data[0] => RotateRight0.IN31
 data[1] => RotateRight0.IN30
 data[2] => RotateRight0.IN29
@@ -12710,7 +12862,7 @@ output[30] <= RotateRight0.DB_MAX_OUTPUT_PORT_TYPE
 output[31] <= RotateRight0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu_path:alu_datapath|register64bit:register_Z
+|DE0_interface|datapath:DE0_map|alu_path:alu_datapath|register64bit:register_Z
 clr => BusMuxIn1[0]~reg0.ACLR
 clr => BusMuxIn1[1]~reg0.ACLR
 clr => BusMuxIn1[2]~reg0.ACLR
@@ -13033,7 +13185,7 @@ BusMuxIn1[30] <= BusMuxIn1[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn1[31] <= BusMuxIn1[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:inport_register
+|DE0_interface|datapath:DE0_map|register32bit:inport_register
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -13196,7 +13348,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|register32bit:outport_register
+|DE0_interface|datapath:DE0_map|register32bit:outport_register
 clr => BusMuxIn[0]~reg0.ACLR
 clr => BusMuxIn[1]~reg0.ACLR
 clr => BusMuxIn[2]~reg0.ACLR
@@ -13359,7 +13511,7 @@ BusMuxIn[30] <= BusMuxIn[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 BusMuxIn[31] <= BusMuxIn[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|Seven_Seg_Display:sevenSegDiplay_port
+|DE0_interface|datapath:DE0_map|Seven_Seg_Display:sevenSegDiplay_port
 clk => outputSegment[0]~reg0.CLK
 clk => outputSegment[1]~reg0.CLK
 clk => outputSegment[2]~reg0.CLK
@@ -13586,7 +13738,7 @@ outputSegment[30] <= outputSegment[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 outputSegment[31] <= outputSegment[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|conff_logic:conff
+|DE0_interface|datapath:DE0_map|conff_logic:conff
 clk => Q~reg0.CLK
 clr => Q~reg0.ACLR
 C2[0] => Equal0.IN3
@@ -13635,7 +13787,7 @@ Con_in => Q~reg0.ENA
 Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|sel_and_encode:select_and_encode
+|DE0_interface|datapath:DE0_map|sel_and_encode:select_and_encode
 IR_in[0] => C_sign_extended[0].DATAIN
 IR_in[1] => C_sign_extended[1].DATAIN
 IR_in[2] => C_sign_extended[2].DATAIN
@@ -13781,7 +13933,7 @@ R_out[14] <= R_out.DB_MAX_OUTPUT_PORT_TYPE
 R_out[15] <= R_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|ram_function_512x32:Ram
+|DE0_interface|datapath:DE0_map|ram_function_512x32:Ram
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -13859,7 +14011,7 @@ q[30] <= altsyncram:altsyncram_component.q_a[30]
 q[31] <= altsyncram:altsyncram_component.q_a[31]
 
 
-|datapath|ram_function_512x32:Ram|altsyncram:altsyncram_component
+|DE0_interface|datapath:DE0_map|ram_function_512x32:Ram|altsyncram:altsyncram_component
 wren_a => altsyncram_jss3:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -13957,7 +14109,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|datapath|ram_function_512x32:Ram|altsyncram:altsyncram_component|altsyncram_jss3:auto_generated
+|DE0_interface|datapath:DE0_map|ram_function_512x32:Ram|altsyncram:altsyncram_component|altsyncram_jss3:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -14376,7 +14528,7 @@ wren_a => ram_block1a30.PORTAWE
 wren_a => ram_block1a31.PORTAWE
 
 
-|datapath|control_unit:Control
+|DE0_interface|datapath:DE0_map|control_unit:Control
 clk => present_state.halt.CLK
 clk => present_state.nop.CLK
 clk => present_state.str6.CLK
@@ -14427,6 +14579,7 @@ clk => present_state.shr4.CLK
 clk => present_state.shr3.CLK
 clk => present_state.mflo3.CLK
 clk => present_state.mfhi3.CLK
+clk => present_state.in3_1.CLK
 clk => present_state.in3.CLK
 clk => present_state.jal4.CLK
 clk => present_state.jal3.CLK
@@ -14594,6 +14747,7 @@ IR[27] => Mux88.IN31
 IR[27] => Mux89.IN31
 IR[27] => Mux90.IN31
 IR[27] => Mux91.IN31
+IR[27] => Mux92.IN31
 IR[28] => Mux0.IN30
 IR[28] => Mux1.IN30
 IR[28] => Mux2.IN30
@@ -14686,6 +14840,7 @@ IR[28] => Mux88.IN30
 IR[28] => Mux89.IN30
 IR[28] => Mux90.IN30
 IR[28] => Mux91.IN30
+IR[28] => Mux92.IN30
 IR[29] => Mux0.IN29
 IR[29] => Mux1.IN29
 IR[29] => Mux2.IN29
@@ -14778,6 +14933,7 @@ IR[29] => Mux88.IN29
 IR[29] => Mux89.IN29
 IR[29] => Mux90.IN29
 IR[29] => Mux91.IN29
+IR[29] => Mux92.IN29
 IR[30] => Mux0.IN28
 IR[30] => Mux1.IN28
 IR[30] => Mux2.IN28
@@ -14870,6 +15026,7 @@ IR[30] => Mux88.IN28
 IR[30] => Mux89.IN28
 IR[30] => Mux90.IN28
 IR[30] => Mux91.IN28
+IR[30] => Mux92.IN28
 IR[31] => Mux0.IN27
 IR[31] => Mux1.IN27
 IR[31] => Mux2.IN27
@@ -14962,21 +15119,23 @@ IR[31] => Mux88.IN27
 IR[31] => Mux89.IN27
 IR[31] => Mux90.IN27
 IR[31] => Mux91.IN27
-con_ff => Selector92.IN4
-Rin <= WideOr76.DB_MAX_OUTPUT_PORT_TYPE
-Rout <= WideOr68.DB_MAX_OUTPUT_PORT_TYPE
-Gra <= WideOr77.DB_MAX_OUTPUT_PORT_TYPE
-Grb <= WideOr69.DB_MAX_OUTPUT_PORT_TYPE
-Grc <= WideOr71.DB_MAX_OUTPUT_PORT_TYPE
-BAout <= WideOr79.DB_MAX_OUTPUT_PORT_TYPE
+IR[31] => Mux92.IN27
+con_ff => PCin.IN1
+con_ff => Selector132.IN4
+Rin <= Rin$latch.DB_MAX_OUTPUT_PORT_TYPE
+Rout <= Rout$latch.DB_MAX_OUTPUT_PORT_TYPE
+Gra <= Gra$latch.DB_MAX_OUTPUT_PORT_TYPE
+Grb <= Grb$latch.DB_MAX_OUTPUT_PORT_TYPE
+Grc <= Grc$latch.DB_MAX_OUTPUT_PORT_TYPE
+BAout <= BAout$latch.DB_MAX_OUTPUT_PORT_TYPE
 encoder_in[0] <= HIout.DB_MAX_OUTPUT_PORT_TYPE
 encoder_in[1] <= LOout.DB_MAX_OUTPUT_PORT_TYPE
 encoder_in[2] <= Zhighout.DB_MAX_OUTPUT_PORT_TYPE
-encoder_in[3] <= WideOr64.DB_MAX_OUTPUT_PORT_TYPE
-encoder_in[4] <= WideOr62.DB_MAX_OUTPUT_PORT_TYPE
+encoder_in[3] <= Zlowout.DB_MAX_OUTPUT_PORT_TYPE
+encoder_in[4] <= PCout.DB_MAX_OUTPUT_PORT_TYPE
 encoder_in[5] <= MDRout.DB_MAX_OUTPUT_PORT_TYPE
 encoder_in[6] <= Inportout.DB_MAX_OUTPUT_PORT_TYPE
-encoder_in[7] <= WideOr78.DB_MAX_OUTPUT_PORT_TYPE
+encoder_in[7] <= Cout.DB_MAX_OUTPUT_PORT_TYPE
 encoder_in[8] <= <GND>
 encoder_in[9] <= <GND>
 encoder_in[10] <= <GND>
@@ -14987,13 +15146,13 @@ encoder_in[14] <= <GND>
 encoder_in[15] <= <GND>
 register_enable[0] <= HIin.DB_MAX_OUTPUT_PORT_TYPE
 register_enable[1] <= LOin.DB_MAX_OUTPUT_PORT_TYPE
-register_enable[2] <= Selector92.DB_MAX_OUTPUT_PORT_TYPE
+register_enable[2] <= PCin.DB_MAX_OUTPUT_PORT_TYPE
 register_enable[3] <= IRin.DB_MAX_OUTPUT_PORT_TYPE
-register_enable[4] <= WideOr67.DB_MAX_OUTPUT_PORT_TYPE
-register_enable[5] <= WideOr63.DB_MAX_OUTPUT_PORT_TYPE
-register_enable[6] <= WideOr70.DB_MAX_OUTPUT_PORT_TYPE
-register_enable[7] <= WideOr61.DB_MAX_OUTPUT_PORT_TYPE
-register_enable[8] <= <GND>
+register_enable[4] <= MDRin.DB_MAX_OUTPUT_PORT_TYPE
+register_enable[5] <= MARin.DB_MAX_OUTPUT_PORT_TYPE
+register_enable[6] <= Yin.DB_MAX_OUTPUT_PORT_TYPE
+register_enable[7] <= Zin.DB_MAX_OUTPUT_PORT_TYPE
+register_enable[8] <= In_in.DB_MAX_OUTPUT_PORT_TYPE
 register_enable[9] <= Out_in.DB_MAX_OUTPUT_PORT_TYPE
 register_enable[10] <= CONin.DB_MAX_OUTPUT_PORT_TYPE
 register_enable[11] <= <GND>
@@ -15001,19 +15160,19 @@ register_enable[12] <= <GND>
 register_enable[13] <= <GND>
 register_enable[14] <= <GND>
 register_enable[15] <= <GND>
-IncPC <= IncPC.DB_MAX_OUTPUT_PORT_TYPE
-MDR_read <= MDR_read.DB_MAX_OUTPUT_PORT_TYPE
-MDR_write <= MDR_write.DB_MAX_OUTPUT_PORT_TYPE
+IncPC <= IncPC$latch.DB_MAX_OUTPUT_PORT_TYPE
+MDR_read <= MDR_read$latch.DB_MAX_OUTPUT_PORT_TYPE
+MDR_write <= MDR_write$latch.DB_MAX_OUTPUT_PORT_TYPE
 run <= run$latch.DB_MAX_OUTPUT_PORT_TYPE
 clear <= clear$latch.DB_MAX_OUTPUT_PORT_TYPE
-OP_code[0] <= WideOr75.DB_MAX_OUTPUT_PORT_TYPE
-OP_code[1] <= WideOr74.DB_MAX_OUTPUT_PORT_TYPE
-OP_code[2] <= WideOr73.DB_MAX_OUTPUT_PORT_TYPE
-OP_code[3] <= WideOr72.DB_MAX_OUTPUT_PORT_TYPE
-OP_code[4] <= OP_code.DB_MAX_OUTPUT_PORT_TYPE
+OP_code[0] <= OP_code[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+OP_code[1] <= OP_code[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+OP_code[2] <= OP_code[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+OP_code[3] <= OP_code[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+OP_code[4] <= OP_code[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|P1_bus:datapathBus
+|DE0_interface|datapath:DE0_map|P1_bus:datapathBus
 muxIn0[0] => mux32to1:Bus_Mux.data0in[0]
 muxIn0[1] => mux32to1:Bus_Mux.data0in[1]
 muxIn0[2] => mux32to1:Bus_Mux.data0in[2]
@@ -16104,7 +16263,7 @@ BusMuxOut[30] <= mux32to1:Bus_Mux.result[30]
 BusMuxOut[31] <= mux32to1:Bus_Mux.result[31]
 
 
-|datapath|P1_bus:datapathBus|encoder32to5:Bus_encoder
+|DE0_interface|datapath:DE0_map|P1_bus:datapathBus|encoder32to5:Bus_encoder
 input[0] => Equal0.IN63
 input[0] => Equal1.IN63
 input[0] => Equal2.IN63
@@ -17104,7 +17263,7 @@ output[3] <= output.DB_MAX_OUTPUT_PORT_TYPE
 output[4] <= output.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|P1_bus:datapathBus|mux32to1:Bus_Mux
+|DE0_interface|datapath:DE0_map|P1_bus:datapathBus|mux32to1:Bus_Mux
 data0in[0] => Mux31.IN0
 data0in[1] => Mux30.IN0
 data0in[2] => Mux29.IN0
