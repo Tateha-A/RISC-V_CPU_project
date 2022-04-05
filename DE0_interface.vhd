@@ -55,6 +55,9 @@ signal RAM_out: std_logic_vector(31 downto 0);
 signal reset_DE0: std_logic;
 signal stop_DE0	: std_logic;
 signal run_DE0: std_logic;
+-- reverse input
+signal	reset_internal	: std_logic;
+signal	stop_internal	: std_logic;
 
 -- clock modifier
 signal prescaler : unsigned(23 downto 0);
@@ -97,13 +100,16 @@ end component datapath;
 
 begin
 
-	gen_clk : process (clk, reset)
+	reset_internal <= not reset;
+	stop_internal <= not stop;
+	
+	gen_clk : process (clk, reset_internal)
 	begin  -- process gen_clk
-    if reset = '1' then
+    if reset_internal = '1' then
       clk_DE0 <= '0';
       prescaler <= (others => '0');
     elsif rising_edge(clk) then   -- rising clock edge
-		if prescaler = X"8" then     -- 50MHz / 8 = 6.25MHz
+		if prescaler = X"14" then     -- 50MHz / 20 = 2.5MHz
         prescaler <= (others => '0');
         clk_DE0 <= not clk_DE0;
       else
@@ -114,11 +120,13 @@ begin
 	
 	--in_port(31 downto 8) <= (others => '0');
 	
+
+	
 	DE0_map : datapath port map 
 									(
 									clk_DE0, 
-									reset, 
-									stop, 
+									reset_internal, 
+									stop_internal, 
 									run, 
 									in_port, 
 									out_port,
