@@ -20,37 +20,53 @@ function singleDigit(signal singleHex: in STD_LOGIC_VECTOR(3 DOWNTO 0))
 BEGIN
 	CASE singleHex(3 DOWNTO 0) IS
 	WHEN "0000" =>
-		seven_seg_out := "11000000";
+	-- 0
+		seven_seg_out := "00000000";
 	WHEN "0001" =>
-		seven_seg_out := "11111001";
+	-- 1
+		seven_seg_out := "00000011";
 	WHEN "0010" =>
-		seven_seg_out := "10100100";
+	-- 2
+		seven_seg_out := "01011011";
 	WHEN "0011" =>
-		seven_seg_out := "10110000";
+	-- 3
+		seven_seg_out := "01001111";
 	WHEN "0100" =>
-		seven_seg_out := "10011001";
+	-- 4
+		seven_seg_out := "01100110";
 	WHEN "0101" =>
-		seven_seg_out := "10010010";
+	-- 5
+		seven_seg_out := "01101101";
 	WHEN "0110" =>
-		seven_seg_out := "10000010";
+	-- 6
+		seven_seg_out := "01111101";
 	WHEN "0111" =>
-		seven_seg_out := "11111000";
+	-- 7
+		seven_seg_out := "00000111";
 	WHEN "1000" =>
-		seven_seg_out := "10000000";
+	-- 8
+		seven_seg_out := "01111111";
 	WHEN "1001" =>
-		seven_seg_out := "10010000";
+	-- 9
+		seven_seg_out := "01101111";
 	WHEN "1010" =>
-		seven_seg_out := "10001000";
+	-- A
+		seven_seg_out := "01110111";
 	WHEN "1011" =>
-		seven_seg_out := "10000011";
+	-- B
+		seven_seg_out := "01111100";
 	WHEN "1100" =>
-		seven_seg_out := "11000110";
+	-- C
+		seven_seg_out := "00111001";
 	WHEN "1101" =>
-		seven_seg_out := "10100001";
+	-- D
+		seven_seg_out := "01011110";
 	WHEN "1110" =>
-		seven_seg_out := "10000110";
+	-- E
+		seven_seg_out := "01111001";
 	WHEN "1111" =>
-		seven_seg_out := "10001110";
+	-- F
+		seven_seg_out := "01110011";
 	WHEN OTHERS =>
 		seven_seg_out := "11111111";
 	END CASE;
