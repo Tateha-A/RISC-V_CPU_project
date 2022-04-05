@@ -23,7 +23,7 @@ port(
 		run	: out std_logic;
 		in_port: in std_logic_vector (31 downto 0);
 		out_port: out std_logic_vector (31 downto 0);
-		seven_segment_out: out std_logic_vector (31 downto 0));
+		seven_segment_out_IO: out std_logic_vector (31 downto 0));
 		-- LED ([5] run/halt)
 		-- switch (in_port[0...8])
 		-- PB[0] reset
@@ -51,6 +51,8 @@ main: process
 begin
 	inport_tb <= x"00000088";
 	stop_tb <= '1';
+	reset_tb <= '1';
+	wait for 5000 ns;
 	reset_tb <= '0';
 	wait for 15 ns;
 	reset_tb <= '1';

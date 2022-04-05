@@ -13,7 +13,7 @@ port(
 		run	: out std_logic;
 		in_port: in std_logic_vector (31 downto 0);
 		out_port: out std_logic_vector (31 downto 0);
-		seven_segment_out: out std_logic_vector (31 downto 0));
+		seven_segment_out_IO: out std_logic_vector (31 downto 0));
 		-- LED ([5] run/halt)
 		-- switch (in_port[0...8])
 		-- PB[0] reset
@@ -127,10 +127,10 @@ begin
 									clk_DE0, 
 									reset_internal, 
 									stop_internal, 
-									run, 
+									run_DE0, 
 									in_port, 
 									out_port,
-									seven_segment_out,
+									seven_segment_out_DE0,
 									R0out_DE0, 
 									R1out_DE0, 
 									R2out_DE0,
@@ -156,5 +156,8 @@ begin
 									IRout_DE0,
 									Zout_DE0,
 									RAM_out);
+									
+	seven_segment_out_IO <= seven_segment_out_DE0;
+	run <= run_DE0;
 
 end architecture behavior;
