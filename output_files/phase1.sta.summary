@@ -2,76 +2,136 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -136.866
-TNS   : -17582.322
+Type  : Slow 1200mV 85C Model Setup 'clk_DE0'
+Slack : -127.606
+TNS   : -17746.102
 
-Type  : Slow 1200mV 85C Model Setup 'MDR_write'
-Slack : -4.816
-TNS   : -32742.197
+Type  : Slow 1200mV 85C Model Setup 'datapath:DE0_map|control_unit:Control|present_state.in3'
+Slack : -4.762
+TNS   : -40.218
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -1.846
+TNS   : -30.495
+
+Type  : Slow 1200mV 85C Model Hold 'datapath:DE0_map|control_unit:Control|present_state.in3'
+Slack : -0.478
+TNS   : -0.523
+
+Type  : Slow 1200mV 85C Model Hold 'clk_DE0'
+Slack : -0.196
+TNS   : -9.634
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : -0.187
-TNS   : -1.773
+Slack : -0.123
+TNS   : -0.123
 
-Type  : Slow 1200mV 85C Model Hold 'MDR_write'
-Slack : -0.054
-TNS   : -0.062
+Type  : Slow 1200mV 85C Model Recovery 'clk_DE0'
+Slack : -2.299
+TNS   : -1556.582
+
+Type  : Slow 1200mV 85C Model Removal 'clk_DE0'
+Slack : 1.950
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -845.000
+TNS   : -28.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MDR_write'
-Slack : -3.000
-TNS   : -3.000
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_DE0'
+Slack : -2.174
+TNS   : -966.044
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'datapath:DE0_map|control_unit:Control|present_state.in3'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk_DE0'
+Slack : -113.669
+TNS   : -15867.417
+
+Type  : Slow 1200mV 0C Model Setup 'datapath:DE0_map|control_unit:Control|present_state.in3'
+Slack : -4.212
+TNS   : -34.841
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -122.202
-TNS   : -15725.588
+Slack : -1.605
+TNS   : -24.094
 
-Type  : Slow 1200mV 0C Model Setup 'MDR_write'
-Slack : -4.252
-TNS   : -27404.460
+Type  : Slow 1200mV 0C Model Hold 'datapath:DE0_map|control_unit:Control|present_state.in3'
+Slack : -0.442
+TNS   : -0.490
+
+Type  : Slow 1200mV 0C Model Hold 'clk_DE0'
+Slack : -0.175
+TNS   : -3.977
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : -0.164
-TNS   : -1.518
+Slack : -0.136
+TNS   : -0.136
 
-Type  : Slow 1200mV 0C Model Hold 'MDR_write'
-Slack : -0.044
-TNS   : -0.044
+Type  : Slow 1200mV 0C Model Recovery 'clk_DE0'
+Slack : -1.974
+TNS   : -1318.153
+
+Type  : Slow 1200mV 0C Model Removal 'clk_DE0'
+Slack : 1.722
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -845.000
+TNS   : -28.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MDR_write'
-Slack : -3.000
-TNS   : -3.000
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_DE0'
+Slack : -2.174
+TNS   : -966.044
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'datapath:DE0_map|control_unit:Control|present_state.in3'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_DE0'
+Slack : -72.433
+TNS   : -9815.279
+
+Type  : Fast 1200mV 0C Model Setup 'datapath:DE0_map|control_unit:Control|present_state.in3'
+Slack : -2.296
+TNS   : -13.614
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -78.269
-TNS   : -9785.263
+Slack : -0.573
+TNS   : -6.711
 
-Type  : Fast 1200mV 0C Model Setup 'MDR_write'
-Slack : -2.518
-TNS   : -12671.221
+Type  : Fast 1200mV 0C Model Hold 'datapath:DE0_map|control_unit:Control|present_state.in3'
+Slack : -0.208
+TNS   : -0.300
 
-Type  : Fast 1200mV 0C Model Hold 'MDR_write'
-Slack : -0.185
-TNS   : -3.809
+Type  : Fast 1200mV 0C Model Hold 'clk_DE0'
+Slack : -0.184
+TNS   : -26.208
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : -0.098
-TNS   : -0.895
+Slack : -0.143
+TNS   : -0.143
+
+Type  : Fast 1200mV 0C Model Recovery 'clk_DE0'
+Slack : -0.943
+TNS   : -575.859
+
+Type  : Fast 1200mV 0C Model Removal 'clk_DE0'
+Slack : 1.130
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -892.846
+TNS   : -29.400
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MDR_write'
-Slack : -3.000
-TNS   : -3.277
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_DE0'
+Slack : -1.000
+TNS   : -959.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'datapath:DE0_map|control_unit:Control|present_state.in3'
+Slack : 0.386
+TNS   : 0.000
 
 ------------------------------------------------------------

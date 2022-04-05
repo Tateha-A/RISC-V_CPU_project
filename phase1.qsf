@@ -142,19 +142,10 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE P4_DE0_interface.vhd
-set_global_assignment -name EDA_TEST_BENCH_FILE ld_R1_85_tb.vhd -section_id ld_R1_85_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE ldi_R1_85_tb.vhd -section_id ldi_R1_85_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE ld_R1_35_tb.vhd -section_id ld_R1_35_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE ldi_r0_35r1_tb.vhd -section_id ldi_r0_35r1_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE P2_st_90_R1_tb.vhd -section_id P2_st_90_R1_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE P2_st_90R1_R1_tb.vhd -section_id P2_st_90R1_R1_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE P2_brzr_R2_35_tb.vhd -section_id P2_brzr_R2_35_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE P3_controlUnit_tb.vhd -section_id P3_controlUnit_tb
 set_global_assignment -name EDA_TEST_BENCH_NAME P4_DE0_interface -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id P4_DE0_interface
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "250000 ns" -section_id P4_DE0_interface
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "5000000 ns" -section_id P4_DE0_interface
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME P4_DE0_interface -section_id P4_DE0_interface
-set_global_assignment -name EDA_TEST_BENCH_FILE P4_DE0_interface.vhd -section_id P4_DE0_interface
 set_location_assignment PIN_G21 -to clk
 set_location_assignment PIN_J6 -to in_port[0]
 set_location_assignment PIN_H5 -to in_port[1]
@@ -184,4 +175,13 @@ set_location_assignment PIN_B15 -to seven_segment_out[15]
 set_location_assignment PIN_H2 -to reset
 set_location_assignment PIN_G3 -to stop
 set_location_assignment PIN_E1 -to run
+set_global_assignment -name EDA_TEST_BENCH_FILE ld_R1_85_tb.vhd -section_id ld_R1_85_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE ldi_R1_85_tb.vhd -section_id ldi_R1_85_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE ld_R1_35_tb.vhd -section_id ld_R1_35_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE ldi_r0_35r1_tb.vhd -section_id ldi_r0_35r1_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE P2_st_90_R1_tb.vhd -section_id P2_st_90_R1_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE P2_st_90R1_R1_tb.vhd -section_id P2_st_90R1_R1_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE P2_brzr_R2_35_tb.vhd -section_id P2_brzr_R2_35_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE P3_controlUnit_tb.vhd -section_id P3_controlUnit_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE P4_DE0_interface.vhd -section_id P4_DE0_interface
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
