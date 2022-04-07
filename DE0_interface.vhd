@@ -13,7 +13,8 @@ port(
 		run	: out std_logic;
 		in_port: in std_logic_vector (31 downto 0);
 		out_port: out std_logic_vector (31 downto 0);
-		seven_segment_out_IO: out std_logic_vector (31 downto 0));
+		seven_segment_out_IO: out std_logic_vector (31 downto 0);
+		PC_digit_one: out std_logic_vector (3 downto 0));
 		-- LED ([5] run/halt)
 		-- switch (in_port[0...8])
 		-- PB[0] reset
@@ -61,6 +62,7 @@ signal	stop_internal	: std_logic;
 
 -- clock modifier
 signal prescaler : unsigned(23 downto 0);
+signal PCout_scaler : unsigned(32 downto 0);
 
 component datapath is 
 	port (
@@ -122,6 +124,8 @@ begin
 	
 
 	
+
+	
 	DE0_map : datapath port map 
 									(
 									clk_DE0, 
@@ -157,6 +161,20 @@ begin
 									Zout_DE0,
 									RAM_out);
 									
+	PC_process : process (clk, reset_internal)
+	begin  -- process gen_clk
+    if reset_internal = '1' then
+      PCout_scaler <= (others => '0');
+    elsif rising_edge(clk) then   -- rising clock edge
+		if PCout_scaler = X"FFFF" then     -- 50MHz / 16^4 = 763
+        PCout_scaler <= (others => '0');
+        PC_digit_one <= PCval_DE0(3 downto 0);
+      else
+        PCout_scaler <= PCout_scaler + "1";
+      end if;
+    end if;
+	end process PC_process;
+	
 	seven_segment_out_IO <= seven_segment_out_DE0;
 	run <= run_DE0;
 

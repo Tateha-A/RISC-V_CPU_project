@@ -144,7 +144,7 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE P4_DE0_interface.vhd
 set_global_assignment -name EDA_TEST_BENCH_NAME P4_DE0_interface -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id P4_DE0_interface
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "5000000 ns" -section_id P4_DE0_interface
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "10000000 ns" -section_id P4_DE0_interface
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME P4_DE0_interface -section_id P4_DE0_interface
 set_location_assignment PIN_G21 -to clk
 set_location_assignment PIN_J6 -to in_port[0]
@@ -156,25 +156,25 @@ set_location_assignment PIN_J7 -to in_port[5]
 set_location_assignment PIN_H7 -to in_port[6]
 set_location_assignment PIN_E3 -to in_port[7]
 set_location_assignment PIN_E4 -to in_port[8]
-set_location_assignment PIN_E11 -to seven_segment_out[0]
-set_location_assignment PIN_F11 -to seven_segment_out[1]
-set_location_assignment PIN_H12 -to seven_segment_out[2]
-set_location_assignment PIN_H13 -to seven_segment_out[3]
-set_location_assignment PIN_G12 -to seven_segment_out[4]
-set_location_assignment PIN_F12 -to seven_segment_out[5]
-set_location_assignment PIN_F13 -to seven_segment_out[6]
-set_location_assignment PIN_D13 -to seven_segment_out[7]
-set_location_assignment PIN_A13 -to seven_segment_out[8]
-set_location_assignment PIN_B13 -to seven_segment_out[9]
-set_location_assignment PIN_C13 -to seven_segment_out[10]
-set_location_assignment PIN_A14 -to seven_segment_out[11]
-set_location_assignment PIN_B14 -to seven_segment_out[12]
-set_location_assignment PIN_E14 -to seven_segment_out[13]
-set_location_assignment PIN_A15 -to seven_segment_out[14]
-set_location_assignment PIN_B15 -to seven_segment_out[15]
 set_location_assignment PIN_H2 -to reset
 set_location_assignment PIN_G3 -to stop
 set_location_assignment PIN_E1 -to run
+set_location_assignment PIN_E11 -to seven_segment_out_IO[0]
+set_location_assignment PIN_F11 -to seven_segment_out_IO[1]
+set_location_assignment PIN_H12 -to seven_segment_out_IO[2]
+set_location_assignment PIN_H13 -to seven_segment_out_IO[3]
+set_location_assignment PIN_G12 -to seven_segment_out_IO[4]
+set_location_assignment PIN_F12 -to seven_segment_out_IO[5]
+set_location_assignment PIN_F13 -to seven_segment_out_IO[6]
+set_location_assignment PIN_D13 -to seven_segment_out_IO[7]
+set_location_assignment PIN_A13 -to seven_segment_out_IO[8]
+set_location_assignment PIN_B13 -to seven_segment_out_IO[9]
+set_location_assignment PIN_C13 -to seven_segment_out_IO[10]
+set_location_assignment PIN_A14 -to seven_segment_out_IO[11]
+set_location_assignment PIN_B14 -to seven_segment_out_IO[12]
+set_location_assignment PIN_E14 -to seven_segment_out_IO[13]
+set_location_assignment PIN_A15 -to seven_segment_out_IO[14]
+set_location_assignment PIN_B15 -to seven_segment_out_IO[15]
 set_global_assignment -name EDA_TEST_BENCH_FILE ld_R1_85_tb.vhd -section_id ld_R1_85_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE ldi_R1_85_tb.vhd -section_id ldi_R1_85_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE ld_R1_35_tb.vhd -section_id ld_R1_35_tb
@@ -184,4 +184,8 @@ set_global_assignment -name EDA_TEST_BENCH_FILE P2_st_90R1_R1_tb.vhd -section_id
 set_global_assignment -name EDA_TEST_BENCH_FILE P2_brzr_R2_35_tb.vhd -section_id P2_brzr_R2_35_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE P3_controlUnit_tb.vhd -section_id P3_controlUnit_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE P4_DE0_interface.vhd -section_id P4_DE0_interface
+set_location_assignment PIN_C1 -to PC_digit_one[0]
+set_location_assignment PIN_C2 -to PC_digit_one[1]
+set_location_assignment PIN_B2 -to PC_digit_one[2]
+set_location_assignment PIN_B1 -to PC_digit_one[3]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
