@@ -63,6 +63,7 @@ signal	stop_internal	: std_logic;
 -- clock modifier
 signal prescaler : unsigned(23 downto 0);
 signal PCout_scaler : unsigned(32 downto 0);
+signal Con_scaler : unsigned(32 downto 0);
 
 component datapath is 
 	port (
@@ -121,10 +122,6 @@ begin
 	end process gen_clk;
 	
 	--in_port(31 downto 8) <= (others => '0');
-	
-
-	
-
 	
 	DE0_map : datapath port map 
 									(
