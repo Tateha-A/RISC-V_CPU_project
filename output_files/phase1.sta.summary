@@ -3,195 +3,135 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk_DE0'
-Slack : -130.806
-TNS   : -22990.307
+Slack : -125.520
+TNS   : -17713.408
 
 Type  : Slow 1200mV 85C Model Setup 'datapath:DE0_map|control_unit:Control|present_state.in3'
-Slack : -5.591
-TNS   : -47.400
+Slack : -4.014
+TNS   : -40.334
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -2.271
-TNS   : -32.235
-
-Type  : Slow 1200mV 85C Model Setup 'reset'
-Slack : -2.159
-TNS   : -3.037
-
-Type  : Slow 1200mV 85C Model Hold 'reset'
-Slack : -7.786
-TNS   : -15.538
+Slack : -2.434
+TNS   : -84.167
 
 Type  : Slow 1200mV 85C Model Hold 'datapath:DE0_map|control_unit:Control|present_state.in3'
-Slack : -0.549
-TNS   : -0.829
+Slack : -1.161
+TNS   : -2.956
 
 Type  : Slow 1200mV 85C Model Hold 'clk_DE0'
-Slack : -0.267
-TNS   : -0.553
+Slack : -0.213
+TNS   : -13.521
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : -0.101
-TNS   : -0.101
+Slack : -0.211
+TNS   : -0.211
 
 Type  : Slow 1200mV 85C Model Recovery 'clk_DE0'
-Slack : -4.766
-TNS   : -3803.750
-
-Type  : Slow 1200mV 85C Model Recovery 'clk'
-Slack : 0.197
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'clk'
-Slack : -0.631
-TNS   : -10.887
+Slack : -1.385
+TNS   : -790.556
 
 Type  : Slow 1200mV 85C Model Removal 'clk_DE0'
-Slack : 0.926
+Slack : 1.057
 TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'reset'
-Slack : -3.000
-TNS   : -79.539
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -28.000
+TNS   : -65.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_DE0'
 Slack : -2.174
 TNS   : -966.044
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'datapath:DE0_map|control_unit:Control|present_state.in3'
-Slack : 0.402
+Slack : 0.358
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk_DE0'
-Slack : -116.813
-TNS   : -20656.866
+Slack : -112.054
+TNS   : -15814.684
 
 Type  : Slow 1200mV 0C Model Setup 'datapath:DE0_map|control_unit:Control|present_state.in3'
-Slack : -5.061
-TNS   : -41.704
+Slack : -3.540
+TNS   : -34.672
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -1.940
-TNS   : -25.716
-
-Type  : Slow 1200mV 0C Model Setup 'reset'
-Slack : -1.801
-TNS   : -2.414
-
-Type  : Slow 1200mV 0C Model Hold 'reset'
-Slack : -7.061
-TNS   : -14.118
+Slack : -2.092
+TNS   : -67.361
 
 Type  : Slow 1200mV 0C Model Hold 'datapath:DE0_map|control_unit:Control|present_state.in3'
-Slack : -0.512
-TNS   : -0.785
-
-Type  : Slow 1200mV 0C Model Hold 'clk_DE0'
-Slack : -0.245
-TNS   : -0.281
+Slack : -1.046
+TNS   : -2.648
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : -0.113
-TNS   : -0.113
+Slack : -0.205
+TNS   : -0.205
+
+Type  : Slow 1200mV 0C Model Hold 'clk_DE0'
+Slack : -0.150
+TNS   : -5.639
 
 Type  : Slow 1200mV 0C Model Recovery 'clk_DE0'
-Slack : -4.318
-TNS   : -3446.478
-
-Type  : Slow 1200mV 0C Model Recovery 'clk'
-Slack : 0.216
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'clk'
-Slack : -0.541
-TNS   : -8.853
+Slack : -1.123
+TNS   : -606.209
 
 Type  : Slow 1200mV 0C Model Removal 'clk_DE0'
-Slack : 0.884
+Slack : 0.902
 TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'reset'
-Slack : -3.000
-TNS   : -69.115
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -28.000
+TNS   : -65.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_DE0'
 Slack : -2.174
 TNS   : -966.044
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'datapath:DE0_map|control_unit:Control|present_state.in3'
-Slack : 0.386
+Slack : 0.423
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk_DE0'
-Slack : -74.988
-TNS   : -13344.157
+Slack : -71.067
+TNS   : -9734.936
 
 Type  : Fast 1200mV 0C Model Setup 'datapath:DE0_map|control_unit:Control|present_state.in3'
-Slack : -2.743
-TNS   : -17.456
+Slack : -1.976
+TNS   : -14.021
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -0.847
-TNS   : -7.687
-
-Type  : Fast 1200mV 0C Model Setup 'reset'
-Slack : -0.844
-TNS   : -1.043
-
-Type  : Fast 1200mV 0C Model Hold 'reset'
-Slack : -4.964
-TNS   : -9.821
+Slack : -0.925
+TNS   : -21.925
 
 Type  : Fast 1200mV 0C Model Hold 'datapath:DE0_map|control_unit:Control|present_state.in3'
-Slack : -0.327
-TNS   : -0.458
-
-Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : -0.193
-TNS   : -0.193
+Slack : -0.753
+TNS   : -1.855
 
 Type  : Fast 1200mV 0C Model Hold 'clk_DE0'
-Slack : -0.183
-TNS   : -10.215
+Slack : -0.218
+TNS   : -47.444
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.218
+TNS   : -0.218
 
 Type  : Fast 1200mV 0C Model Recovery 'clk_DE0'
-Slack : -2.170
-TNS   : -1719.416
-
-Type  : Fast 1200mV 0C Model Recovery 'clk'
-Slack : 0.047
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'clk'
-Slack : -0.452
-TNS   : -8.698
+Slack : -0.427
+TNS   : -143.553
 
 Type  : Fast 1200mV 0C Model Removal 'clk_DE0'
-Slack : 0.481
+Slack : 0.635
 TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'reset'
-Slack : -3.000
-TNS   : -39.930
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -29.387
+TNS   : -68.681
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_DE0'
 Slack : -1.000
 TNS   : -959.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'datapath:DE0_map|control_unit:Control|present_state.in3'
-Slack : 0.377
+Slack : 0.351
 TNS   : 0.000
 
 ------------------------------------------------------------

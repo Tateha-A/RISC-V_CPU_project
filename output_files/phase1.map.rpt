@@ -1,5 +1,5 @@
 Analysis & Synthesis report for phase1
-Tue Apr 05 11:13:58 2022
+Wed Apr 06 05:08:54 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -56,16 +56,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 05 11:13:58 2022      ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 06 05:08:54 2022      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; phase1                                     ;
 ; Top-level Entity Name              ; DE0_interface                              ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 7,010                                      ;
-;     Total combinational functions  ; 6,265                                      ;
-;     Dedicated logic registers      ; 978                                        ;
-; Total registers                    ; 978                                        ;
-; Total pins                         ; 100                                        ;
+; Total logic elements               ; 7,058                                      ;
+;     Total combinational functions  ; 6,309                                      ;
+;     Dedicated logic registers      ; 1,015                                      ;
+; Total registers                    ; 1015                                       ;
+; Total pins                         ; 104                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 16,384                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -246,29 +246,29 @@ applicable agreement for further details.
 +---------------------------------------------+---------+
 ; Resource                                    ; Usage   ;
 +---------------------------------------------+---------+
-; Estimated Total logic elements              ; 7,010   ;
+; Estimated Total logic elements              ; 7,058   ;
 ;                                             ;         ;
-; Total combinational functions               ; 6265    ;
+; Total combinational functions               ; 6309    ;
 ; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 2705    ;
-;     -- 3 input functions                    ; 3103    ;
-;     -- <=2 input functions                  ; 457     ;
+;     -- 4 input functions                    ; 2717    ;
+;     -- 3 input functions                    ; 3104    ;
+;     -- <=2 input functions                  ; 488     ;
 ;                                             ;         ;
 ; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 4030    ;
-;     -- arithmetic mode                      ; 2235    ;
+;     -- normal mode                          ; 4042    ;
+;     -- arithmetic mode                      ; 2267    ;
 ;                                             ;         ;
-; Total registers                             ; 978     ;
-;     -- Dedicated logic registers            ; 978     ;
+; Total registers                             ; 1015    ;
+;     -- Dedicated logic registers            ; 1015    ;
 ;     -- I/O registers                        ; 0       ;
 ;                                             ;         ;
-; I/O pins                                    ; 100     ;
+; I/O pins                                    ; 104     ;
 ; Total memory bits                           ; 16384   ;
 ; Embedded Multiplier 9-bit elements          ; 0       ;
 ; Maximum fan-out node                        ; clk_DE0 ;
 ; Maximum fan-out                             ; 986     ;
-; Total fan-out                               ; 25426   ;
-; Average fan-out                             ; 3.40    ;
+; Total fan-out                               ; 25657   ;
+; Average fan-out                             ; 3.39    ;
 +---------------------------------------------+---------+
 
 
@@ -277,18 +277,18 @@ applicable agreement for further details.
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                         ; Library Name ;
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |DE0_interface                                     ; 6265 (35)         ; 978 (25)     ; 16384       ; 0            ; 0       ; 0         ; 100  ; 0            ; |DE0_interface                                                                                                                                                                                                              ; work         ;
-;    |datapath:DE0_map|                              ; 6230 (0)          ; 953 (0)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map                                                                                                                                                                                             ; work         ;
+; |DE0_interface                                     ; 6309 (80)         ; 1015 (62)    ; 16384       ; 0            ; 0       ; 0         ; 104  ; 0            ; |DE0_interface                                                                                                                                                                                                              ; work         ;
+;    |datapath:DE0_map|                              ; 6229 (0)          ; 953 (0)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map                                                                                                                                                                                             ; work         ;
 ;       |MDR:MDR_register|                           ; 32 (0)            ; 32 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|MDR:MDR_register                                                                                                                                                                            ; work         ;
 ;          |register32bit:MDR_instance|              ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|MDR:MDR_register|register32bit:MDR_instance                                                                                                                                                 ; work         ;
 ;       |P1_bus:datapathBus|                         ; 538 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|P1_bus:datapathBus                                                                                                                                                                          ; work         ;
 ;          |encoder32to5:Bus_encoder|                ; 58 (58)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|P1_bus:datapathBus|encoder32to5:Bus_encoder                                                                                                                                                 ; work         ;
 ;          |mux32to1:Bus_Mux|                        ; 480 (480)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|P1_bus:datapathBus|mux32to1:Bus_Mux                                                                                                                                                         ; work         ;
 ;       |Seven_Seg_Display:sevenSegDiplay_port|      ; 28 (28)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|Seven_Seg_Display:sevenSegDiplay_port                                                                                                                                                       ; work         ;
-;       |alu_path:alu_datapath|                      ; 5305 (161)        ; 96 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath                                                                                                                                                                       ; work         ;
-;          |alu:alu_unit|                            ; 5106 (392)        ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit                                                                                                                                                          ; work         ;
+;       |alu_path:alu_datapath|                      ; 5307 (162)        ; 96 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath                                                                                                                                                                       ; work         ;
+;          |alu:alu_unit|                            ; 5107 (395)        ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit                                                                                                                                                          ; work         ;
 ;             |and32:aluAnd|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|and32:aluAnd                                                                                                                                             ; work         ;
-;             |booth_alu:aluMul|                     ; 2885 (2885)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|booth_alu:aluMul                                                                                                                                         ; work         ;
+;             |booth_alu:aluMul|                     ; 2884 (2884)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|booth_alu:aluMul                                                                                                                                         ; work         ;
 ;             |lpm_add_sub0:aluAddSub|               ; 65 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_add_sub0:aluAddSub                                                                                                                                   ; work         ;
 ;                |lpm_add_sub:LPM_ADD_SUB_component| ; 65 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_add_sub0:aluAddSub|lpm_add_sub:LPM_ADD_SUB_component                                                                                                 ; work         ;
 ;                   |add_sub_ich:auto_generated|     ; 65 (65)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_add_sub0:aluAddSub|lpm_add_sub:LPM_ADD_SUB_component|add_sub_ich:auto_generated                                                                      ; work         ;
@@ -300,13 +300,13 @@ applicable agreement for further details.
 ;                            |add_sub_vnc:add_sub_1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|lpm_divide0:aluDiv|lpm_divide:LPM_DIVIDE_component|lpm_divide_hjp:auto_generated|sign_div_unsign_39h:divider|alt_u_div_t8f:divider|add_sub_vnc:add_sub_1 ; work         ;
 ;             |negate32:aluNeg|                      ; 64 (64)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|negate32:aluNeg                                                                                                                                          ; work         ;
 ;             |rotateleft32:aluRol|                  ; 134 (134)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|rotateleft32:aluRol                                                                                                                                      ; work         ;
-;             |rotateright32:aluRor|                 ; 103 (103)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|rotateright32:aluRor                                                                                                                                     ; work         ;
+;             |rotateright32:aluRor|                 ; 102 (102)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|rotateright32:aluRor                                                                                                                                     ; work         ;
 ;             |shiftleft32:aluShl|                   ; 57 (57)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|shiftleft32:aluShl                                                                                                                                       ; work         ;
 ;             |shiftright32:aluShr|                  ; 78 (78)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|shiftright32:aluShr                                                                                                                                      ; work         ;
 ;          |register32bit:register_Y|                ; 0 (0)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|register32bit:register_Y                                                                                                                                              ; work         ;
 ;          |register64bit:register_Z|                ; 38 (38)           ; 64 (64)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|register64bit:register_Z                                                                                                                                              ; work         ;
 ;       |conff_logic:conff|                          ; 12 (12)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|conff_logic:conff                                                                                                                                                                           ; work         ;
-;       |control_unit:Control|                       ; 242 (242)         ; 83 (83)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|control_unit:Control                                                                                                                                                                        ; work         ;
+;       |control_unit:Control|                       ; 239 (239)         ; 83 (83)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|control_unit:Control                                                                                                                                                                        ; work         ;
 ;       |ram_function_512x32:Ram|                    ; 0 (0)             ; 0 (0)        ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|ram_function_512x32:Ram                                                                                                                                                                     ; work         ;
 ;          |altsyncram:altsyncram_component|         ; 0 (0)             ; 0 (0)        ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|ram_function_512x32:Ram|altsyncram:altsyncram_component                                                                                                                                     ; work         ;
 ;             |altsyncram_jss3:auto_generated|       ; 0 (0)             ; 0 (0)        ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |DE0_interface|datapath:DE0_map|ram_function_512x32:Ram|altsyncram:altsyncram_component|altsyncram_jss3:auto_generated                                                                                                      ; work         ;
@@ -426,12 +426,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 978   ;
+; Total registers                              ; 1015  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 64    ;
-; Number of registers using Asynchronous Clear ; 950   ;
+; Number of registers using Asynchronous Clear ; 983   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 869   ;
+; Number of registers using Clock Enable       ; 873   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -441,7 +441,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
-; 40:1               ; 32 bits   ; 832 LEs       ; 160 LEs              ; 672 LEs                ; Yes        ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|register64bit:register_Z|BusMuxIn1[28] ;
+; 40:1               ; 32 bits   ; 832 LEs       ; 160 LEs              ; 672 LEs                ; Yes        ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|register64bit:register_Z|BusMuxIn1[21] ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|booth_alu:aluMul|sum      ;
 ; 4:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; No         ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|booth_alu:aluMul|sum      ;
 ; 8:1                ; 29 bits   ; 145 LEs       ; 87 LEs               ; 58 LEs                 ; No         ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|booth_alu:aluMul|sum      ;
@@ -464,7 +464,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|booth_alu:aluMul|sum      ;
 ; 6:1                ; 27 bits   ; 108 LEs       ; 81 LEs               ; 27 LEs                 ; No         ; |DE0_interface|datapath:DE0_map|alu_path:alu_datapath|alu:alu_unit|booth_alu:aluMul|sum      ;
 ; 32:1               ; 29 bits   ; 609 LEs       ; 522 LEs              ; 87 LEs                 ; No         ; |DE0_interface|datapath:DE0_map|control_unit:Control|Mux41                                   ;
-; 28:1               ; 14 bits   ; 252 LEs       ; 224 LEs              ; 28 LEs                 ; No         ; |DE0_interface|datapath:DE0_map|P1_bus:datapathBus|mux32to1:Bus_Mux|Mux1                     ;
+; 28:1               ; 14 bits   ; 252 LEs       ; 224 LEs              ; 28 LEs                 ; No         ; |DE0_interface|datapath:DE0_map|P1_bus:datapathBus|mux32to1:Bus_Mux|Mux8                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------+
 
 
@@ -653,37 +653,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "datapath:DE0_map"                                                                        ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                             ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
-; r0out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r1out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r2out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r3out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r4out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r5out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r6out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r7out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r8out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r9out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r10out    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r11out    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r12out    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r13out    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r14out    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; r15out    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; busmuxout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; mar_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; mdr_out   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pcout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; hiout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; loout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; irout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; zout      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; ram_pop   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:DE0_map"                                                                           ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; r0out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r1out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r2out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r3out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r4out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r5out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r6out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r7out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r8out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r9out        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r10out       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r11out       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r12out       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r13out       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r14out       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; r15out       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; busmuxout    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; mar_out      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; mdr_out      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pcout[31..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; hiout        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; loout        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; irout        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; zout         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; ram_pop      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -701,7 +701,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Apr 05 11:13:40 2022
+    Info: Processing started: Wed Apr 06 05:08:36 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off phase1 -c phase1
 Info (20032): Parallel compilation is enabled and will use up to 16 processors
 Info (12021): Found 2 design units, including 1 entities, in source file register32bit.vhd
@@ -830,31 +830,30 @@ Info (12021): Found 2 design units, including 1 entities, in source file p4_de0_
     Info (12022): Found design unit 1: P4_DE0_interface-logic
     Info (12023): Found entity 1: P4_DE0_interface
 Info (12127): Elaborating entity "DE0_interface" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(30): object "R0out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(31): object "R1out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(32): object "R2out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(33): object "R3out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(34): object "R4out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(35): object "R5out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(36): object "R6out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(37): object "R7out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(38): object "R8out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(39): object "R9out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(40): object "R10out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(41): object "R11out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(42): object "R12out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(43): object "R13out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(44): object "R14out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(45): object "R15out_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(46): object "BusMuxOut_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(47): object "HIout_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(48): object "LOout_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(49): object "IRout_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(50): object "PCval_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(51): object "Zout_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(52): object "MDRval_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(53): object "MARval_DE0" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(54): object "RAM_out" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(31): object "R0out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(32): object "R1out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(33): object "R2out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(34): object "R3out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(35): object "R4out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(36): object "R5out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(37): object "R6out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(38): object "R7out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(39): object "R8out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(40): object "R9out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(41): object "R10out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(42): object "R11out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(43): object "R12out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(44): object "R13out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(45): object "R14out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(46): object "R15out_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(47): object "BusMuxOut_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(48): object "HIout_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(49): object "LOout_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(50): object "IRout_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(52): object "Zout_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(53): object "MDRval_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(54): object "MARval_DE0" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at DE0_interface.vhd(55): object "RAM_out" assigned a value but never read
 Info (12128): Elaborating entity "datapath" for hierarchy "datapath:DE0_map"
 Warning (10036): Verilog HDL or VHDL warning at datapath.vhd(95): object "overflow" assigned a value but never read
 Info (12128): Elaborating entity "registerR0" for hierarchy "datapath:DE0_map|registerR0:R0"
@@ -1062,14 +1061,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 7174 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 7226 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
-    Info (21059): Implemented 65 output pins
-    Info (21061): Implemented 7042 logic cells
+    Info (21059): Implemented 69 output pins
+    Info (21061): Implemented 7090 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 74 warnings
-    Info: Peak virtual memory: 4791 megabytes
-    Info: Processing ended: Tue Apr 05 11:13:58 2022
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 73 warnings
+    Info: Peak virtual memory: 4775 megabytes
+    Info: Processing ended: Wed Apr 06 05:08:54 2022
     Info: Elapsed time: 00:00:18
     Info: Total CPU time (on all processors): 00:00:18
 

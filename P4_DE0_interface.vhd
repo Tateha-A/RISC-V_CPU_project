@@ -11,6 +11,7 @@ signal clr_tb: std_logic;
 signal inport_tb: std_logic_vector(31 downto 0);
 signal outport_tb: std_logic_vector(31 downto 0);
 signal seven_segment_out_tb: std_logic_vector (31 downto 0);
+signal PC_digit_one_tb: std_logic_vector (3 downto 0);
 signal reset_tb: std_logic;
 signal stop_tb	: std_logic;
 signal run_tb: std_logic;
@@ -23,7 +24,8 @@ port(
 		run	: out std_logic;
 		in_port: in std_logic_vector (31 downto 0);
 		out_port: out std_logic_vector (31 downto 0);
-		seven_segment_out_IO: out std_logic_vector (31 downto 0));
+		seven_segment_out_IO: out std_logic_vector (31 downto 0);
+		PC_digit_one: out std_logic_vector (3 downto 0));
 		-- LED ([5] run/halt)
 		-- switch (in_port[0...8])
 		-- PB[0] reset
@@ -39,7 +41,8 @@ interfaceTest : DE0_interface port map
 									run_tb,
 									inport_tb,
 									outport_tb,
-									seven_segment_out_tb);
+									seven_segment_out_tb,
+									PC_digit_one_tb);
 
 clk_process: process
 begin
@@ -56,7 +59,7 @@ begin
 	reset_tb <= '0';
 	wait for 15 ns;
 	reset_tb <= '1';
-	wait for 5000000 ns;
+	wait for 10000000 ns;
 end process;
 end architecture;	
 
