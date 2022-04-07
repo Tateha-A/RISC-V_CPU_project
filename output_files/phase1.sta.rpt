@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for phase1
-Wed Apr 06 05:09:44 2022
+Thu Apr 07 15:48:10 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -136,14 +136,14 @@ applicable agreement for further details.
 ; Number detected on machine ; 24          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 2.13        ;
+; Average used               ; 1.88        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;  50.0%      ;
-;     Processor 3            ;  37.5%      ;
-;     Processor 4            ;  25.0%      ;
+;     Processor 3            ;  25.0%      ;
+;     Processor 4            ;  12.5%      ;
 ;     Processors 5-16        ; < 0.1%      ;
 ;     Processors 17-24       ;   0.0%      ;
 +----------------------------+-------------+
@@ -5266,7 +5266,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Wed Apr 06 05:09:35 2022
+    Info: Processing started: Thu Apr 07 15:48:02 2022
 Info: Command: quartus_sta phase1 -c phase1
 Info: qsta_default_script.tcl version: #1
 Info (20032): Parallel compilation is enabled and will use up to 16 processors
@@ -5376,9 +5376,9 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5074 megabytes
-    Info: Processing ended: Wed Apr 06 05:09:44 2022
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 5075 megabytes
+    Info: Processing ended: Thu Apr 07 15:48:10 2022
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:10
 
 
